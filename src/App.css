@@ -1,0 +1,34 @@
+/* Custom styles beyond Tailwind */
+.progress-ring {
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+/* Ensure the app takes full height */
+html, body, #root, .App {
+  height: 100%;
+}
+
+/* Typewriter cursor animation */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Banner styling */
+.typewriter-banner {
+  line-height: 1.6;
+}
+
+.typewriter-banner p {
+  white-space: pre-line;
+}

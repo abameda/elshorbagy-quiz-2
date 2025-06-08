@@ -326,7 +326,7 @@ const quizData = {
     options: [
       "TCP/IP and HTTP",
       "SCSI and SATA",
-      "USB and FireWire",
+      "Fibre Channel and iSCSI",
       "Ethernet and WiFi"
     ],
     correct: 1,
@@ -1608,14 +1608,7 @@ const quizData = {
       correct: 0,
       explanation: "Required multiple operations due to 32-bit addressability constraints."
     },
-    {
-      question: "Which supercomputer architecture used 64-bit addressability?",
-      options: ["Burroughs 1700", "Cray-1", "Intel 432", "VAX-11"],
-      correct: 1,
-      explanation: "Cray supercomputers pioneered 64-bit addressability for scientific computing."
-    },
 
-    // Endianness (Pages 7-8)
     {
       question: "Which architecture uses big-endian byte ordering?",
       options: ["x86", "PowerPC", "ARM (little-endian mode)", "Original PCI bus"],
@@ -2129,8 +2122,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "gates",
         "chips"
       ],
-      "correct": 1,
-      "explanation": "The fundamental components of a computer system are the Central Processing Unit (CPU), memory (storage cells), and the interconnections (buses) that allow them to communicate."
+      "correct": 2,
+      "explanation": "A computer fundamentally consists of gates (for processing logic), memory cells (for storage), and interconnections among these elements."
     },
     {
       "question": "Specifies the address in memory of the word to be written from or read into the memory address register. ___.",
@@ -5732,12 +5725,6 @@ const quizDataArabic = {
       explanation: "يتطلب عمليات متعددة بسبب قيود العنونة 32 بت."
     },
     {
-      question: "أي بنية حاسوب عملاق استخدمت عنونة 64 بت؟",
-      options: ["Burroughs 1700", "Cray-1", "Intel 432", "VAX-11"],
-      correct: 1,
-      explanation: "أجهزة الكمبيوتر العملاقة Cray كانت رائدة في عنونة 64 بت للحوسبة العلمية."
-    },
-    {
       question: "أي بنية تستخدم ترتيب البايت الكبير (big-endian)؟",
       options: ["x86", "PowerPC", "ARM (وضع little-endian)", "ناقل PCI الأصلي"],
       correct: 1,
@@ -6230,8 +6217,8 @@ const quizDataArabic = {
         "gates",
         "chips"
       ],
-      "correct": 1,
-      "explanation": "المكونات الأساسية لنظام الكمبيوتر هي وحدة المعالجة المركزية (CPU)، والذاكرة (خلايا التخزين)، والتوصيلات البينية (buses) التي تسمح لها بالتواصل."
+      "correct": 3,
+      "explanation": "يتكون الكمبيوتر أساسًا من البوابات (لمعالجة المنطق)، وخلايا الذاكرة (للتخزين)، والتوصيلات البينية بين هذه العناصر."
     },
     {
       "question": "يحدد العنوان في الذاكرة للكلمة المراد كتابتها من أو قراءتها في سجل عنوان الذاكرة. ___.",

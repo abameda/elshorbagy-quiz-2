@@ -1997,9 +1997,2133 @@ options: [
 correct: 0,
 explanation: "MemtoReg selects whether the writeback data comes from the ALU result (e.g., for ADD) or memory (e.g., for LW)."
 },
-]
+],
 
+  'General 1': [
+    {
+      "question": "RAID level ___ has the highest disk overhead of all RAID types.",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "RAID 1 (mirroring) duplicates all data, meaning it requires twice the disk space for the same amount of data, hence the highest disk overhead."
+    },
+    {
+      "question": "Disk arrays may be consolidated or virtualized in a ____.",
+      "options": [
+        "RAID",
+        "NAS",
+        "SAN",
+        "SAS"
+      ],
+      "correct": 2,
+      "explanation": "A Storage Area Network (SAN) provides block-level storage and allows for consolidation and virtualization of disk arrays across multiple servers."
+    },
+    {
+      "question": "What is the minimum number of disks required for RAID 1? ___.",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "RAID 1 involves mirroring, which means data is duplicated across two or more disks. Therefore, a minimum of two disks is required."
+    },
+    {
+      "question": "The ______ was designed to provide a powerful and flexible instruction set within the constraints of a 16-bit minicomputer.",
+      "options": [
+        "PDP-10",
+        "PDP-11",
+        "VAX",
+        "ARM"
+      ],
+      "correct": 1,
+      "explanation": "The PDP-11 was a highly influential 16-bit minicomputer developed by Digital Equipment Corporation (DEC) known for its flexible and powerful instruction set."
+    },
+    {
+      "question": "The cache bridges the speed gap between ______ and ______.",
+      "options": [
+        "RAM and ROM",
+        "Processor and RAM",
+        "RAM and Secondary memory",
+        "None of the mentioned"
+      ],
+      "correct": 1,
+      "explanation": "Cache memory is a small, fast memory that stores frequently used data and instructions, reducing the time the processor has to wait for data from the slower main RAM."
+    },
+    {
+      "question": "The ______ is the part of the computer that sequences and executes instructions.",
+      "options": [
+        "CPU",
+        "memory",
+        "bus",
+        "input/output devices"
+      ],
+      "correct": 0,
+      "explanation": "The Central Processing Unit (CPU) is the 'brain' of the computer, responsible for fetching, decoding, and executing instructions, as well as performing arithmetic and logical operations."
+    },
+    {
+      "question": "A high-speed, special-purpose network that integrates different types of data storage devices into a single storage system and connects them to computing resources across an entire organization is called a ______.",
+      "options": [
+        "network-attached storage",
+        "storage area network",
+        "storage as a service",
+        "enterprise data storage solution"
+      ],
+      "correct": 1,
+      "explanation": "A Storage Area Network (SAN) is a dedicated high-speed network that provides access to consolidated, block-level data storage."
+    },
+    {
+      "question": "Load/store architecture: operate instructions operate only on ______.",
+      "options": [
+        "Memory",
+        "Register",
+        "immediate",
+        "register indirect"
+      ],
+      "correct": 1,
+      "explanation": "In load/store architectures (like RISC), arithmetic and logical operations only work on data that is already in processor registers. Data must be explicitly loaded from memory into registers before operations, and stored back to memory after."
+    },
+    {
+      "question": "The use of multiple processors on the same chip is referred to as ______ and provides the potential to increase performance without increasing the clock rate.",
+      "options": [
+        "multicore",
+        "GPU",
+        "data channels",
+        "MPC"
+      ],
+      "correct": 0,
+      "explanation": "Multicore processors integrate multiple independent processing units (cores) onto a single chip, allowing for parallel execution of tasks and improving performance without solely relying on higher clock speeds."
+    },
+    {
+      "question": "A measurement of how many tasks a computer can accomplish in a certain amount of time is called a ______.",
+      "options": [
+        "throughput",
+        "application analysis",
+        "cycle speed",
+        "real-time system"
+      ],
+      "correct": 0,
+      "explanation": "Throughput refers to the rate at which a system processes data or completes tasks. It's a measure of system performance."
+    },
+    {
+      "question": "Employed to temporarily hold the right-hand instruction from word in memory.",
+      "options": [
+        "MBR",
+        "MAR",
+        "IBR",
+        "PC"
+      ],
+      "correct": 2,
+      "explanation": "The Instruction Buffer Register (IBR) is used in some architectures to temporarily hold the next instruction to be executed, often when instructions are fetched in pairs (e.g., in early computers like the IAS machine)."
+    },
+    {
+      "question": "A computer consists of ______, memory cells, and interconnections among these elements.",
+      "options": [
+        "circuits",
+        "CPU",
+        "gates",
+        "chips"
+      ],
+      "correct": 1,
+      "explanation": "The fundamental components of a computer system are the Central Processing Unit (CPU), memory (storage cells), and the interconnections (buses) that allow them to communicate."
+    },
+    {
+      "question": "Specifies the address in memory of the word to be written from or read into the memory address register. ___.",
+      "options": [
+        "MBR",
+        "MAR",
+        "IBR",
+        "PC"
+      ],
+      "correct": 1,
+      "explanation": "The Memory Address Register (MAR) holds the address of the memory location that is to be accessed (read from or written to)."
+    },
+    {
+      "question": "______ manages the computer’s resources and orchestrates the performance of its functional parts.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 1,
+      "explanation": "The control unit (part of the CPU) is responsible for managing and coordinating all the components of the computer system, ensuring instructions are executed correctly and resources are utilized efficiently."
+    },
+    {
+      "question": "Updating bank statement show operations involving ______.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 2,
+      "explanation": "Updating a bank statement involves performing calculations (e.g., adding deposits, subtracting withdrawals) on financial data, which falls under data processing."
+    },
+    {
+      "question": "Embedded Systems have extreme resource constraints in terms of memory processor size, time, and ______.",
+      "options": [
+        "Power consumption",
+        "Energy consumption",
+        "speed",
+        "cost"
+      ],
+      "correct": 0,
+      "explanation": "Embedded systems are typically designed for specific functions and often operate in environments where power consumption is a critical factor, such as battery-powered devices."
+    },
+    {
+      "question": "Transferring data from one peripheral or communications line to another is ______.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 0,
+      "explanation": "Moving data between different components of a computer system (e.g., from an input device to memory, or from memory to an output device) is referred to as data movement."
+    },
+    {
+      "question": "______ consisting of a number of conducting wires to which all the other components attach.",
+      "options": [
+        "System bus",
+        "memory",
+        "CPU",
+        "I/O"
+      ],
+      "correct": 0,
+      "explanation": "A system bus is a set of parallel wires that provides a communication pathway between the CPU, memory, and input/output devices."
+    },
+    {
+      "question": "If a system is 64-bit machine, then the length of each word will be ______.",
+      "options": [
+        "4 bytes",
+        "8 bytes",
+        "16 bytes",
+        "32 bytes"
+      ],
+      "correct": 1,
+      "explanation": "A 64-bit machine means its word size is 64 bits. Since 1 byte = 8 bits, 64 bits is equal to 64/8 = 8 bytes."
+    },
+    {
+      "question": "The ______ processors are vulnerable to a new class of Denial of Service (DoS) attacks because the memory system is 'unfairly' shared among multiple cores.",
+      "options": [
+        "single-core",
+        "multi-core",
+        "super scalar",
+        "dual core"
+      ],
+      "correct": 1,
+      "explanation": "In multicore processors, if memory access is not managed fairly among cores, a malicious process on one core could monopolize memory access, leading to a denial-of-service for other cores."
+    },
+    {
+      "question": "In most contemporary systems fixed-length sectors are used, with ______ bytes being the nearly universal sector size.",
+      "options": [
+        "512",
+        "265",
+        "128",
+        "64"
+      ],
+      "correct": 0,
+      "explanation": "512 bytes is the historical and still widely used standard sector size for hard disk drives and other storage devices."
+    },
+    {
+      "question": "______ is example that apply orthogonal ISA.",
+      "options": [
+        "VAX",
+        "ARM",
+        "MIPS",
+        "X86"
+      ],
+      "correct": 0,
+      "explanation": "The VAX architecture is often cited as an example of an orthogonal instruction set architecture, where any addressing mode can be used with any instruction."
+    },
+    {
+      "question": "SAN component interconnect device such as ______.",
+      "options": [
+        "Storage arrays",
+        "switches",
+        "management software",
+        "cables"
+      ],
+      "correct": 1,
+      "explanation": "Switches (e.g., Fibre Channel switches) are key interconnect devices in a SAN, allowing multiple servers to connect to multiple storage devices."
+    },
+    {
+      "question": "A ______ expresses operations in a concise algebraic form using variables.",
+      "options": [
+        "high-level language",
+        "opcode",
+        "machine language",
+        "register"
+      ],
+      "correct": 0,
+      "explanation": "High-level programming languages (like Python, Java, C++) use syntax that is more abstract and closer to human language, allowing programmers to express operations using variables and algebraic forms."
+    },
+    {
+      "question": "The ARM architecture only ______ instructions access memory locations.",
+      "options": [
+        "data processing",
+        "status register access",
+        "load and store",
+        "branch"
+      ],
+      "correct": 2,
+      "explanation": "ARM is a RISC architecture, adhering to the load/store principle where only explicit load and store instructions interact with memory. All other operations are performed on registers."
+    },
+    {
+      "question": "NAS component Head unit is ______.",
+      "options": [
+        "CPU",
+        "NIC",
+        "Protocols",
+        "SCSI"
+      ],
+      "correct": 1,
+      "explanation": "The head unit of a Network Attached Storage (NAS) device typically includes a Network Interface Card (NIC) to connect to the network and serve files."
+    },
+    {
+      "question": "______ multiple layers of memory between the processor and main memory.",
+      "options": [
+        "Cache Memory",
+        "Controller",
+        "RAM",
+        "CPU"
+      ],
+      "correct": 0,
+      "explanation": "Cache memory is organized in a hierarchy (L1, L2, L3) to provide faster access to frequently used data, bridging the speed gap between the processor and main memory."
+    },
+    {
+      "question": "______ contains a word to be stored in memory or sent to the I/O unit.",
+      "options": [
+        "Memory buffer register",
+        "Memory address register",
+        "Instruction register",
+        "Instruction buffer register"
+      ],
+      "correct": 0,
+      "explanation": "The Memory Buffer Register (MBR), also known as the Memory Data Register (MDR), temporarily holds data being written to or read from memory."
+    },
+    {
+      "question": "The decoded instruction is stored in ______.",
+      "options": [
+        "Register",
+        "PC",
+        "IR",
+        "MDR"
+      ],
+      "correct": 2,
+      "explanation": "After an instruction is fetched and decoded by the control unit, it is stored in the Instruction Register (IR) for execution."
+    },
+    {
+      "question": "A higher level only needs to know about the interface to the lower level, not how the lower level is implemented refer to ______.",
+      "options": [
+        "ISA",
+        "Microarchitecture",
+        "Abstraction",
+        "Purpose of computing"
+      ],
+      "correct": 2,
+      "explanation": "Abstraction in computer science means hiding the complex details of how something works and exposing only the necessary interface, allowing different levels of a system to interact without needing to understand the full implementation of the lower level."
+    },
+    {
+      "question": "Unexpected Slowdowns in Multi-core because ______.",
+      "options": [
+        "L2 cash",
+        "L3 cash",
+        "Dram controller",
+        "Row buffer"
+      ],
+      "correct": 2,
+      "explanation": "The DRAM controller plays a crucial role in managing memory access for multicore processors. Inefficient or unfair scheduling by the DRAM controller can lead to unexpected slowdowns and performance degradation for some cores."
+    },
+    {
+      "question": "The DRAM controller reorders streams requests to the open row over other requests (even older ones) to ______ DRAM throughput.",
+      "options": [
+        "maximize",
+        "minimize",
+        "equalize",
+        "optimization"
+      ],
+      "correct": 0,
+      "explanation": "DRAM controllers often employ row buffer management techniques to maximize throughput by prioritizing access to currently open rows, reducing latency and improving overall memory performance."
+    },
+    {
+      "question": "DRAM bank unavailable while refreshed refer to ______.",
+      "options": [
+        "Energy consumption",
+        "Performance degradation",
+        "QoS/impact",
+        "DRAM capacity scaling"
+      ],
+      "correct": 1,
+      "explanation": "DRAM memory requires periodic refreshing to maintain data. During refresh cycles, the DRAM bank is unavailable for reads or writes, which can lead to temporary performance degradation."
+    },
+    {
+      "question": "In the case of, Zero-address instruction method the operands are stored in ______.",
+      "options": [
+        "Registers",
+        "Accumulators",
+        "Push down stack",
+        "Cache"
+      ],
+      "correct": 2,
+      "explanation": "Zero-address instruction sets operate on a stack. Operands are implicitly taken from the top of the stack, and results are pushed back onto the stack."
+    },
+    {
+      "question": "The addressing mode, where you directly specify the operand value is ______.",
+      "options": [
+        "Immediate",
+        "Direct",
+        "Definite",
+        "Relative"
+      ],
+      "correct": 0,
+      "explanation": "Immediate addressing mode means the operand itself is included as part of the instruction, rather than an address where the operand can be found."
+    },
+    {
+      "question": "Cache memory acts between ______ and ______.",
+      "options": [
+        "CPU and RAM",
+        "RAM and ROM",
+        "CPU and Hard Disk",
+        "None of these"
+      ],
+      "correct": 0,
+      "explanation": "Cache memory is positioned hierarchically between the fast CPU and the slower main RAM to reduce the average memory access time."
+    },
+    {
+      "question": "The CISC stands for ______.",
+      "options": [
+        "Computer Instruction Set Compliment",
+        "Complete Instruction Set Compliment",
+        "Computer Indexed Set Components",
+        "Complex Instruction Set Computer"
+      ],
+      "correct": 3,
+      "explanation": "CISC stands for Complex Instruction Set Computer, characterized by a large and varied set of instructions, some of which can perform complex operations in a single instruction."
+    },
+    {
+      "question": "The computer architecture aimed at reducing the time of execution of instructions is ______.",
+      "options": [
+        "CISC",
+        "RISC",
+        "ISA",
+        "ANNA"
+      ],
+      "correct": 1,
+      "explanation": "RISC (Reduced Instruction Set Computer) architectures aim for faster execution by using a smaller, simpler, and more optimized set of instructions, often executed in a single clock cycle."
+    },
+    {
+      "question": "Both the CISC and RISC architectures have been developed to reduce the ______.",
+      "options": [
+        "Cost",
+        "Time delay",
+        "Semantic gap",
+        "All of the mentioned"
+      ],
+      "correct": 2,
+      "explanation": "The semantic gap refers to the difference in expressive power between high-level programming languages and the underlying machine language. Both CISC and RISC aim to bridge this gap, albeit through different approaches."
+    },
+    {
+      "question": "In CISC architecture most of the complex instructions are stored in ______.",
+      "options": [
+        "Register",
+        "Diodes",
+        "CMOS",
+        "Transistors"
+      ],
+      "correct": 3,
+      "explanation": "The complex instructions in CISC architectures are implemented using microcode, which is typically stored in control memory within the CPU's control unit, composed of transistors."
+    },
+    {
+      "question": "Which of the architecture is power efficient? ______.",
+      "options": [
+        "CISC",
+        "RISC",
+        "ISA",
+        "IANA"
+      ],
+      "correct": 1,
+      "explanation": "RISC architectures, with their simpler instruction sets, tend to be more power-efficient due to less complex hardware requirements and fewer transistors used in the CPU design."
+    },
+    {
+      "question": "The throughput of a super scalar processor is ______.",
+      "options": [
+        "less than 1",
+        "1",
+        "more than 1",
+        "not known"
+      ],
+      "correct": 2,
+      "explanation": "A superscalar processor can execute more than one instruction per clock cycle by utilizing multiple execution units in parallel, thus having a throughput greater than 1."
+    },
+    {
+      "question": "When the processor executes multiple instructions at a time is said to use ______.",
+      "options": [
+        "Single issue",
+        "Multiplicity",
+        "Visualization",
+        "Multiple issues"
+      ],
+      "correct": 3,
+      "explanation": "Multiple issue refers to the ability of a processor to fetch and execute multiple instructions simultaneously in a single clock cycle, a characteristic of superscalar and VLIW architectures."
+    },
+    {
+      "question": "The ______ plays a very vital role in case of super scalar processors.",
+      "options": [
+        "Compilers",
+        "Motherboard",
+        "Memory",
+        "Peripherals"
+      ],
+      "correct": 0,
+      "explanation": "Compilers are crucial for superscalar processors as they optimize the instruction stream to identify independent instructions that can be executed in parallel, fully utilizing the multiple execution units."
+    },
+    {
+      "question": "A stack organized computer has ______ address instruction.",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "correct": 3,
+      "explanation": "Stack-organized computers use zero-address instructions because operands are implicitly popped from the top of the stack, and results are implicitly pushed back onto the stack."
+    },
+    {
+      "question": "The disk drive is connected to the system by using the ______.",
+      "options": [
+        "PCI bus",
+        "SCSI bus",
+        "HDMI",
+        "ISA"
+      ],
+      "correct": 1,
+      "explanation": "SCSI (Small Computer System Interface) is a standard for connecting and transferring data between computers and peripheral devices, including disk drives. While other buses exist, SCSI was widely used for this purpose."
+    },
+    {
+      "question": "ARM stands for ______.",
+      "options": [
+        "Advanced Rate Machines",
+        "Advanced RISC Machines",
+        "Artificial Running Machines",
+        "Aviary Running Machines"
+      ],
+      "correct": 1,
+      "explanation": "ARM stands for Advanced RISC Machines, reflecting its origin as a RISC (Reduced Instruction Set Computer) architecture."
+    },
+    {
+      "question": "The main importance of ARM micro-processors is providing operation with ______.",
+      "options": [
+        "Low cost and low power consumption",
+        "Higher degree of multi-tasking",
+        "Lower error or glitches",
+        "Efficient memory management"
+      ],
+      "correct": 0,
+      "explanation": "ARM processors are widely known for their efficiency, enabling low-cost and low-power consumption, which makes them ideal for mobile and embedded devices."
+    },
+    {
+      "question": "ARM processors where basically designed for ______.",
+      "options": [
+        "Main frame systems",
+        "Distributed systems",
+        "Mobile systems",
+        "Super computers"
+      ],
+      "correct": 2,
+      "explanation": "ARM processors were initially designed for mobile and embedded systems, where power efficiency and compact size are crucial."
+    },
+    {
+      "question": "In the ARM, PC is implemented using ______.",
+      "options": [
+        "Caches",
+        "Heaps",
+        "General purpose register",
+        "Stack"
+      ],
+      "correct": 2,
+      "explanation": "In ARM architecture, the Program Counter (PC) is typically one of the general-purpose registers (specifically R15), allowing for efficient manipulation and addressing."
+    },
+    {
+      "question": "The instruction, ADD R1, R2, R3 is decoded as ______.",
+      "options": [
+        "R1<-[R1]+[R2]+[R3]",
+        "R3<-[R1]+[R2]",
+        "R3<-[R1]+[R2]+[R3]",
+        "R1<-[R2]+[R3]"
+      ],
+      "correct": 3,
+      "explanation": "In ARM assembly (and many other architectures), the `ADD` instruction typically takes three operands: destination register, first source register, and second source register. So, `ADD R1, R2, R3` means `R1 = R2 + R3`."
+    },
+    {
+      "question": "______ converts the programs written in assembly language into machine instructions.",
+      "options": [
+        "Machine compiler",
+        "Interpreter",
+        "Assembler",
+        "Converter"
+      ],
+      "correct": 2,
+      "explanation": "An assembler is a program that translates assembly language code into machine code that a computer's processor can execute."
+    },
+    {
+      "question": "The instructions like MOV or ADD are called as ______.",
+      "options": [
+        "OP-Code",
+        "Operators",
+        "Commands",
+        "Operand"
+      ],
+      "correct": 0,
+      "explanation": "MOV (move) and ADD (add) are examples of operation codes (opcodes), which specify the operation to be performed by the instruction."
+    },
+    {
+      "question": "A source program is usually in ______.",
+      "options": [
+        "Assembly Language",
+        "Machine Level Language",
+        "High-level language",
+        "Natural language"
+      ],
+      "correct": 2,
+      "explanation": "Source programs are typically written by programmers in high-level languages, which are more human-readable and abstract than assembly or machine code."
+    },
+    {
+      "question": "What is used to increase the apparent size of physical memory.",
+      "options": [
+        "Disks",
+        "Hard-disk",
+        "Virtual memory",
+        "Secondary memory"
+      ],
+      "correct": 2,
+      "explanation": "Virtual memory is a memory management technique that allows the operating system to compensate for physical memory shortages by temporarily transferring data from RAM to disk storage."
+    },
+    {
+      "question": "During instruction execution, an instruction is read into an ______ in the processor.",
+      "options": [
+        "Memory buffer register (MBR)",
+        "Address register (AD)",
+        "Instruction register (IR)",
+        "Index register (IR)"
+      ],
+      "correct": 2,
+      "explanation": "After fetching, the instruction is loaded into the Instruction Register (IR) within the CPU for decoding and execution."
+    },
+    {
+      "question": "Which computer program is used to convert whole program into the machine language at a time?",
+      "options": [
+        "Simulator",
+        "Compiler",
+        "Interpreter",
+        "Commander"
+      ],
+      "correct": 1,
+      "explanation": "A compiler translates an entire high-level source program into machine code before execution. An interpreter translates and executes line by line."
+    },
+    {
+      "question": "The input devices use ______ to store the data received.",
+      "options": [
+        "Primary Memory",
+        "Secondary Memory",
+        "Buffer",
+        "External Memory"
+      ],
+      "correct": 2,
+      "explanation": "Input devices often use buffers (temporary storage areas) to hold data before it is processed or moved to main memory, to manage speed differences between the input device and the CPU."
+    },
+    {
+      "question": "In RISC architecture, memory access is limited to instructions: ______.",
+      "options": [
+        "MOV and IMP",
+        "ST and LD",
+        "PUSH and POP",
+        "CALL and RET"
+      ],
+      "correct": 1,
+      "explanation": "In RISC, memory access is restricted to explicit load (LD) and store (ST) instructions. All other operations are performed on registers."
+    },
+    {
+      "question": "Two processors A and B have clock frequencies of 700 Mhz and 900 Mhz respectively. Suppose A can execute an instruction with an average of 3 steps and B can execute with an average of 5 steps, For the execution of the same instruction which processor is faster?",
+      "options": [
+        "A",
+        "B",
+        "Both take the same time",
+        "Insufficient information"
+      ],
+      "correct": 0,
+      "explanation": "To determine which is faster, we need to calculate the time per instruction for each: Processor A: (1 / 700 MHz) * 3 steps = 3 / 700 microseconds ≈ 0.00428 microseconds. Processor B: (1 / 900 MHz) * 5 steps = 5 / 900 microseconds ≈ 0.00555 microseconds. Processor A takes less time per instruction, so A is faster."
+    },
+    {
+      "question": "The ______ format is usually used to store data.",
+      "options": [
+        "BCD",
+        "Decimal",
+        "Hexadecimal",
+        "Octal"
+      ],
+      "correct": 0,
+      "explanation": "BCD (Binary-Coded Decimal) is a common format used to store decimal numbers in binary form, particularly in applications where precise decimal arithmetic is crucial."
+    }
+  ],
+  
+  "General 2": [
+    {
+      "question": "DRAM controllers commonly used scheduling policy (FR-FCFS).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "DRAM controllers typically use the FR-FCFS (First-Ready, First-Come-First-Serve) scheduling policy to optimize memory access by prioritizing requests to already open rows."
+    },
+    {
+      "question": "Processor Is the computer component that interprets and executes instructions.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "The processor (CPU) is the core component responsible for fetching, decoding, and executing instructions in a computer system."
+    },
+    {
+      "question": "Alpha ISA contains a doubly linked list data type.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "The Alpha ISA (Instruction Set Architecture) does not natively include a doubly linked list data type; it provides basic instructions for data manipulation, but complex data structures are implemented in software."
+    },
+    {
+      "question": "CPU interconnection is a mechanism that provides for communication among CPU, main memory, and I/O.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "CPU interconnection (e.g., buses or point-to-point links) enables communication between the CPU, memory, and I/O devices to transfer data and control signals."
+    },
+    {
+      "question": "DRAM cells need to be refreshed because reading changes the voltage level of the capacitor in a cell and capacitors leak current.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "DRAM cells store data as charge in capacitors, which leak charge over time. Refreshing restores the charge to maintain data integrity."
+    },
+    {
+      "question": "Two-level global branch prediction is microarchitecture.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Two-level branch prediction is a microarchitectural technique used in CPUs to improve the accuracy of branch prediction by tracking past branch behavior."
+    },
+    {
+      "question": "DRAM controllers designed to minimize DRAM data throughput.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "DRAM controllers are designed to maximize throughput by reordering requests (e.g., FR-FCFS) to reduce latency and improve efficiency."
+    },
+    {
+      "question": "Deeply Embedded Systems is not programmable once the program logic for the device has been burned into ROM.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Many deeply embedded systems use ROM or flash memory for firmware, making them non-programmable after deployment unless designed for updates."
+    },
+    {
+      "question": "Program counter is advanced sequentially except for control transfer instructions.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "The program counter (PC) increments sequentially for linear execution but jumps to new addresses for branches, jumps, or interrupts."
+    },
+    {
+      "question": "ISA change more slowly than microarchitecture.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Instruction Set Architecture (ISA) is typically stable for compatibility, while microarchitecture evolves faster to improve performance (e.g., pipelining, caching)."
+    },
+    {
+      "question": "The type of memory assignment used in Intel processors is Little Endian.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Intel x86 processors use Little Endian byte order, where the least significant byte is stored at the lowest memory address."
+    },
+    {
+      "question": "RAID 5 apply disk striping with dedicated parity driver.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "RAID 5 uses distributed parity across all disks, not a dedicated parity drive (which is RAID 3/4)."
+    },
+    {
+      "question": "RAID level 1 does not over any redundancy at all.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "RAID 1 (mirroring) provides full redundancy by duplicating data on two or more disks."
+    },
+    {
+      "question": "During the transfer of data between the processor and memory we use register.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Registers (e.g., MAR, MBR) temporarily hold data during transfers between CPU and memory."
+    },
+    {
+      "question": "Memory and Registers are types of locations can hold source and destination operands.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Both memory addresses and registers can serve as operands in instructions (e.g., ADD [MEM], R1)."
+    },
+    {
+      "question": "ARM ISA use Load/Store architecture addressing mode.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "ARM uses a Load/Store architecture where only load/store instructions access memory, while other instructions operate on registers."
+    },
+    {
+      "question": "SAN allowing multiple clients to access files at the same time with very high performance.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Storage Area Networks (SANs) are designed for high-performance, concurrent access to block-level storage by multiple clients."
+    },
+    {
+      "question": "Alpha ISA SCAN opcode operates on character strings; PUSH\\POP.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "The Alpha ISA doesn't have a SCAN opcode for string operations; PUSH/POP are stack operations unrelated to string scanning."
+    },
+    {
+      "question": "Orthogonal ISA refer all addressing modes can be used with instruction types.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Orthogonal ISA means addressing modes can be used uniformly across different instruction types, providing programming flexibility."
+    },
+    {
+      "question": "Potentially many instructions can execute at the same time in control flow order.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "In superscalar processors, multiple instructions can execute simultaneously while maintaining correct control flow."
+    },
+    {
+      "question": "In dataflow order each instruction specifies 'who' should receive the result.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Dataflow architectures execute instructions based on operand availability, with results routed to dependent instructions."
+    },
+    {
+      "question": "RAID levels 4 through 6 make use of a virtual access technique that allows separate I/O requests to be satisfied in parallel.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "RAID 4-6 use striping with parity, not virtual access. Parallel I/O is enabled by striping but limited by parity calculations."
+    },
+    {
+      "question": "Programmer cannot access pipeline registers directly.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Pipeline registers are internal processor components used for instruction staging and are not architecturally visible to programmers."
+    },
+    {
+      "question": "Interfaces between the computer and peripherals is an example of an organizational attribute.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "I/O interfaces are organizational attributes as they're hardware implementation details transparent to the ISA."
+    },
+    {
+      "question": "Both the structure and functioning of a computer are, in essence, simple.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "While basic principles may be simple, modern computer systems are extremely complex in both structure and operation."
+    },
+    {
+      "question": "When data are moved over longer distances, to or from a remoted device, the process is known as data transport.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Data transport refers to moving data across longer distances, typically involving network protocols and specialized hardware."
+    },
+    {
+      "question": "The SAN advantage is no distance limitation.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "SANs have practical distance limitations due to latency and protocol requirements, though technologies like FCIP can extend this."
+    },
+    {
+      "question": "RAID provide fault tolerance for shared data and applications.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "RAID (except RAID 0) provides fault tolerance through redundancy, protecting against disk failures."
+    },
+    {
+      "question": "Many transistors can be produces at the same time on a single wafer of silicon.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Semiconductor manufacturing creates multiple transistors simultaneously through photolithography processes on silicon wafers."
+    },
+    {
+      "question": "Dedicated processor defined by the processor's ability to execute complex operating systems.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "Dedicated processors are specialized for specific tasks, often not running full OSes. General-purpose processors execute complex OSes."
+    },
+    {
+      "question": "Deeply Embedded Systems use a microcontroller rather than a microprocessor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Deeply embedded systems typically use microcontrollers (MCUs) that integrate CPU, memory, and I/O on a single chip."
+    },
+    {
+      "question": "Internet download to disk is example of processing from/to storage.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Downloading files involves processing network data and storing it on disk, representing storage I/O operations."
+    },
+    {
+      "question": "Updating bank statement is example of processing from storage to I/O.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "Updating a bank statement primarily involves processing stored data (storage to CPU), not necessarily I/O operations."
+    },
+    {
+      "question": "Moore observed number of transistors that could be put on a single chip was doubling every year.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Moore's original 1965 observation stated transistor counts doubled annually (later revised to ~18-24 months)."
+    },
+    {
+      "question": "The cost of computer logic and memory circuitry has fallen at a dramatic rate is the consequences of Moore's law.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Moore's Law drove cost reductions through scaling, making transistors cheaper and more numerous over time."
+    },
+    {
+      "question": "Can evaluate a modern processor by performing hands-on RTL and C-level implementation.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Processor evaluation involves RTL (Register Transfer Level) design verification and performance modeling in C/HLS."
+    },
+    {
+      "question": "A floating-point unit that uses wide floating-point values for additional accuracy is Microarchitecture.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "FPU design (e.g., 64-bit vs 128-bit) is a microarchitectural choice affecting precision and performance."
+    },
+    {
+      "question": "Predicated instruction execution is ISA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "Predication is a microarchitectural technique (though some ISAs like ARM expose it through conditional instructions)."
+    },
+    {
+      "question": "A row-conflict memory access takes significantly longer than a row-hit access.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Row conflicts in DRAM require precharging and reactivating rows, adding ~30-40ns latency versus row hits (~15ns)."
+    },
+    {
+      "question": "The ARM processors don't support Byte addressability.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "ARM processors support byte-addressable memory through load/store byte instructions (e.g., LDRB/STRB)."
+    },
+    {
+      "question": "The disadvantage of non-uniform decode is restricts instruction format.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Non-uniform instruction decoding complicates hardware but doesn't restrict formats; it's variable-length encodings that may restrict formats."
+    },
+    {
+      "question": "The RISC processor has a more complicated design than CISC.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "RISC designs are typically simpler due to uniform instructions, while CISC processors have complex decoders for variable-length instructions."
+    },
+    {
+      "question": "Immediate addressing moves operand at address in A6 to data registers 5.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "Immediate addressing uses operand values embedded in instructions, not memory addresses (this describes direct addressing)."
+    },
+    {
+      "question": "A modern 'super scalar' processor that can execute two or more instruction at once is consider a single core processor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Superscalar refers to parallel execution within a single core. Multi-core means multiple CPUs on one chip."
+    }
+  ],
+  'General 3': [
+    {
+      "question": "Both the structure and functioning of a computer are, in essence, simple.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "b) False",
+      "explanation": "While basic principles may seem simple, modern computers involve complex interactions between hardware and software components."
+    },
+    {
+      "question": "A computer must be able to process, store, move, and control data.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "a) True",
+      "explanation": "These four functions (processing, storage, data movement, and control) are fundamental to all computer systems."
+    },
+    {
+      "question": "Computer technology is changing at a ______ pace.",
+      "options": [
+        "A) Slow",
+        "B) Slow to medium",
+        "C) Rapid",
+        "D) Non-existent"
+      ],
+      "correct": "C) Rapid",
+      "explanation": "Advancements in computing follow exponential trends like Moore's Law, making technological change extremely rapid."
+    },
+    {
+      "question": "Computer ______ refers to those attributes that have a direct impact on the logical execution of a program.",
+      "options": [
+        "A) Organization",
+        "B) Specifics",
+        "C) Design",
+        "D) Architecture"
+      ],
+      "correct": "D) Architecture",
+      "explanation": "Computer architecture defines the logical interface visible to programmers (e.g., instruction set, addressing modes)."
+    },
+    {
+      "question": "Architectural attributes include ______.",
+      "options": [
+        "A) I/O mechanisms",
+        "B) Control signals",
+        "C) Interfaces",
+        "D) Memory technology used"
+      ],
+      "correct": "C) Interfaces",
+      "explanation": "Architectural attributes focus on visible interfaces like instruction sets, not implementation details like control signals."
+    },
+    {
+      "question": "______ attributes include hardware details transparent to the programmer.",
+      "options": [
+        "A) Interface",
+        "B) Organizational",
+        "C) Memory",
+        "D) Architectural"
+      ],
+      "correct": "B) Organizational",
+      "explanation": "Organizational attributes (e.g., pipeline depth, cache size) are hardware optimizations invisible to software."
+    },
+    {
+      "question": "It is a(n) ______ design issue whether a computer will have a multiply instruction.",
+      "options": [
+        "A) Architectural",
+        "B) Memory",
+        "C) Elementary",
+        "D) Organizational"
+      ],
+      "correct": "A) Architectural",
+      "explanation": "Including specific instructions (like multiply) is an architectural decision affecting the ISA."
+    },
+    {
+      "question": "It is a(n) ______ issue whether the multiply instruction will be implemented by a special multiply unit or by a mechanism that makes repeated use of the add unit of the system.",
+      "options": [
+        "A) Architectural",
+        "B) Memory",
+        "C) Mechanical",
+        "D) Organizational"
+      ],
+      "correct": "D) Organizational",
+      "explanation": "Implementation choices (e.g., dedicated multiplier vs. iterative addition) are organizational/hardware decisions."
+    },
+    {
+      "question": "A ______ system is a set of interrelated subsystems.",
+      "options": [
+        "A) Secondary",
+        "B) Hierarchical",
+        "C) Complex",
+        "D) Functional"
+      ],
+      "correct": "D) Functional",
+      "explanation": "Computers are functionally organized into subsystems (CPU, memory, I/O) that collaborate to execute programs."
+    },
+    {
+      "question": "An I/O device is referred to as a ______.",
+      "options": [
+        "A) CPU",
+        "B) Control device",
+        "C) Peripheral",
+        "D) Register"
+      ],
+      "correct": "C) Peripheral",
+      "explanation": "I/O devices (keyboards, printers, etc.) are peripherals that extend a computer's functionality."
+    },
+    {
+      "question": "When data are moved over longer distances, to or from a remote device, the process is known as ______.",
+      "options": [
+        "A) Data communications",
+        "B) Registering",
+        "C) Structuring",
+        "D) Data transport"
+      ],
+      "correct": "D) Data transport",
+      "explanation": "Data transport covers movement across networks or between remote systems, distinct from local I/O operations."
+    },
+    {
+      "question": "The ______ stores data.",
+      "options": [
+        "A) System bus",
+        "B) I/O",
+        "C) Main memory",
+        "D) Control unit"
+      ],
+      "correct": "C) Main memory",
+      "explanation": "Main memory (RAM) is the primary volatile storage for data and instructions during execution."
+    },
+    {
+      "question": "The ______ moves data between the computer and its external environment.",
+      "options": [
+        "A) Data transport",
+        "B) I/O",
+        "C) Register",
+        "D) CPU interconnection"
+      ],
+      "correct": "B) I/O",
+      "explanation": "I/O subsystems manage data exchange with external devices (disks, networks, etc.)."
+    },
+    {
+      "question": "A common example of system interconnection is by means of a ______.",
+      "options": [
+        "A) Register",
+        "B) System bus",
+        "C) Data transport",
+        "D) Control device"
+      ],
+      "correct": "B) System bus",
+      "explanation": "Buses (e.g., PCIe, USB) interconnect CPU, memory, and I/O devices using shared electrical pathways."
+    },
+    {
+      "question": "A ______ is a mechanism that provides for communication among CPU, main memory, and I/O.",
+      "options": [
+        "A) System interconnection",
+        "B) CPU interconnection",
+        "C) Peripheral",
+        "D) Processor"
+      ],
+      "correct": "A) System interconnection",
+      "explanation": "System interconnects (buses, networks) enable component communication across the entire computer."
+    },
+    {
+      "question": "______ provide storage internal to the CPU.",
+      "options": [
+        "A) Control units",
+        "B) ALUs",
+        "C) Main memory",
+        "D) Registers"
+      ],
+      "correct": "D) Registers",
+      "explanation": "Registers are the fastest storage locations directly accessible by the CPU for temporary data."
+    },
+    {
+      "question": "The ______ performs the computer's data processing functions.",
+      "options": [
+        "A) Register",
+        "B) CPU interconnection",
+        "C) ALU",
+        "D) System bus"
+      ],
+      "correct": "C) ALU",
+      "explanation": "The Arithmetic Logic Unit (ALU) executes mathematical and logical operations for data processing."
+    },
+    {
+      "question": "The smallest entity of memory is called ______.",
+      "options": [
+        "a) Cell",
+        "b) Block",
+        "c) Instance",
+        "d) Unit"
+      ],
+      "correct": "a) Cell",
+      "explanation": "A memory cell stores one bit (0/1) and is the fundamental building block of memory hierarchies."
+    },
+    {
+      "question": "When using the Big-Endian assignment to store a number, the sign bit of the number is stored in ______.",
+      "options": [
+        "a) The higher order byte of the word",
+        "b) The lower order byte of the word",
+        "c) Can’t say",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) The higher order byte of the word",
+      "explanation": "Big-Endian stores the most significant byte (including sign bits) at the lowest memory address."
+    },
+    {
+      "question": "The key factor/s in commercial success of a computer are ______.",
+      "options": [
+        "a) Performance",
+        "b) Cost",
+        "c) Speed",
+        "d) Both Performance and Cost"
+      ],
+      "correct": "d) Both Performance and Cost",
+      "explanation": "Market success balances performance (speed, capability) with cost-effectiveness."
+    },
+    {
+      "question": "______ have been developed specifically for pipelined systems.",
+      "options": [
+        "a) Utility software",
+        "b) Speed up utilities",
+        "c) Optimizing compilers",
+        "d) None of the mentioned"
+      ],
+      "correct": "c) Optimizing compilers",
+      "explanation": "Optimizing compilers rearrange code to minimize pipeline stalls (e.g., branch prediction, instruction scheduling)."
+    },
+    {
+      "question": "The fetch and execution cycles are interleaved with the help of ______.",
+      "options": [
+        "a) Modification in processor architecture",
+        "b) Clock",
+        "c) Special unit",
+        "d) Control unit"
+      ],
+      "correct": "d) Control unit",
+      "explanation": "The control unit orchestrates pipelining by managing the fetch-decode-execute cycle stages."
+    },
+    {
+      "question": "The pipelining process is also called as ______.",
+      "options": [
+        "a) Superscalar operation",
+        "b) Assembly line operation",
+        "c) Von Neumann cycle",
+        "d) None of the mentioned"
+      ],
+      "correct": "b) Assembly line operation",
+      "explanation": "Pipelining parallels factory assembly lines, where tasks are divided into sequential stages."
+    },
+    {
+      "question": "Each stage in pipelining should be completed within ______ cycle.",
+      "options": [
+        "a) 1",
+        "b) 2",
+        "c) 3",
+        "d) 4"
+      ],
+      "correct": "a) 1",
+      "explanation": "Ideal pipelines complete each stage in one clock cycle to maintain throughput."
+    },
+    {
+      "question": "To increase the speed of memory access in pipelining, we make use of ______.",
+      "options": [
+        "a) Special memory locations",
+        "b) Special purpose registers",
+        "c) Cache",
+        "d) Buffers"
+      ],
+      "correct": "c) Cache",
+      "explanation": "Caches reduce memory latency by storing frequently accessed data close to the CPU."
+    },
+    {
+      "question": "The Sun micro systems processors usually follow ______ architecture.",
+      "options": [
+        "a) CISC",
+        "b) ISA",
+        "c) ULTRA SPARC",
+        "d) RISC"
+      ],
+      "correct": "d) RISC",
+      "explanation": "Sun's SPARC processors use RISC (Reduced Instruction Set Computer) principles."
+    },
+    {
+      "question": "Both the CISC and RISC architectures have been developed to reduce the ______.",
+      "options": [
+        "a) Cost",
+        "b) Time delay",
+        "c) Semantic gap",
+        "d) All of the mentioned"
+      ],
+      "correct": "c) Semantic gap",
+      "explanation": "They aim to bridge the gap between high-level languages and machine instructions."
+    },
+    {
+      "question": "Out of the following which is not a CISC machine.",
+      "options": [
+        "a) IBM 370/168",
+        "b) VAX 11/780",
+        "c) Intel 80486",
+        "d) Motorola A567"
+      ],
+      "correct": "d) Motorola A567",
+      "explanation": "The Motorola A567 is a RISC processor, unlike the others which are CISC."
+    },
+    {
+      "question": "Pipe-lining is a unique feature of ______.",
+      "options": [
+        "a) RISC",
+        "b) CISC",
+        "c) ISA",
+        "d) IANA"
+      ],
+      "correct": "a) RISC",
+      "explanation": "While pipelining exists in both, RISC's simpler instructions enable deeper pipelines."
+    },
+    {
+      "question": "In CISC architecture most of the complex instructions are stored in ______.",
+      "options": [
+        "a) Register",
+        "b) Diodes",
+        "c) CMOS",
+        "d) Transistors"
+      ],
+      "correct": "d) Transistors",
+      "explanation": "Complex instructions are hardwired into the processor's transistor logic."
+    },
+    {
+      "question": "The collection of the above-mentioned entities where data is stored is called ______.",
+      "options": [
+        "a) Block",
+        "b) Set",
+        "c) Word",
+        "d) Byte"
+      ],
+      "correct": "c) Word",
+      "explanation": "A word is the native unit of data (e.g., 32/64 bits) processed by a CPU."
+    },
+    {
+      "question": "An 24-bit address generates an address space of ______ locations.",
+      "options": [
+        "a) 1024",
+        "b) 4096",
+        "c) 248",
+        "d) 16,777,216"
+      ],
+      "correct": "d) 16,777,216",
+      "explanation": "$$2^{24} = 16,777,216$$ unique addressable memory locations."
+    },
+    {
+      "question": "If a system is 64-bit machine, then the length of each word will be ______.",
+      "options": [
+        "a) 4 bytes",
+        "b) 8 bytes",
+        "c) 16 bytes",
+        "d) 12 bytes"
+      ],
+      "correct": "b) 8 bytes",
+      "explanation": "64 bits = 8 bytes (1 byte = 8 bits)."
+    },
+    {
+      "question": "The type of memory assignment used in Intel processors is ______.",
+      "options": [
+        "a) Little Endian",
+        "b) Big Endian",
+        "c) Medium Endian",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) Little Endian",
+      "explanation": "Intel x86/x64 uses Little Endian (LSB at lowest address)."
+    },
+    {
+      "question": "To get the physical address from the logical address generated by CPU we use ______.",
+      "options": [
+        "a) MAR",
+        "b) MMU",
+        "c) Overlays",
+        "d) TLB"
+      ],
+      "correct": "b) MMU",
+      "explanation": "The Memory Management Unit (MMU) translates virtual/logical addresses to physical ones."
+    },
+    {
+      "question": "______ method is used to map logical addresses of variable length onto physical memory.",
+      "options": [
+        "a) Paging",
+        "b) Overlays",
+        "c) Segmentation",
+        "d) Paging with segmentation"
+      ],
+      "correct": "c) Segmentation",
+      "explanation": "Segmentation supports variable-sized memory blocks, unlike fixed-size paging."
+    },
+    {
+      "question": "During the transfer of data between the processor and memory we use ______.",
+      "options": [
+        "a) Cache",
+        "b) TLB",
+        "c) Buffers",
+        "d) Registers"
+      ],
+      "correct": "d) Registers",
+      "explanation": "Registers (e.g., MAR, MDR) hold data during CPU-memory transfers."
+    },
+    {
+      "question": "Physical memory is divided into sets of finite size called as ______.",
+      "options": [
+        "a) Frames",
+        "b) Pages",
+        "c) Blocks",
+        "d) Vectors"
+      ],
+      "correct": "a) Frames",
+      "explanation": "Physical memory is partitioned into frames (typically 4KB each) for paging."
+    },
+    {
+      "question": "The CISC stands for ______.",
+      "options": [
+        "a) Computer Instruction Set Compliment",
+        "b) Complete Instruction Set Compliment",
+        "c) Computer Indexed Set Components",
+        "d) Complex Instruction set computer"
+      ],
+      "correct": "d) Complex Instruction set computer",
+      "explanation": "CISC architectures emphasize rich, multi-cycle instructions."
+    },
+    {
+      "question": "The computer architecture aimed at reducing the time of execution of instructions is ______.",
+      "options": [
+        "a) CISC",
+        "b) RISC",
+        "c) ISA",
+        "d) ANNA"
+      ],
+      "correct": "b) RISC",
+      "explanation": "RISC achieves faster execution via simpler, single-cycle instructions."
+    },
+    {
+      "question": "The RISC processor has a more complicated design than CISC.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "b) False",
+      "explanation": "RISC designs are simpler due to uniform instructions and pipelining."
+    },
+    {
+      "question": "The iconic feature of the RISC machine among the following is ______.",
+      "options": [
+        "a) Reduced number of addressing modes",
+        "b) Increased memory size",
+        "c) Having a branch delay slot",
+        "d) All of the mentioned"
+      ],
+      "correct": "a) Reduced number of addressing modes",
+      "explanation": "RISC simplifies addressing modes to streamline instruction execution."
+    },
+    {
+      "question": "Which of the architecture is power efficient?",
+      "options": [
+        "a) CISC",
+        "b) RISC",
+        "c) ISA",
+        "d) IANA"
+      ],
+      "correct": "b) RISC",
+      "explanation": "RISC's simpler circuitry typically consumes less power than CISC."
+    },
+    {
+      "question": "ARM stands for ______.",
+      "options": [
+        "a) Advanced Rate Machines",
+        "b) Advanced RISC Machines",
+        "c) Artificial Running Machines",
+        "d) Aviary Running Machines"
+      ],
+      "correct": "b) Advanced RISC Machines",
+      "explanation": "ARM originally stood for Acorn RISC Machine, later rebranded."
+    },
+    {
+      "question": "The main importance of ARM micro-processors is providing operation with ______.",
+      "options": [
+        "a) Low cost and low power consumption",
+        "b) Higher degree of multi-tasking",
+        "c) Lower error or glitches",
+        "d) Efficient memory management"
+      ],
+      "correct": "a) Low cost and low power consumption",
+      "explanation": "ARM dominates mobile devices due to its energy efficiency and cost-effectiveness."
+    },
+    {
+      "question": "ARM processors where basically designed for ______.",
+      "options": [
+        "a) Main frame systems",
+        "b) Distributed systems",
+        "c) Mobile systems",
+        "d) Super computers"
+      ],
+      "correct": "c) Mobile systems",
+      "explanation": "ARM's low-power design targets embedded and mobile applications."
+    },
+    {
+      "question": "The ARM processors don’t support Byte addressability.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "b) False",
+      "explanation": "ARM supports byte-addressable memory via instructions like LDRB/STRB."
+    },
+    {
+      "question": "The address space in ARM is ______.",
+      "options": [
+        "a) 224",
+        "b) 264",
+        "c) 216",
+        "d) 232"
+      ],
+      "correct": "d) 232",
+      "explanation": "32-bit ARM architectures use 32-bit addressing (4GB address space)."
+    },
+    {
+      "question": "The address system supported by ARM systems is/are ______.",
+      "options": [
+        "a) Little Endian",
+        "b) Big Endian",
+        "c) X-Little Endian",
+        "d) Both Little & Big Endian"
+      ],
+      "correct": "d) Both Little & Big Endian",
+      "explanation": "ARM supports configurable endianness for compatibility."
+    },
+    {
+      "question": "Memory can be accessed in ARM systems by ______ instructions.",
+      "options": [
+        "i) Store",
+        "ii) MOVE",
+        "iii) Load",
+        "iv) arithmetic",
+        "v) logical",
+        "a) i, ii, iii",
+        "b) i, ii",
+        "c) i, iv, v",
+        "d) iii, iv, v"
+      ],
+      "correct": "b) i, ii",
+      "explanation": "Only load/store instructions access memory; arithmetic/logical ops use registers."
+    },
+    {
+      "question": "RISC stands for ______.",
+      "options": [
+        "a) Restricted Instruction Sequencing Computer",
+        "b) Restricted Instruction Sequential Compiler",
+        "c) Reduced Instruction Set Computer",
+        "d) Reduced Induction Set Computer"
+      ],
+      "correct": "c) Reduced Instruction Set Computer",
+      "explanation": "RISC simplifies instructions for faster, more efficient execution."
+    },
+    {
+      "question": "In the ARM, PC is implemented using ______.",
+      "options": [
+        "a) Caches",
+        "b) Heaps",
+        "c) General purpose register",
+        "d) Stack"
+      ],
+      "correct": "c) General purpose register",
+      "explanation": "ARM's Program Counter (R15) is part of its register file."
+    },
+    {
+      "question": "The additional duplicate register used in ARM machines are called as ______.",
+      "options": [
+        "a) Copied-registers",
+        "b) Banked registers",
+        "c) Extra registers",
+        "d) External registers"
+      ],
+      "correct": "b) Banked registers",
+      "explanation": "Banked registers switch context during interrupts/privilege changes."
+    },
+    {
+      "question": "The banked registers are used for ______.",
+      "options": [
+        "a) Switching between supervisor and interrupt mode",
+        "b) Extended storing",
+        "c) Same as other general purpose registers",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) Switching between supervisor and interrupt mode",
+      "explanation": "They enable fast context switching for exception handling."
+    },
+    {
+      "question": "Each instruction in ARM machines is encoded into ______ Word.",
+      "options": [
+        "a) 2 byte",
+        "b) 3 byte",
+        "c) 4 byte",
+        "d) 8 byte"
+      ],
+      "correct": "c) 4 byte",
+      "explanation": "Classic ARM uses fixed-length 32-bit (4-byte) instructions."
+    },
+    {
+      "question": "All instructions in ARM are conditionally executed.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "a) True",
+      "explanation": "ARM instructions include conditional fields (e.g., ADDEQ) to skip execution."
+    },
+    {
+      "question": "The addressing mode where the EA of the operand is the contents of Rn is ______.",
+      "options": [
+        "a) Pre-indexed mode",
+        "b) Pre-indexed with write back mode",
+        "c) Post-indexed mode",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) Pre-indexed mode",
+      "explanation": "Pre-indexing uses register values directly as addresses."
+    },
+    {
+      "question": "The effective address of the instruction written in Post-indexed mode, MOVE[Rn]+Rm is ______.",
+      "options": [
+        "a) EA = [Rn]",
+        "b) EA = [Rn + Rm]",
+        "c) EA = [Rn] + Rm",
+        "d) EA = [Rm] + Rn"
+      ],
+      "correct": "a) EA = [Rn]",
+      "explanation": "Post-indexing uses Rn's initial value, then updates Rn post-operation."
+    },
+    {
+      "question": "The ______ format is usually used to store data.",
+      "options": [
+        "a) BCD",
+        "b) Decimal",
+        "c) Hexadecimal",
+        "d) Octal"
+      ],
+      "correct": "a) BCD",
+      "explanation": "Binary-Coded Decimal (BCD) preserves exact decimal values in storage."
+    },
+    {
+      "question": "The 8-bit encoding format used to store data in a computer is ______.",
+      "options": [
+        "a) ASCII",
+        "b) EBCDIC",
+        "c) ANCI",
+        "d) USCII"
+      ],
+      "correct": "a) ASCII",
+      "explanation": "ASCII is the standard 7-bit/8-bit encoding for text (with extensions)."
+    },
+    {
+      "question": "A source program is usually in ______.",
+      "options": [
+        "a) Assembly language",
+        "b) Machine level language",
+        "c) High-level language",
+        "d) Natural language"
+      ],
+      "correct": "c) High-level language",
+      "explanation": "Source code is written in human-readable languages like C/Python."
+    },
+    {
+      "question": "Which memory device is generally made of semiconductors?",
+      "options": [
+        "a) RAM",
+        "b) Hard-disk",
+        "c) Floppy disk",
+        "d) Cd disk"
+      ],
+      "correct": "a) RAM",
+      "explanation": "RAM uses semiconductor technology (transistors/capacitors), unlike magnetic/optical storage."
+    },
+    {
+      "question": "The small extremely fast, RAM’s are called as ______.",
+      "options": [
+        "a) Cache",
+        "b) Heaps",
+        "c) Accumulators",
+        "d) Stacks"
+      ],
+      "correct": "a) Cache",
+      "explanation": "Caches are SRAM-based memories that bridge CPU-register speed gaps."
+    },
+    {
+      "question": "The ALU makes use of ______ to store the intermediate results.",
+      "options": [
+        "a) Accumulators",
+        "b) Registers",
+        "c) Heap",
+        "d) Stack"
+      ],
+      "correct": "b) Registers",
+      "explanation": "Registers temporarily hold ALU outputs during multi-step operations."
+    },
+    {
+      "question": "The control unit controls other units by generating ______.",
+      "options": [
+        "a) Control signals",
+        "b) Timing signals",
+        "c) Transfer signals",
+        "d) Command Signals"
+      ],
+      "correct": "a) Control signals",
+      "explanation": "Control signals coordinate datapath components (e.g., ALU ops, register writes)."
+    },
+    {
+      "question": "______ are numbers and encoded characters, generally used as operands.",
+      "options": [
+        "a) Input",
+        "b) Data",
+        "c) Information",
+        "d) Stored Values"
+      ],
+      "correct": "b) Data",
+      "explanation": "Data represents raw values processed by instructions."
+    },
+    {
+      "question": "The Input devices can send information to the processor.",
+      "options": [
+        "a) When the SIN status flag is set",
+        "b) When the data arrives regardless of the SIN flag",
+        "c) Neither of the cases",
+        "d) Either of the cases"
+      ],
+      "correct": "d) Either of the cases",
+      "explanation": "Input methods vary: polled I/O checks flags, interrupt-driven I/O triggers events."
+    },
+    {
+      "question": "______ bus structure is usually used to connect I/O devices.",
+      "options": [
+        "a) Single bus",
+        "b) Multiple bus",
+        "c) Star bus",
+        "d) Rambus"
+      ],
+      "correct": "b) Multiple bus",
+      "explanation": "Modern systems use hierarchical buses (e.g., memory vs. I/O buses) for parallelism."
+    },
+    {
+      "question": "The I/O interface required to connect the I/O device to the bus consists of ______.",
+      "options": [
+        "a) Address decoder and registers",
+        "b) Control circuits",
+        "c) Address decoder, registers and Control circuits",
+        "d) Only Control circuits"
+      ],
+      "correct": "c) Address decoder, registers and Control circuits",
+      "explanation": "I/O interfaces need address decoding, data buffering (registers), and control logic."
+    },
+    {
+      "question": "To reduce the memory access time, we generally make use of ______.",
+      "options": [
+        "a) Heaps",
+        "b) Higher capacity RAM’s",
+        "c) SDRAM’s",
+        "d) Cache’s"
+      ],
+      "correct": "d) Cache’s",
+      "explanation": "Caches store frequently accessed data to minimize slow main memory accesses."
+    },
+    {
+      "question": "______ is generally used to increase the apparent size of physical memory.",
+      "options": [
+        "a) Secondary memory",
+        "b) Virtual memory",
+        "c) Hard-disk",
+        "d) Disks"
+      ],
+      "correct": "b) Virtual memory",
+      "explanation": "Virtual memory uses disk space to extend addressable memory via paging."
+    },
+    {
+      "question": "MFC stands for ______.",
+      "options": [
+        "a) Memory Format Caches",
+        "b) Memory Function Complete",
+        "c) Memory Find Command",
+        "d) Mass Format Command"
+      ],
+      "correct": "b) Memory Function Complete",
+      "explanation": "MFC signals completion of memory operations in some architectures."
+    },
+    {
+      "question": "The time delay between two successive initiations of memory operation ______.",
+      "options": [
+        "a) Memory access time",
+        "b) Memory search time",
+        "c) Memory cycle time",
+        "d) Instruction delay"
+      ],
+      "correct": "c) Memory cycle time",
+      "explanation": "Cycle time includes access time plus recovery/precharge delays."
+    },
+    {
+      "question": "In pipelining the task which requires the least time is performed first.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": "b) False",
+      "explanation": "Pipelining processes tasks in fixed stages; speed variations cause stalls."
+    },
+    {
+      "question": "If a unit completes its task before the allotted time period, then ______.",
+      "options": [
+        "a) It’ll perform some other task in the remaining time",
+        "b) Its time gets reallocated to a different task",
+        "c) It’ll remain idle for the remaining time",
+        "d) None of the mentioned"
+      ],
+      "correct": "c) It’ll remain idle for the remaining time",
+      "explanation": "Pipeline stages synchronize to the slowest stage’s clock cycle."
+    },
+    {
+      "question": "The periods of time when the unit is idle is called as ______.",
+      "options": [
+        "a) Stalls",
+        "b) Bubbles",
+        "c) Hazards",
+        "d) Both Stalls and Bubbles"
+      ],
+      "correct": "d) Both Stalls and Bubbles",
+      "explanation": "Bubbles are pipeline stalls caused by hazards or delays."
+    },
+    {
+      "question": "The contention for the usage of a hardware device is called ______.",
+      "options": [
+        "a) Structural hazard",
+        "b) Stalk",
+        "c) Deadlock",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) Structural hazard",
+      "explanation": "Structural hazards occur when hardware resources are oversubscribed."
+    },
+    {
+      "question": "The situation wherein the data of operands are not available is called ______.",
+      "options": [
+        "a) Data hazard",
+        "b) Stock",
+        "c) Deadlock",
+        "d) Structural hazard"
+      ],
+      "correct": "a) Data hazard",
+      "explanation": "Data hazards arise from dependencies (e.g., RAW—Read After Write)."
+    },
+    {
+      "question": "The decoded instruction is stored in ______.",
+      "options": [
+        "a) IR",
+        "b) PC",
+        "c) Registers",
+        "d) MDR"
+      ],
+      "correct": "a) IR",
+      "explanation": "The Instruction Register (IR) holds decoded instructions for execution."
+    },
+    {
+      "question": "The instruction -> Add LOCA, R0 does ______.",
+      "options": [
+        "a) Adds the value of LOCA to R0 and stores in the temp register",
+        "b) Adds the value of R0 to the address of LOCA",
+        "c) Adds the values of both LOCA and R0 and stores it in R0",
+        "d) Adds the value of LOCA with a value in accumulator and stores it in R0"
+      ],
+      "correct": "c) Adds the values of both LOCA and R0 and stores it in R0",
+      "explanation": "This instruction typically means: $$R0 \leftarrow [R0] + [LOCA]$$ (register + memory)."
+    },
+    {
+      "question": "Which registers can interact with the secondary storage?",
+      "options": [
+        "a) MAR",
+        "b) PC",
+        "c) IR",
+        "d) R0"
+      ],
+      "correct": "a) MAR",
+      "explanation": "The Memory Address Register (MAR) holds addresses for memory/disk access."
+    },
+    {
+      "question": "During the execution of a program which gets initialized first?",
+      "options": [
+        "a) MDR",
+        "b) IR",
+        "c) PC",
+        "d) MAR"
+      ],
+      "correct": "c) PC",
+      "explanation": "The Program Counter (PC) is initialized to the first instruction’s address."
+    },
+    {
+      "question": "Which of the register/s of the processor is/are connected to Memory Bus?",
+      "options": [
+        "a) PC",
+        "b) MAR",
+        "c) IR",
+        "d) Both PC and MAR"
+      ],
+      "correct": "b) MAR",
+      "explanation": "The MAR interfaces directly with the memory bus for address transmission."
+    },
+    {
+      "question": "ISP stands for ______.",
+      "options": [
+        "a) Instruction Set Processor",
+        "b) Information Standard Processing",
+        "c) Interchange Standard Protocol",
+        "d) Interrupt Service Procedure"
+      ],
+      "correct": "a) Instruction Set Processor",
+      "explanation": "ISP describes a processor’s instruction set architecture (ISA)."
+    },
+    {
+      "question": "The internal components of the processor are connected by ______.",
+      "options": [
+        "a) Processor intra-connectivity circuitry",
+        "b) Processor bus",
+        "c) Memory bus",
+        "d) Rambus"
+      ],
+      "correct": "b) Processor bus",
+      "explanation": "Internal buses (e.g., ALU-register connections) enable component communication."
+    },
+    {
+      "question": "______ is used to choose between incrementing the PC or performing ALU operations.",
+      "options": [
+        "a) Conditional codes",
+        "b) Multiplexer",
+        "c) Control unit",
+        "d) None of the mentioned"
+      ],
+      "correct": "c) Control unit",
+      "explanation": "The control unit directs datapath operations based on instruction decoding."
+    },
+    {
+      "question": "The registers, ALU and the interconnection between them are collectively called as ______.",
+      "options": [
+        "a) process route",
+        "b) information trail",
+        "c) information path",
+        "d) data path"
+      ],
+      "correct": "d) data path",
+      "explanation": "The datapath performs data processing and transfer operations."
+    },
+    {
+      "question": "______ is used to store data in registers.",
+      "options": [
+        "a) D flip flop",
+        "b) JK flip flop",
+        "c) RS flip flop",
+        "d) None of the mentioned"
+      ],
+      "correct": "a) D flip flop",
+      "explanation": "D flip-flops are commonly used for register storage due to their stability."
+    },
+    {
+      "question": "Which of the following is true about Computer Organization?",
+      "options": [
+        "i) It deals with high-level design issues.",
+        "ii) It involves Logic (Instruction sets, Addressing modes, Data types, Cache optimization).",
+        "iii) Computer Organization tells us how exactly all the units in the system are arranged and interconnected.",
+        "iv) None of the Above"
+      ],
+      "correct": "iii) Computer Organization tells us how exactly all the units in the system are arranged and interconnected.",
+      "explanation": "Computer Organization focuses on hardware implementation and interconnections."
+    },
+    {
+      "question": "The program written and before being compiled or assembled is called ______.",
+      "options": [
+        "A) Start Program",
+        "B) Intermediate program",
+        "C) Source Program",
+        "D) Natural Program"
+      ],
+      "correct": "C) Source Program",
+      "explanation": "Source code is the human-readable program before compilation."
+    },
+    {
+      "question": "The ______ is the computational center of the CPU.",
+      "options": [
+        "A) Registers",
+        "B) ALU",
+        "C) Flip-Flop",
+        "D) Multiplexer"
+      ],
+      "correct": "B) ALU",
+      "explanation": "The Arithmetic Logic Unit (ALU) performs all mathematical/logical operations."
+    },
+    {
+      "question": "The input devices use ______ to store the data received.",
+      "options": [
+        "A) Primary Memory",
+        "B) Secondary Memory",
+        "C) Buffer",
+        "D) External Memory"
+      ],
+      "correct": "C) Buffer",
+      "explanation": "Buffers temporarily hold input data before processing."
+    },
+    {
+      "question": "The I/O devices are connected to the CPU via ______.",
+      "options": [
+        "A) SDRAM's",
+        "B) Control circuits",
+        "C) Signals",
+        "D) BUS"
+      ],
+      "correct": "D) BUS",
+      "explanation": "Buses (e.g., PCIe, USB) provide the physical pathways for I/O communication."
+    },
+    {
+      "question": "An optimizing Compiler does ______.",
+      "options": [
+        "A) Better compilation of the given piece of code",
+        "B) Takes advantage of the type of processor and reduces its process time",
+        "C) Does better memory management",
+        "D) All of the above"
+      ],
+      "correct": "D) All of the above",
+      "explanation": "Optimizing compilers improve code efficiency across multiple dimensions."
+    },
+    {
+      "question": "Which bus is used to connect the monitor to the CPU?",
+      "options": [
+        "A) Single Bus",
+        "B) SCSI Bus",
+        "C) Multiple Bus",
+        "D) Rambus"
+      ],
+      "correct": "B) SCSI Bus",
+      "explanation": "SCSI and modern interfaces (HDMI/DisplayPort) connect displays to GPUs/CPUs."
+    },
+    {
+      "question": "In the ARM Architecture Only ______ Instructions Access Memory Locations.",
+      "options": [
+        "a) Branch",
+        "b) Status Register Access",
+        "c) Data Processing",
+        "d) load and store"
+      ],
+      "correct": "d) load and store",
+      "explanation": "ARM uses a load/store architecture where only LDR/STR access memory."
+    }
+  ]
 };
+
 
 
 const quizDataArabic = {
@@ -3975,9 +6099,2132 @@ const quizDataArabic = {
       explanation: "تختار MemtoReg ما إذا كانت بيانات الكتابة الخلفية تأتي من نتيجة ALU (على سبيل المثال، لـ ADD) أو الذاكرة (على سبيل المثال، لـ LW)."
     }
   ],
+  
+  'عام 1': [
+    {
+      "question": "مستوى RAID رقم ___ لديه أعلى استهلاك للقرص (disk overhead) بين جميع أنواع RAID.",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "يقوم RAID 1 (mirroring) بمضاعفة جميع البيانات، مما يعني أنه يتطلب ضعف مساحة القرص لنفس كمية البيانات، وبالتالي فإن لديه أعلى استهلاك للقرص."
+    },
+    {
+      "question": "يمكن دمج أو محاكاة (virtualized) مصفوفات الأقراص في ____.",
+      "options": [
+        "RAID",
+        "NAS",
+        "SAN",
+        "SAS"
+      ],
+      "correct": 2,
+      "explanation": "توفر شبكة منطقة التخزين (Storage Area Network - SAN) تخزينًا على مستوى الكتل (block-level storage) وتسمح بدمج ومحاكاة مصفوفات الأقراص عبر خوادم متعددة."
+    },
+    {
+      "question": "ما هو الحد الأدنى لعدد الأقراص المطلوبة لـ RAID 1؟ ___.",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "يتضمن RAID 1 تقنية النسخ المتطابق (mirroring)، مما يعني أن البيانات يتم تكرارها عبر قرصين أو أكثر. ولذلك، يلزم وجود قرصين كحد أدنى."
+    },
+    {
+      "question": "تم تصميم الـ ______ لتوفير مجموعة تعليمات قوية ومرنة ضمن قيود كمبيوتر مصغر 16 بت (16-bit minicomputer).",
+      "options": [
+        "PDP-10",
+        "PDP-11",
+        "VAX",
+        "ARM"
+      ],
+      "correct": 1,
+      "explanation": "كان PDP-11 جهاز كمبيوتر مصغر 16 بت مؤثرًا للغاية تم تطويره بواسطة Digital Equipment Corporation (DEC) ومعروف بمجموعة تعليماته المرنة والقوية."
+    },
+    {
+      "question": "تجسّر الـ Cache الفجوة في السرعة بين ______ و ______.",
+      "options": [
+        "RAM و ROM",
+        "Processor و RAM",
+        "RAM و Secondary memory",
+        "None of the mentioned"
+      ],
+      "correct": 1,
+      "explanation": "ذاكرة التخزين المؤقت (Cache memory) هي ذاكرة صغيرة وسريعة تخزن البيانات والتعليمات المستخدمة بشكل متكرر، مما يقلل من الوقت الذي يحتاجه المعالج لانتظار البيانات من ذاكرة الوصول العشوائي (RAM) الرئيسية الأبطأ."
+    },
+    {
+      "question": "الـ ______ هو جزء الكمبيوتر الذي يقوم بتسلسل وتنفيذ التعليمات.",
+      "options": [
+        "CPU",
+        "memory",
+        "bus",
+        "input/output devices"
+      ],
+      "correct": 0,
+      "explanation": "وحدة المعالجة المركزية (CPU) هي 'عقل' الكمبيوتر، وهي مسؤولة عن جلب التعليمات وفك تشفيرها وتنفيذها، بالإضافة إلى إجراء العمليات الحسابية والمنطقية."
+    },
+    {
+      "question": "تسمى الشبكة عالية السرعة ذات الغرض الخاص التي تدمج أنواعًا مختلفة من أجهزة تخزين البيانات في نظام تخزين واحد وتربطها بموارد الحوسبة عبر مؤسسة بأكملها بـ ______.",
+      "options": [
+        "network-attached storage",
+        "storage area network",
+        "storage as a service",
+        "enterprise data storage solution"
+      ],
+      "correct": 1,
+      "explanation": "شبكة منطقة التخزين (Storage Area Network - SAN) هي شبكة مخصصة عالية السرعة توفر الوصول إلى تخزين بيانات موحد على مستوى الكتل (block-level)."
+    },
+    {
+      "question": "Load/store architecture: تعليمات التشغيل تعمل فقط على ______.",
+      "options": [
+        "Memory",
+        "Register",
+        "immediate",
+        "register indirect"
+      ],
+      "correct": 1,
+      "explanation": "في معماريات load/store (مثل RISC)، تعمل العمليات الحسابية والمنطقية فقط على البيانات الموجودة بالفعل في سجلات المعالج (processor registers). يجب تحميل البيانات صراحةً من الذاكرة إلى السجلات قبل العمليات، وتخزينها مرة أخرى في الذاكرة بعد ذلك."
+    },
+    {
+      "question": "يُشار إلى استخدام معالجات متعددة على نفس الشريحة باسم ______ ويوفر إمكانية زيادة الأداء دون زيادة معدل الساعة (clock rate).",
+      "options": [
+        "multicore",
+        "GPU",
+        "data channels",
+        "MPC"
+      ],
+      "correct": 0,
+      "explanation": "تدمج المعالجات متعددة النوى (Multicore processors) وحدات معالجة مستقلة متعددة (cores) على شريحة واحدة، مما يسمح بالتنفيذ المتوازي للمهام وتحسين الأداء دون الاعتماد فقط على سرعات ساعة أعلى."
+    },
+    {
+      "question": "يُسمى قياس عدد المهام التي يمكن لجهاز الكمبيوتر إنجازها في مقدار معين من الوقت بـ ______.",
+      "options": [
+        "throughput",
+        "application analysis",
+        "cycle speed",
+        "real-time system"
+      ],
+      "correct": 0,
+      "explanation": "يشير Throughput إلى المعدل الذي يقوم به النظام بمعالجة البيانات أو إكمال المهام. إنه مقياس لأداء النظام."
+    },
+    {
+      "question": "يُستخدم لـ احتجاز التعليمات اليمنى مؤقتًا من كلمة في الذاكرة.",
+      "options": [
+        "MBR",
+        "MAR",
+        "IBR",
+        "PC"
+      ],
+      "correct": 2,
+      "explanation": "يُستخدم Instruction Buffer Register (IBR) في بعض المعماريات لاحتجاز التعليمات التالية المراد تنفيذها مؤقتًا، غالبًا عندما يتم جلب التعليمات في أزواج (على سبيل المثال، في أجهزة الكمبيوتر المبكرة مثل جهاز IAS)."
+    },
+    {
+      "question": "يتكون الكمبيوتر من ______، وخلايا الذاكرة، والتوصيلات البينية بين هذه العناصر.",
+      "options": [
+        "circuits",
+        "CPU",
+        "gates",
+        "chips"
+      ],
+      "correct": 1,
+      "explanation": "المكونات الأساسية لنظام الكمبيوتر هي وحدة المعالجة المركزية (CPU)، والذاكرة (خلايا التخزين)، والتوصيلات البينية (buses) التي تسمح لها بالتواصل."
+    },
+    {
+      "question": "يحدد العنوان في الذاكرة للكلمة المراد كتابتها من أو قراءتها في سجل عنوان الذاكرة. ___.",
+      "options": [
+        "MBR",
+        "MAR",
+        "IBR",
+        "PC"
+      ],
+      "correct": 1,
+      "explanation": "يحمل Memory Address Register (MAR) عنوان موقع الذاكرة الذي سيتم الوصول إليه (قراءته منه أو الكتابة إليه)."
+    },
+    {
+      "question": "______ يدير موارد الكمبيوتر وينسق أداء أجزائه الوظيفية.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 1,
+      "explanation": "وحدة التحكم (جزء من الـ CPU) مسؤولة عن إدارة وتنسيق جميع مكونات نظام الكمبيوتر، وضمان تنفيذ التعليمات بشكل صحيح واستخدام الموارد بكفاءة."
+    },
+    {
+      "question": "تُظهر عمليات تحديث كشف الحساب البنكي عمليات تتضمن ______.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 2,
+      "explanation": "يتضمن تحديث كشف الحساب البنكي إجراء حسابات (مثل إضافة الودائع، وطرح السحوبات) على البيانات المالية، وهو ما يندرج تحت معالجة البيانات (data processing)."
+    },
+    {
+      "question": "الأنظمة المدمجة (Embedded Systems) لديها قيود شديدة على الموارد من حيث حجم معالج الذاكرة، والوقت، و ______.",
+      "options": [
+        "Power consumption",
+        "Energy consumption",
+        "speed",
+        "cost"
+      ],
+      "correct": 0,
+      "explanation": "تم تصميم الأنظمة المدمجة عادةً لوظائف محددة وغالبًا ما تعمل في بيئات يكون فيها استهلاك الطاقة عاملاً حاسمًا، مثل الأجهزة التي تعمل بالبطارية."
+    },
+    {
+      "question": "نقل البيانات من جهاز طرفي أو خط اتصال إلى آخر هو ______.",
+      "options": [
+        "Data Movement",
+        "Control",
+        "Data processing",
+        "Data storage"
+      ],
+      "correct": 0,
+      "explanation": "يُشار إلى نقل البيانات بين المكونات المختلفة لنظام الكمبيوتر (مثل من جهاز إدخال إلى الذاكرة، أو من الذاكرة إلى جهاز إخراج) باسم نقل البيانات (data movement)."
+    },
+    {
+      "question": "______ يتكون من عدد من الأسلاك الموصلة التي تتصل بها جميع المكونات الأخرى.",
+      "options": [
+        "System bus",
+        "memory",
+        "CPU",
+        "I/O"
+      ],
+      "correct": 0,
+      "explanation": "الـ System bus هو مجموعة من الأسلاك المتوازية التي توفر مسار اتصال بين الـ CPU والذاكرة وأجهزة الإدخال/الإخراج."
+    },
+    {
+      "question": "إذا كان النظام جهازًا 64 بت (64-bit machine)، فإن طول كل كلمة سيكون ______.",
+      "options": [
+        "4 bytes",
+        "8 bytes",
+        "16 bytes",
+        "32 bytes"
+      ],
+      "correct": 1,
+      "explanation": "يعني جهاز 64 بت أن حجم كلمته هو 64 بت. نظرًا لأن 1 بايت = 8 بت، فإن 64 بت تساوي 64/8 = 8 بايت."
+    },
+    {
+      "question": "معالجات الـ ______ عرضة لفئة جديدة من هجمات حجب الخدمة (Denial of Service - DoS) لأن نظام الذاكرة يتم مشاركته 'بشكل غير عادل' بين النوى المتعددة (multiple cores).",
+      "options": [
+        "single-core",
+        "multi-core",
+        "super scalar",
+        "dual core"
+      ],
+      "correct": 1,
+      "explanation": "في المعالجات متعددة النوى (multicore processors)، إذا لم يتم إدارة الوصول إلى الذاكرة بشكل عادل بين النوى، يمكن لعملية ضارة على نواة واحدة أن تحتكر الوصول إلى الذاكرة، مما يؤدي إلى حجب الخدمة (denial-of-service) للنوى الأخرى."
+    },
+    {
+      "question": "في معظم الأنظمة المعاصرة، تُستخدم القطاعات ذات الطول الثابت (fixed-length sectors)، مع كون ______ بايت هو الحجم العالمي للقطاع تقريبًا.",
+      "options": [
+        "512",
+        "265",
+        "128",
+        "64"
+      ],
+      "correct": 0,
+      "explanation": "512 بايت هو حجم القطاع القياسي التاريخي والذي لا يزال مستخدمًا على نطاق واسع لمحركات الأقراص الصلبة وأجهزة التخزين الأخرى."
+    },
+    {
+      "question": "______ هو مثال يطبق ISA متعامد (orthogonal ISA).",
+      "options": [
+        "VAX",
+        "ARM",
+        "MIPS",
+        "X86"
+      ],
+      "correct": 0,
+      "explanation": "غالبًا ما تُعتبر معمارية VAX مثالاً على مجموعة تعليمات متعامدة (orthogonal instruction set architecture)، حيث يمكن استخدام أي وضع عنونة (addressing mode) مع أي تعليمة."
+    },
+    {
+      "question": "جهاز الربط البيني لمكون SAN مثل ______.",
+      "options": [
+        "Storage arrays",
+        "switches",
+        "management software",
+        "cables"
+      ],
+      "correct": 1,
+      "explanation": "المفاتيح (switches) (على سبيل المثال، Fibre Channel switches) هي أجهزة ربط بيني رئيسية في شبكة SAN، مما يسمح لعدة خوادم بالاتصال بأجهزة تخزين متعددة."
+    },
+    {
+      "question": "تُعبر الـ ______ عن العمليات في شكل جبري موجز باستخدام المتغيرات.",
+      "options": [
+        "high-level language",
+        "opcode",
+        "machine language",
+        "register"
+      ],
+      "correct": 0,
+      "explanation": "تستخدم لغات البرمجة عالية المستوى (مثل Python، Java، C++) صيغة أكثر تجريدًا وأقرب إلى اللغة البشرية، مما يسمح للمبرمجين بالتعبير عن العمليات باستخدام المتغيرات والأشكال الجبرية."
+    },
+    {
+      "question": "معمارية ARM فقط تعليمات الـ ______ تصل إلى مواقع الذاكرة.",
+      "options": [
+        "data processing",
+        "status register access",
+        "load and store",
+        "branch"
+      ],
+      "correct": 2,
+      "explanation": "ARM هي معمارية RISC، وتلتزم بمبدأ load/store حيث تتفاعل فقط تعليمات load و store الصريحة مع الذاكرة. يتم تنفيذ جميع العمليات الأخرى على السجلات."
+    },
+    {
+      "question": "وحدة رأس مكون NAS هي ______.",
+      "options": [
+        "CPU",
+        "NIC",
+        "Protocols",
+        "SCSI"
+      ],
+      "correct": 1,
+      "explanation": "تشتمل وحدة الرأس في جهاز التخزين المتصل بالشبكة (Network Attached Storage - NAS) عادةً على بطاقة واجهة الشبكة (NIC) للاتصال بالشبكة وخدمة الملفات."
+    },
+    {
+      "question": "______ طبقات متعددة من الذاكرة بين المعالج والذاكرة الرئيسية.",
+      "options": [
+        "Cache Memory",
+        "Controller",
+        "RAM",
+        "CPU"
+      ],
+      "correct": 0,
+      "explanation": "ذاكرة التخزين المؤقت (Cache memory) منظمة في تسلسل هرمي (L1, L2, L3) لتوفير وصول أسرع للبيانات المستخدمة بشكل متكرر، مما يسد فجوة السرعة بين المعالج والذاكرة الرئيسية."
+    },
+    {
+      "question": "______ يحتوي على كلمة ليتم تخزينها في الذاكرة أو إرسالها إلى وحدة الإدخال/الإخراج.",
+      "options": [
+        "Memory buffer register",
+        "Memory address register",
+        "Instruction register",
+        "Instruction buffer register"
+      ],
+      "correct": 0,
+      "explanation": "يحتوي سجل المخزن المؤقت للذاكرة (Memory Buffer Register - MBR)، المعروف أيضًا باسم سجل بيانات الذاكرة (Memory Data Register - MDR)، مؤقتًا على البيانات التي يتم كتابتها إلى الذاكرة أو قراءتها منها."
+    },
+    {
+      "question": "يتم تخزين التعليمات المفككة في ______.",
+      "options": [
+        "Register",
+        "PC",
+        "IR",
+        "MDR"
+      ],
+      "correct": 2,
+      "explanation": "بعد جلب التعليمات وفك تشفيرها بواسطة وحدة التحكم، يتم تخزينها في سجل التعليمات (Instruction Register - IR) للتنفيذ."
+    },
+    {
+      "question": "يحتاج المستوى الأعلى فقط إلى معرفة الواجهة للمستوى الأدنى، وليس كيفية تنفيذ المستوى الأدنى يشير إلى ______.",
+      "options": [
+        "ISA",
+        "Microarchitecture",
+        "Abstraction",
+        "Purpose of computing"
+      ],
+      "correct": 2,
+      "explanation": "يعني التجريد (Abstraction) في علوم الكمبيوتر إخفاء التفاصيل المعقدة لكيفية عمل شيء ما وكشف الواجهة الضرورية فقط، مما يسمح لمستويات مختلفة من النظام بالتفاعل دون الحاجة إلى فهم التنفيذ الكامل للمستوى الأدنى."
+    },
+    {
+      "question": "تباطؤات غير متوقعة في المعالجات متعددة النوى (Multi-core) بسبب ______.",
+      "options": [
+        "L2 cash",
+        "L3 cash",
+        "Dram controller",
+        "Row buffer"
+      ],
+      "correct": 2,
+      "explanation": "يلعب متحكم الـ DRAM دورًا حاسمًا في إدارة الوصول إلى الذاكرة للمعالجات متعددة النوى. يمكن أن يؤدي الجدولة غير الفعالة أو غير العادلة بواسطة متحكم الـ DRAM إلى تباطؤات غير متوقعة وتدهور الأداء لبعض النوى."
+    },
+    {
+      "question": "يعيد متحكم الـ DRAM ترتيب طلبات التدفقات إلى الصف المفتوح (open row) على حساب الطلبات الأخرى (حتى الأقدم منها) من أجل ______ إنتاجية الـ DRAM.",
+      "options": [
+        "maximize",
+        "minimize",
+        "equalize",
+        "optimization"
+      ],
+      "correct": 0,
+      "explanation": "غالبًا ما تستخدم متحكمات الـ DRAM تقنيات إدارة المخزن المؤقت للصفوف (row buffer management) لزيادة الإنتاجية إلى أقصى حد عن طريق إعطاء الأولوية للوصول إلى الصفوف المفتوحة حاليًا، مما يقلل من وقت الاستجابة ويحسن الأداء العام للذاكرة."
+    },
+    {
+      "question": "بنك الـ DRAM غير متاح أثناء التحديث (refresh) يشير إلى ______.",
+      "options": [
+        "Energy consumption",
+        "Performance degradation",
+        "QoS/impact",
+        "DRAM capacity scaling"
+      ],
+      "correct": 1,
+      "explanation": "تتطلب ذاكرة الـ DRAM تحديثًا دوريًا للحفاظ على البيانات. خلال دورات التحديث، يكون بنك الـ DRAM غير متاح للقراءة أو الكتابة، مما قد يؤدي إلى تدهور مؤقت في الأداء."
+    },
+    {
+      "question": "في حالة طريقة تعليمات العنوان الصفري (Zero-address instruction method)، يتم تخزين المعاملات (operands) في ______.",
+      "options": [
+        "Registers",
+        "Accumulators",
+        "Push down stack",
+        "Cache"
+      ],
+      "correct": 2,
+      "explanation": "تعمل مجموعات تعليمات العنوان الصفري (Zero-address instruction sets) على الـ stack. يتم أخذ المعاملات ضمنيًا من أعلى الـ stack، ويتم دفع النتائج مرة أخرى إلى الـ stack."
+    },
+    {
+      "question": "وضع العنونة (addressing mode)، حيث تحدد قيمة المعامل (operand value) مباشرة هو ______.",
+      "options": [
+        "Immediate",
+        "Direct",
+        "Definite",
+        "Relative"
+      ],
+      "correct": 0,
+      "explanation": "يعني وضع العنونة الفوري (Immediate addressing mode) أن المعامل نفسه يتم تضمينه كجزء من التعليمات، بدلاً من عنوان يمكن العثور على المعامل فيه."
+    },
+    {
+      "question": "تعمل ذاكرة الـ Cache بين ______ و ______.",
+      "options": [
+        "CPU and RAM",
+        "RAM and ROM",
+        "CPU and Hard Disk",
+        "None of these"
+      ],
+      "correct": 0,
+      "explanation": "تتم وضع ذاكرة الـ Cache هرميًا بين الـ CPU السريع وذاكرة الوصول العشوائي (RAM) الرئيسية الأبطأ لتقليل متوسط وقت الوصول إلى الذاكرة."
+    },
+    {
+      "question": "الـ CISC يرمز إلى ______.",
+      "options": [
+        "Computer Instruction Set Compliment",
+        "Complete Instruction Set Compliment",
+        "Computer Indexed Set Components",
+        "Complex Instruction Set Computer"
+      ],
+      "correct": 3,
+      "explanation": "CISC ترمز إلى Complex Instruction Set Computer (كمبيوتر مجموعة التعليمات المعقدة)، وتتميز بمجموعة كبيرة ومتنوعة من التعليمات، بعضها يمكنه تنفيذ عمليات معقدة في تعليمة واحدة."
+    },
+    {
+      "question": "معمارية الكمبيوتر التي تهدف إلى تقليل وقت تنفيذ التعليمات هي ______.",
+      "options": [
+        "CISC",
+        "RISC",
+        "ISA",
+        "ANNA"
+      ],
+      "correct": 1,
+      "explanation": "تهدف معماريات RISC (Reduced Instruction Set Computer) إلى التنفيذ الأسرع باستخدام مجموعة أصغر وأبسط وأكثر تحسينًا من التعليمات، غالبًا ما يتم تنفيذها في دورة ساعة واحدة."
+    },
+    {
+      "question": "تم تطوير كل من معماريات CISC و RISC لتقليل الـ ______.",
+      "options": [
+        "Cost",
+        "Time delay",
+        "Semantic gap",
+        "All of the mentioned"
+      ],
+      "correct": 2,
+      "explanation": "تشير الفجوة الدلالية (semantic gap) إلى الفرق في القوة التعبيرية بين لغات البرمجة عالية المستوى ولغة الآلة الأساسية. يهدف كل من CISC و RISC إلى سد هذه الفجوة، وإن كان ذلك من خلال مقاربات مختلفة."
+    },
+    {
+      "question": "في معمارية CISC، يتم تخزين معظم التعليمات المعقدة في ______.",
+      "options": [
+        "Register",
+        "Diodes",
+        "CMOS",
+        "Transistors"
+      ],
+      "correct": 3,
+      "explanation": "يتم تنفيذ التعليمات المعقدة في معماريات CISC باستخدام microcode، والذي يتم تخزينه عادةً في ذاكرة التحكم داخل وحدة التحكم في الـ CPU، ويتكون من الترانزستورات."
+    },
+    {
+      "question": "أي من المعماريات هي الأكثر كفاءة في استهلاك الطاقة؟ ______.",
+      "options": [
+        "CISC",
+        "RISC",
+        "ISA",
+        "IANA"
+      ],
+      "correct": 1,
+      "explanation": "تميل معماريات RISC، ذات مجموعات التعليمات الأبسط، إلى أن تكون أكثر كفاءة في استهلاك الطاقة نظرًا لمتطلبات الأجهزة الأقل تعقيدًا واستخدام عدد أقل من الترانزستورات في تصميم الـ CPU."
+    },
+    {
+      "question": "إنتاجية المعالج الفائق التوازي (super scalar processor) هي ______.",
+      "options": [
+        "less than 1",
+        "1",
+        "more than 1",
+        "not known"
+      ],
+      "correct": 2,
+      "explanation": "يمكن للمعالج الفائق التوازي (superscalar processor) تنفيذ أكثر من تعليمة واحدة في دورة ساعة واحدة عن طريق استخدام وحدات تنفيذ متعددة بالتوازي، وبالتالي فإن لديه إنتاجية أكبر من 1."
+    },
+    {
+      "question": "عندما يقوم المعالج بتنفيذ تعليمات متعددة في وقت واحد، يُقال إنه يستخدم ______.",
+      "options": [
+        "Single issue",
+        "Multiplicity",
+        "Visualization",
+        "Multiple issues"
+      ],
+      "correct": 3,
+      "explanation": "يشير Multiple issues إلى قدرة المعالج على جلب وتنفيذ تعليمات متعددة في وقت واحد في دورة ساعة واحدة، وهي سمة من سمات معماريات superscalar و VLIW."
+    },
+    {
+      "question": "يلعب الـ ______ دورًا حيويًا جدًا في حالة المعالجات فائقة التوازي (super scalar processors).",
+      "options": [
+        "Compilers",
+        "Motherboard",
+        "Memory",
+        "Peripherals"
+      ],
+      "correct": 0,
+      "explanation": "تعتبر المترجمات (Compilers) حاسمة بالنسبة للمعالجات فائقة التوازي لأنها تحسن تدفق التعليمات لتحديد التعليمات المستقلة التي يمكن تنفيذها بالتوازي، مما يستغل وحدات التنفيذ المتعددة بالكامل."
+    },
+    {
+      "question": "الكمبيوتر المنظم على أساس الـ Stack لديه تعليمات بعنوان ______.",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "correct": 3,
+      "explanation": "تستخدم أجهزة الكمبيوتر المنظمة على أساس الـ Stack تعليمات ذات عنوان صفري (zero-address instructions) لأن المعاملات يتم إخراجها ضمنيًا من أعلى الـ Stack، ويتم دفع النتائج مرة أخرى إلى الـ Stack."
+    },
+    {
+      "question": "يتم توصيل محرك القرص بالنظام باستخدام الـ ______.",
+      "options": [
+        "PCI bus",
+        "SCSI bus",
+        "HDMI",
+        "ISA"
+      ],
+      "correct": 1,
+      "explanation": "SCSI (Small Computer System Interface) هو معيار لربط ونقل البيانات بين أجهزة الكمبيوتر والأجهزة الطرفية، بما في ذلك محركات الأقراص. على الرغم من وجود ناقلات أخرى، إلا أن SCSI كان يستخدم على نطاق واسع لهذا الغرض."
+    },
+    {
+      "question": "ARM يرمز إلى ______.",
+      "options": [
+        "Advanced Rate Machines",
+        "Advanced RISC Machines",
+        "Artificial Running Machines",
+        "Aviary Running Machines"
+      ],
+      "correct": 1,
+      "explanation": "ARM تعني Advanced RISC Machines، مما يعكس أصلها كمعمارية RISC (Reduced Instruction Set Computer)."
+    },
+    {
+      "question": "الأهمية الرئيسية لمعالجات ARM الدقيقة هي توفير التشغيل بـ ______.",
+      "options": [
+        "Low cost and low power consumption",
+        "Higher degree of multi-tasking",
+        "Lower error or glitches",
+        "Efficient memory management"
+      ],
+      "correct": 0,
+      "explanation": "تشتهر معالجات ARM على نطاق واسع بكفاءتها، مما يتيح تكلفة منخفضة واستهلاك طاقة منخفض، مما يجعلها مثالية للأجهزة المحمولة والمدمجة."
+    },
+    {
+      "question": "تم تصميم معالجات ARM في الأساس لـ ______.",
+      "options": [
+        "Main frame systems",
+        "Distributed systems",
+        "Mobile systems",
+        "Super computers"
+      ],
+      "correct": 2,
+      "explanation": "تم تصميم معالجات ARM في البداية للأنظمة المحمولة والمدمجة، حيث تعتبر كفاءة الطاقة وصغر الحجم أمرًا بالغ الأهمية."
+    },
+    {
+      "question": "في ARM، يتم تنفيذ الـ PC باستخدام ______.",
+      "options": [
+        "Caches",
+        "Heaps",
+        "General purpose register",
+        "Stack"
+      ],
+      "correct": 2,
+      "explanation": "في معمارية ARM، عادة ما يكون Program Counter (PC) أحد السجلات ذات الأغراض العامة (على وجه التحديد R15)، مما يسمح بالتعامل والعنونة بكفاءة."
+    },
+    {
+      "question": "التعليمات، ADD R1, R2, R3 يتم فك تشفيرها على أنها ______.",
+      "options": [
+        "R1<-[R1]+[R2]+[R3]",
+        "R3<-[R1]+[R2]",
+        "R3<-[R1]+[R2]+[R3]",
+        "R1<-[R2]+[R3]"
+      ],
+      "correct": 3,
+      "explanation": "في لغة تجميع ARM (والعديد من المعماريات الأخرى)، تأخذ تعليمة `ADD` عادة ثلاثة معاملات: سجل الوجهة، سجل المصدر الأول، وسجل المصدر الثاني. لذا، `ADD R1, R2, R3` تعني `R1 = R2 + R3`."
+    },
+    {
+      "question": "______ يحول البرامج المكتوبة بلغة التجميع إلى تعليمات الآلة.",
+      "options": [
+        "Machine compiler",
+        "Interpreter",
+        "Assembler",
+        "Converter"
+      ],
+      "correct": 2,
+      "explanation": "الـ Assembler هو برنامج يترجم كود لغة التجميع إلى كود الآلة الذي يمكن لمعالج الكمبيوتر تنفيذه."
+    },
+    {
+      "question": "التعليمات مثل MOV أو ADD تسمى ______.",
+      "options": [
+        "OP-Code",
+        "Operators",
+        "Commands",
+        "Operand"
+      ],
+      "correct": 0,
+      "explanation": "MOV (move) و ADD (add) هي أمثلة على Operation Codes (Opcodes)، والتي تحدد العملية المراد تنفيذها بواسطة التعليمات."
+    },
+    {
+      "question": "برنامج المصدر (source program) عادة ما يكون في ______.",
+      "options": [
+        "Assembly Language",
+        "Machine Level Language",
+        "High-level language",
+        "Natural language"
+      ],
+      "correct": 2,
+      "explanation": "عادة ما يكتب المبرمجون برامج المصدر بلغات عالية المستوى، والتي تكون أكثر قابلية للقراءة البشرية وأكثر تجريدًا من لغة التجميع أو لغة الآلة."
+    },
+    {
+      "question": "ما الذي يستخدم لزيادة الحجم الظاهري للذاكرة الفعلية؟",
+      "options": [
+        "Disks",
+        "Hard-disk",
+        "Virtual memory",
+        "Secondary memory"
+      ],
+      "correct": 2,
+      "explanation": "الذاكرة الافتراضية (Virtual memory) هي تقنية لإدارة الذاكرة تسمح لنظام التشغيل بالتعويض عن نقص الذاكرة الفعلية عن طريق نقل البيانات مؤقتًا من ذاكرة الوصول العشوائي (RAM) إلى تخزين القرص."
+    },
+    {
+      "question": "أثناء تنفيذ التعليمات، تُقرأ التعليمات في ______ في المعالج.",
+      "options": [
+        "Memory buffer register (MBR)",
+        "Address register (AD)",
+        "Instruction register (IR)",
+        "Index register (IR)"
+      ],
+      "correct": 2,
+      "explanation": "بعد الجلب، يتم تحميل التعليمات إلى سجل التعليمات (Instruction Register - IR) داخل الـ CPU لفك تشفيرها وتنفيذها."
+    },
+    {
+      "question": "أي برنامج كمبيوتر يستخدم لتحويل البرنامج بأكمله إلى لغة الآلة في وقت واحد؟",
+      "options": [
+        "Simulator",
+        "Compiler",
+        "Interpreter",
+        "Commander"
+      ],
+      "correct": 1,
+      "explanation": "يقوم الـ Compiler بترجمة برنامج مصدر عالي المستوى بأكمله إلى كود الآلة قبل التنفيذ. بينما يقوم الـ Interpreter بالترجمة والتنفيذ سطرًا بسطر."
+    },
+    {
+      "question": "تستخدم أجهزة الإدخال ______ لتخزين البيانات المستلمة.",
+      "options": [
+        "Primary Memory",
+        "Secondary Memory",
+        "Buffer",
+        "External Memory"
+      ],
+      "correct": 2,
+      "explanation": "غالبًا ما تستخدم أجهزة الإدخال المخازن المؤقتة (buffers) (مناطق تخزين مؤقتة) للاحتفاظ بالبيانات قبل معالجتها أو نقلها إلى الذاكرة الرئيسية، لإدارة فروق السرعة بين جهاز الإدخال والـ CPU."
+    },
+    {
+      "question": "في معمارية RISC، يقتصر الوصول إلى الذاكرة على التعليمات: ______.",
+      "options": [
+        "MOV and IMP",
+        "ST and LD",
+        "PUSH and POP",
+        "CALL and RET"
+      ],
+      "correct": 1,
+      "explanation": "في RISC، يقتصر الوصول إلى الذاكرة على تعليمات load (LD) و store (ST) الصريحة. يتم تنفيذ جميع العمليات الأخرى على السجلات."
+    },
+    {
+      "question": "معالجان A و B لهما ترددات ساعة 700 ميجاهرتز و 900 ميجاهرتز على التوالي. افترض أن A يمكنه تنفيذ تعليمة بمتوسط 3 خطوات وأن B يمكنه التنفيذ بمتوسط 5 خطوات. لتنفيذ نفس التعليمات، أي المعالجين أسرع؟",
+      "options": [
+        "A",
+        "B",
+        "Both take the same time",
+        "Insufficient information"
+      ],
+      "correct": 0,
+      "explanation": "لتحديد الأسرع، نحتاج إلى حساب الوقت لكل تعليمة لكل منهما: المعالج A: (1 / 700 ميجاهرتز) * 3 خطوات = 3 / 700 ميكروثانية ≈ 0.00428 ميكروثانية. المعالج B: (1 / 900 ميجاهرتز) * 5 خطوات = 5 / 900 ميكروثانية ≈ 0.00555 ميكروثانية. المعالج A يستغرق وقتًا أقل لكل تعليمة، لذا A أسرع."
+    },
+    {
+      "question": "تُستخدم صيغة الـ ______ عادة لتخزين البيانات.",
+      "options": [
+        "BCD",
+        "Decimal",
+        "Hexadecimal",
+        "Octal"
+      ],
+      "correct": 0,
+      "explanation": "BCD (Binary-Coded Decimal) هي صيغة شائعة تُستخدم لتخزين الأرقام العشرية في شكل ثنائي، خاصة في التطبيقات التي تكون فيها الحسابات العشرية الدقيقة حاسمة."
+    }
+  ],
+
+  "عام 2": [
+    {
+      "question": "تستخدم متحكمات الـ DRAM بشكل شائع سياسة الجدولة (FR-FCFS).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تستخدم متحكمات الـ DRAM عادةً سياسة الجدولة FR-FCFS (First-Ready, First-Come-First-Serve) لتحسين الوصول إلى الذاكرة عن طريق إعطاء الأولوية للطلبات على الصفوف المفتوحة بالفعل."
+    },
+    {
+      "question": "الـ Processor هو مكون الكمبيوتر الذي يفسر التعليمات وينفذها.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "المعالج (CPU) هو المكون الأساسي المسؤول عن جلب التعليمات وفك تشفيرها وتنفيذها في نظام الكمبيوتر."
+    },
+    {
+      "question": "يتضمن Alpha ISA نوع بيانات قائمة مزدوجة الترابط (doubly linked list).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "لا يتضمن Alpha ISA (Instruction Set Architecture) بشكل أساسي نوع بيانات قائمة مزدوجة الترابط؛ فهو يوفر تعليمات أساسية لمعالجة البيانات، ولكن يتم تنفيذ هياكل البيانات المعقدة في الـ software."
+    },
+    {
+      "question": "الـ CPU interconnection هي آلية توفر الاتصال بين الـ CPU، الذاكرة الرئيسية (main memory)، والـ I/O.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تتيح وصلات الـ CPU البينية (مثل الـ buses أو الروابط من نقطة إلى نقطة) الاتصال بين الـ CPU والذاكرة وأجهزة الإدخال/الإخراج لنقل البيانات وإشارات التحكم."
+    },
+    {
+      "question": "تحتاج خلايا الـ DRAM إلى التحديث (refresh) لأن القراءة تغير مستوى الجهد للمكثف في الخلية وتتسرب التيارات من المكثفات.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تخزن خلايا الـ DRAM البيانات كشحنة في المكثفات، والتي تتسرب منها الشحنة بمرور الوقت. يؤدي التحديث إلى استعادة الشحنة للحفاظ على سلامة البيانات."
+    },
+    {
+      "question": "التنبؤ بالـ Branch العالمي ذو المستويين (Two-level global branch prediction) هو Microarchitecture.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "التنبؤ بالـ Branch ذو المستويين هو تقنية Microarchitectural تُستخدم في الـ CPUs لتحسين دقة التنبؤ بالـ Branch عن طريق تتبع سلوك الـ Branch السابق."
+    },
+    {
+      "question": "متحكمات الـ DRAM مصممة لتقليل إنتاجية بيانات الـ DRAM.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "تم تصميم متحكمات الـ DRAM لـ زيادة الإنتاجية إلى أقصى حد عن طريق إعادة ترتيب الطلبات (على سبيل المثال، FR-FCFS) لتقليل زمن الوصول وتحسين الكفاءة."
+    },
+    {
+      "question": "الأنظمة المدمجة بعمق (Deeply Embedded Systems) غير قابلة للبرمجة بمجرد حرق منطق البرنامج للجهاز في الـ ROM.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تستخدم العديد من الأنظمة المدمجة بعمق ROM أو ذاكرة فلاش للـ firmware، مما يجعلها غير قابلة للبرمجة بعد النشر ما لم تكن مصممة للتحديثات."
+    },
+    {
+      "question": "يتقدم Program counter بالتسلسل باستثناء تعليمات نقل التحكم (control transfer instructions).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يزيد عداد البرنامج (PC) بالتسلسل للتنفيذ الخطي ولكنه يقفز إلى عناوين جديدة لـ branches، أو jumps، أو interrupts."
+    },
+    {
+      "question": "ISA تتغير ببطء أكبر من Microarchitecture.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "عادة ما تكون Instruction Set Architecture (ISA) مستقرة من أجل التوافقية، بينما تتطور Microarchitecture بشكل أسرع لتحسين الأداء (على سبيل المثال، pipelining، caching)."
+    },
+    {
+      "question": "نوع تعيين الذاكرة المستخدم في معالجات Intel هو Little Endian.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تستخدم معالجات Intel x86 ترتيب البايت Little Endian، حيث يتم تخزين البايت الأقل أهمية في أدنى عنوان للذاكرة."
+    },
+    {
+      "question": "RAID 5 يطبق تجزئة القرص (disk striping) مع محرك parity مخصص.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "يستخدم RAID 5 parity موزعًا عبر جميع الأقراص، وليس محرك parity مخصصًا (وهو ما يميز RAID 3/4)."
+    },
+    {
+      "question": "مستوى RAID 1 لا يوفر أي Redundancy على الإطلاق.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "يوفر RAID 1 (mirroring) redundancy كاملة عن طريق مضاعفة البيانات على قرصين أو أكثر."
+    },
+    {
+      "question": "أثناء نقل البيانات بين المعالج والذاكرة نستخدم الـ Register.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تحتفظ الـ Registers (مثل MAR، MBR) بالبيانات مؤقتًا أثناء عمليات النقل بين الـ CPU والذاكرة."
+    },
+    {
+      "question": "الذاكرة والـ Registers هي أنواع من المواقع التي يمكنها الاحتفاظ بالـ operands المصدر والوجهة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يمكن لكل من عناوين الذاكرة والـ registers أن تعمل كـ operands في التعليمات (على سبيل المثال، ADD [MEM], R1)."
+    },
+    {
+      "question": "ARM ISA تستخدم وضع عنونة Load/Store architecture.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يستخدم ARM معمارية Load/Store حيث لا تصل إلى الذاكرة سوى تعليمات Load/Store، بينما تعمل التعليمات الأخرى على الـ registers."
+    },
+    {
+      "question": "SAN يسمح للعديد من الـ clients بالوصول إلى الملفات في نفس الوقت بأداء عالٍ جدًا.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تم تصميم Storage Area Networks (SANs) لتوفير أداء عالٍ والوصول المتزامن إلى تخزين الـ block-level بواسطة العديد من الـ clients."
+    },
+    {
+      "question": "Alpha ISA SCAN opcode يعمل على سلاسل الأحرف (character strings)؛ PUSH\\POP.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "لا يحتوي Alpha ISA على SCAN opcode لعمليات السلاسل؛ PUSH/POP هي عمليات stack لا علاقة لها بمسح السلاسل."
+    },
+    {
+      "question": "Orthogonal ISA تشير إلى أنه يمكن استخدام جميع أوضاع العنونة (addressing modes) مع أنواع التعليمات.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "Orthogonal ISA تعني أنه يمكن استخدام أوضاع العنونة بشكل موحد عبر أنواع التعليمات المختلفة، مما يوفر مرونة في البرمجة."
+    },
+    {
+      "question": "من المحتمل أن يتم تنفيذ العديد من التعليمات في نفس الوقت بترتيب تدفق التحكم (control flow order).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "في معالجات الـ superscalar، يمكن تنفيذ تعليمات متعددة في وقت واحد مع الحفاظ على تدفق التحكم الصحيح."
+    },
+    {
+      "question": "في ترتيب تدفق البيانات (dataflow order)، تحدد كل تعليمة 'من' يجب أن يتلقى النتيجة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تنفذ معماريات تدفق البيانات (dataflow architectures) التعليمات بناءً على توفر الـ operand، مع توجيه النتائج إلى التعليمات التابعة."
+    },
+    {
+      "question": "مستويات RAID من 4 إلى 6 تستخدم تقنية الوصول الافتراضي (virtual access) التي تسمح بتلبية طلبات الإدخال/الإخراج المنفصلة بشكل متوازي.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "تستخدم RAID 4-6 الـ striping مع parity، وليس الوصول الافتراضي. يتم تمكين I/O المتوازي بواسطة الـ striping ولكنه مقيد بحسابات الـ parity."
+    },
+    {
+      "question": "لا يمكن للمبرمج الوصول إلى الـ pipeline registers مباشرة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "الـ pipeline registers هي مكونات داخلية للمعالج تستخدم لتنظيم التعليمات وليست مرئية للمبرمجين من الناحية المعمارية."
+    },
+    {
+      "question": "واجهات بين الكمبيوتر والأجهزة الطرفية (peripherals) هي مثال على سمة تنظيمية (organizational attribute).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "واجهات الإدخال/الإخراج (I/O interfaces) هي سمات تنظيمية حيث أنها تفاصيل تنفيذ الأجهزة الشفافة لـ ISA."
+    },
+    {
+      "question": "بنية الكمبيوتر ووظائفه، في جوهرها، بسيطة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "بينما قد تكون المبادئ الأساسية بسيطة، فإن أنظمة الكمبيوتر الحديثة معقدة للغاية في بنيتها وعملها."
+    },
+    {
+      "question": "عندما يتم نقل البيانات لمسافات أطول، إلى أو من جهاز بعيد، تُعرف العملية باسم نقل البيانات (data transport).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يشير نقل البيانات (data transport) إلى نقل البيانات عبر مسافات أطول، ويتضمن عادة بروتوكولات الشبكة والأجهزة المتخصصة."
+    },
+    {
+      "question": "ميزة SAN هي عدم وجود قيود على المسافة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "توجد قيود عملية على مسافة شبكات SAN بسبب زمن الاستجابة ومتطلبات البروتوكول، على الرغم من أن تقنيات مثل FCIP يمكن أن توسع هذا."
+    },
+    {
+      "question": "RAID يوفر تحمل الأخطاء (fault tolerance) للبيانات والتطبيقات المشتركة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "توفر RAID (باستثناء RAID 0) تحمل الأخطاء من خلال التكرار (redundancy)، مما يحمي من أعطال القرص."
+    },
+    {
+      "question": "يمكن إنتاج العديد من الـ Transistors في نفس الوقت على شريحة واحدة من الـ silicon.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يصنع تصنيع أشباه الموصلات العديد من الترانزستورات في وقت واحد من خلال عمليات الطباعة الضوئية على رقائق الـ silicon."
+    },
+    {
+      "question": "المعالج المخصص (Dedicated processor) يعرف بقدرة المعالج على تنفيذ أنظمة تشغيل معقدة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "المعالجات المخصصة متخصصة لمهام محددة، وغالبًا لا تقوم بتشغيل أنظمة تشغيل كاملة. المعالجات ذات الأغراض العامة هي التي تنفذ أنظمة تشغيل معقدة."
+    },
+    {
+      "question": "تستخدم الأنظمة المدمجة بعمق (Deeply Embedded Systems) microcontroller بدلاً من microprocessor.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تستخدم الأنظمة المدمجة بعمق عادةً microcontrollers (MCUs) التي تدمج الـ CPU والذاكرة والـ I/O على شريحة واحدة."
+    },
+    {
+      "question": "تنزيل الإنترنت على القرص (Internet download to disk) هو مثال على المعالجة من/إلى التخزين.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يتضمن تنزيل الملفات معالجة بيانات الشبكة وتخزينها على القرص، مما يمثل عمليات إدخال/إخراج التخزين (storage I/O operations)."
+    },
+    {
+      "question": "تحديث كشف الحساب البنكي هو مثال على المعالجة من التخزين إلى الـ I/O.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "يتضمن تحديث كشف الحساب البنكي بشكل أساسي معالجة البيانات المخزنة (من التخزين إلى الـ CPU)، وليس بالضرورة عمليات I/O."
+    },
+    {
+      "question": "لاحظ مور أن عدد الـ transistors التي يمكن وضعها على شريحة واحدة يتضاعف كل عام.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "نصت ملاحظة مور الأصلية عام 1965 على أن عدد الـ transistors يتضاعف سنويًا (تم تعديله لاحقًا إلى حوالي 18-24 شهرًا)."
+    },
+    {
+      "question": "انخفاض تكلفة منطق الكمبيوتر ودوائر الذاكرة بمعدل كبير هو من نتائج قانون مور (Moore's law).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "دفع قانون مور إلى تخفيض التكاليف من خلال التوسع، مما جعل الـ transistors أرخص وأكثر عددًا بمرور الوقت."
+    },
+    {
+      "question": "يمكن تقييم معالج حديث عن طريق إجراء تطبيق عملي على مستوى RTL و C.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يتضمن تقييم المعالج التحقق من تصميم RTL (Register Transfer Level) ونمذجة الأداء في C/HLS."
+    },
+    {
+      "question": "وحدة floating-point التي تستخدم قيم floating-point واسعة لدقة إضافية هي Microarchitecture.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تصميم FPU (على سبيل المثال، 64 بت مقابل 128 بت) هو خيار microarchitectural يؤثر على الدقة والأداء."
+    },
+    {
+      "question": "تنفيذ التعليمات المشروطة (Predicated instruction execution) هو ISA.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "الـ Predication هي تقنية microarchitectural (على الرغم من أن بعض ISAs مثل ARM تكشف عنها من خلال التعليمات الشرطية)."
+    },
+    {
+      "question": "يستغرق الوصول إلى الذاكرة المتعارض مع الصف (row-conflict memory access) وقتًا أطول بكثير من الوصول إلى الصف المتاح (row-hit access).",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "تتطلب تعارضات الصفوف في الـ DRAM إعادة شحن وتنشيط الصفوف، مما يضيف زمن استجابة يتراوح بين 30-40 نانوثانية مقارنة بـ row hits (~15 نانوثانية)."
+    },
+    {
+      "question": "لا تدعم معالجات ARM الـ Byte addressability.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "تدعم معالجات ARM الذاكرة القابلة للعنونة بالبايت من خلال تعليمات تحميل/تخزين البايت (مثل LDRB/STRB)."
+    },
+    {
+      "question": "عيب فك التشفير غير الموحد (non-uniform decode) هو أنه يقيد تنسيق التعليمات.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يعقد فك التشفير غير الموحد الأجهزة ولكنه لا يقيد التنسيقات؛ فالترميزات ذات الطول المتغير هي التي قد تقيد التنسيقات."
+    },
+    {
+      "question": "معالج RISC لديه تصميم أكثر تعقيدًا من CISC.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "عادة ما تكون تصاميم RISC أبسط بسبب التعليمات الموحدة، بينما تحتوي معالجات CISC على فك تشفير معقد لتعليمات ذات طول متغير."
+    },
+    {
+      "question": "العنونة المباشرة (Immediate addressing) تنقل الـ operand في العنوان في A6 إلى سجلات البيانات 5.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 1,
+      "explanation": "تستخدم العنونة المباشرة قيم الـ operand المضمنة في التعليمات، وليس عناوين الذاكرة (هذا يصف العنونة المباشرة)."
+    },
+    {
+      "question": "يعتبر المعالج 'Super Scalar' الحديث الذي يمكنه تنفيذ تعليمات أو أكثر في وقت واحد معالجًا أحادي النواة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "correct": 0,
+      "explanation": "يشير الـ Superscalar إلى التنفيذ المتوازي داخل نواة واحدة. Multi-core يعني وجود وحدات معالجة مركزية متعددة على شريحة واحدة."
+    }
+  ],
+    "General 3": [
+    {
+      "question": "إن بنية الكمبيوتر وطريقة عمله بسيطان في جوهرهما.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "ب) خطأ",
+      "explanation": "على الرغم من أن المبادئ الأساسية قد تبدو بسيطة، إلا أن أجهزة الكمبيوتر الحديثة تتضمن تفاعلات معقدة بين مكونات الأجهزة والبرامج."
+    },
+    {
+      "question": "يجب أن يكون الكمبيوتر قادرًا على معالجة البيانات وتخزينها ونقلها والتحكم فيها.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "أ) صح",
+      "explanation": "هذه الوظائف الأربع (المعالجة والتخزين ونقل البيانات والتحكم) أساسية لجميع أنظمة الكمبيوتر."
+    },
+    {
+      "question": "تتغير تقنية الكمبيوتر بوتيرة ______.",
+      "options": [
+        "أ) بطيئة",
+        "ب) بطيئة إلى متوسطة",
+        "ج) سريعة",
+        "د) غير موجودة"
+      ],
+      "correct": "ج) سريعة",
+      "explanation": "تتبع التطورات في الحوسبة اتجاهات أسية مثل قانون مور، مما يجعل التغيير التكنولوجي سريعًا للغاية."
+    },
+    {
+      "question": "تشير 'هندسة الكمبيوتر' إلى تلك السمات التي لها تأثير مباشر على التنفيذ المنطقي للبرنامج.",
+      "options": [
+        "أ) التنظيم",
+        "ب) التفاصيل",
+        "ج) التصميم",
+        "د) الهندسة المعمارية"
+      ],
+      "correct": "د) الهندسة المعمارية",
+      "explanation": "تحدد هندسة الكمبيوتر الواجهة المنطقية المرئية للمبرمجين (مثل مجموعة التعليمات وأنماط العنونة)."
+    },
+    {
+      "question": "تشمل السمات المعمارية ______.",
+      "options": [
+        "أ) آليات الإدخال/الإخراج",
+        "ب) إشارات التحكم",
+        "ج) الواجهات",
+        "د) تقنية الذاكرة المستخدمة"
+      ],
+      "correct": "ج) الواجهات",
+      "explanation": "تركز السمات المعمارية على الواجهات المرئية مثل مجموعات التعليمات، وليس تفاصيل التنفيذ مثل إشارات التحكم."
+    },
+    {
+      "question": "تشمل السمات ______ تفاصيل الأجهزة الشفافة للمبرمج.",
+      "options": [
+        "أ) الواجهة",
+        "ب) التنظيمية",
+        "ج) الذاكرة",
+        "د) المعمارية"
+      ],
+      "correct": "ب) التنظيمية",
+      "explanation": "تعتبر السمات التنظيمية (مثل عمق خط الأنابيب وحجم ذاكرة التخزين المؤقت) تحسينات للأجهزة غير مرئية للبرامج."
+    },
+    {
+      "question": "إن مسألة تصميم ______ ما إذا كان الكمبيوتر سيحتوي على تعليمة ضرب أم لا.",
+      "options": [
+        "أ) معمارية",
+        "ب) ذاكرة",
+        "ج) أولية",
+        "د) تنظيمية"
+      ],
+      "correct": "أ) معمارية",
+      "explanation": "يعد تضمين تعليمات محددة (مثل الضرب) قرارًا معماريًا يؤثر على مجموعة التعليمات (ISA)."
+    },
+    {
+      "question": "إن مسألة ______ ما إذا كانت تعليمة الضرب ستُنفذ بواسطة وحدة ضرب خاصة أو بواسطة آلية تستخدم وحدة الجمع في النظام بشكل متكرر.",
+      "options": [
+        "أ) معمارية",
+        "ب) ذاكرة",
+        "ج) ميكانيكية",
+        "د) تنظيمية"
+      ],
+      "correct": "د) تنظيمية",
+      "explanation": "تعد خيارات التنفيذ (مثل مضاعف مخصص مقابل الجمع التكراري) قرارات تنظيمية/متعلقة بالأجهزة."
+    },
+    {
+      "question": "النظام ______ هو مجموعة من الأنظمة الفرعية المترابطة.",
+      "options": [
+        "أ) ثانوي",
+        "ب) هرمي",
+        "ج) معقد",
+        "د) وظيفي"
+      ],
+      "correct": "د) وظيفي",
+      "explanation": "تنظم أجهزة الكمبيوتر وظيفيًا إلى أنظمة فرعية (وحدة المعالجة المركزية، الذاكرة، الإدخال/الإخراج) تتعاون لتنفيذ البرامج."
+    },
+    {
+      "question": "يشار إلى جهاز الإدخال/الإخراج باسم ______.",
+      "options": [
+        "أ) وحدة المعالجة المركزية",
+        "ب) جهاز التحكم",
+        "ج) طرفي",
+        "د) سجل"
+      ],
+      "correct": "ج) طرفي",
+      "explanation": "تعتبر أجهزة الإدخال/الإخراج (لوحات المفاتيح، الطابعات، إلخ) أجهزة طرفية توسع وظائف الكمبيوتر."
+    },
+    {
+      "question": "عند نقل البيانات عبر مسافات أطول، إلى أو من جهاز بعيد، تُعرف العملية باسم ______.",
+      "options": [
+        "أ) اتصالات البيانات",
+        "ب) التسجيل",
+        "ج) الهيكلة",
+        "د) نقل البيانات"
+      ],
+      "correct": "د) نقل البيانات",
+      "explanation": "يشمل نقل البيانات الحركة عبر الشبكات أو بين الأنظمة البعيدة، وهو يختلف عن عمليات الإدخال/الإخراج المحلية."
+    },
+    {
+      "question": "يخزن ______ البيانات.",
+      "options": [
+        "أ) ناقل النظام",
+        "ب) الإدخال/الإخراج",
+        "ج) الذاكرة الرئيسية",
+        "د) وحدة التحكم"
+      ],
+      "correct": "ج) الذاكرة الرئيسية",
+      "explanation": "الذاكرة الرئيسية (RAM) هي التخزين الأساسي المتطاير للبيانات والتعليمات أثناء التنفيذ."
+    },
+    {
+      "question": "ينقل ______ البيانات بين الكمبيوتر وبيئته الخارجية.",
+      "options": [
+        "أ) نقل البيانات",
+        "ب) الإدخال/الإخراج",
+        "ج) السجل",
+        "د) التوصيل البيني لوحدة المعالجة المركزية"
+      ],
+      "correct": "ب) الإدخال/الإخراج",
+      "explanation": "تدير الأنظمة الفرعية للإدخال/الإخراج تبادل البيانات مع الأجهزة الخارجية (الأقراص، الشبكات، إلخ)."
+    },
+    {
+      "question": "أحد الأمثلة الشائعة للترابط بين الأنظمة هو عن طريق ______.",
+      "options": [
+        "أ) سجل",
+        "ب) ناقل النظام",
+        "ج) نقل البيانات",
+        "د) جهاز التحكم"
+      ],
+      "correct": "ب) ناقل النظام",
+      "explanation": "تربط النواقل (مثل PCIe، USB) وحدة المعالجة المركزية والذاكرة وأجهزة الإدخال/الإخراج باستخدام مسارات كهربائية مشتركة."
+    },
+    {
+      "question": "الـ ______ هي آلية توفر الاتصال بين وحدة المعالجة المركزية والذاكرة الرئيسية والإدخال/الإخراج.",
+      "options": [
+        "أ) الترابط بين الأنظمة",
+        "ب) الترابط بين وحدات المعالجة المركزية",
+        "ج) الطرفي",
+        "د) المعالج"
+      ],
+      "correct": "أ) الترابط بين الأنظمة",
+      "explanation": "تتيح الموصلات البينية للنظام (النواقل، الشبكات) اتصال المكونات عبر الكمبيوتر بأكمله."
+    },
+    {
+      "question": "توفر ______ تخزينًا داخليًا لوحدة المعالجة المركزية.",
+      "options": [
+        "أ) وحدات التحكم",
+        "ب) وحدات المنطق الحسابي (ALU)",
+        "ج) الذاكرة الرئيسية",
+        "د) السجلات"
+      ],
+      "correct": "د) السجلات",
+      "explanation": "السجلات هي أسرع مواقع التخزين التي يمكن لوحدة المعالجة المركزية الوصول إليها مباشرة للبيانات المؤقتة."
+    },
+    {
+      "question": "يؤدي ______ وظائف معالجة البيانات في الكمبيوتر.",
+      "options": [
+        "أ) السجل",
+        "ب) التوصيل البيني لوحدة المعالجة المركزية",
+        "ج) وحدة المنطق الحسابي (ALU)",
+        "د) ناقل النظام"
+      ],
+      "correct": "ج) وحدة المنطق الحسابي (ALU)",
+      "explanation": "تنفذ وحدة المنطق الحسابي (ALU) العمليات الحسابية والمنطقية لمعالجة البيانات."
+    },
+    {
+      "question": "أصغر كيان للذاكرة يسمى ______.",
+      "options": [
+        "أ) خلية",
+        "ب) كتلة",
+        "ج) مثيل",
+        "د) وحدة"
+      ],
+      "correct": "أ) خلية",
+      "explanation": "تخزن الخلية الذاكرة بتًا واحدًا (0/1) وهي اللبنة الأساسية لتسلسلات الذاكرة الهرمية."
+    },
+    {
+      "question": "عند استخدام تعيين Big-Endian لتخزين رقم، يتم تخزين بت الإشارة للرقم في ______.",
+      "options": [
+        "أ) البايت الأعلى ترتيبًا في الكلمة",
+        "ب) البايت الأقل ترتيبًا في الكلمة",
+        "ج) لا يمكن القول",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) البايت الأعلى ترتيبًا في الكلمة",
+      "explanation": "يخزن Big-Endian البايت الأكثر أهمية (بما في ذلك بتات الإشارة) في أدنى عنوان ذاكرة."
+    },
+    {
+      "question": "العامل (العوامل) الرئيسي في النجاح التجاري للكمبيوتر هو ______.",
+      "options": [
+        "أ) الأداء",
+        "ب) التكلفة",
+        "ج) السرعة",
+        "د) كل من الأداء والتكلفة"
+      ],
+      "correct": "د) كل من الأداء والتكلفة",
+      "explanation": "يوازن النجاح في السوق بين الأداء (السرعة والقدرة) وفعالية التكلفة."
+    },
+    {
+      "question": "تم تطوير ______ خصيصًا للأنظمة المخططة.",
+      "options": [
+        "أ) برامج الخدمات",
+        "ب) أدوات تسريع",
+        "ج) المترجمات المحسنة",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "ج) المترجمات المحسنة",
+      "explanation": "تعيد المترجمات المحسنة ترتيب التعليمات البرمجية لتقليل التوقفات في خط الأنابيب (مثل التنبؤ بالفرع، وجدولة التعليمات)."
+    },
+    {
+      "question": "تتشابك دورات الجلب والتنفيذ بمساعدة ______.",
+      "options": [
+        "أ) تعديل في بنية المعالج",
+        "ب) الساعة",
+        "ج) وحدة خاصة",
+        "د) وحدة التحكم"
+      ],
+      "correct": "د) وحدة التحكم",
+      "explanation": "تنظم وحدة التحكم خط الأنابيب عن طريق إدارة مراحل دورة الجلب-الفك-التنفيذ."
+    },
+    {
+      "question": "تُعرف عملية خط الأنابيب أيضًا باسم ______.",
+      "options": [
+        "أ) عملية متسلسلة فائقة",
+        "ب) عملية خط التجميع",
+        "ج) دورة فون نيومان",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "ب) عملية خط التجميع",
+      "explanation": "توازي عملية خط الأنابيب خطوط التجميع في المصنع، حيث تقسم المهام إلى مراحل متسلسلة."
+    },
+    {
+      "question": "يجب أن تكتمل كل مرحلة في خط الأنابيب خلال دورة ______.",
+      "options": [
+        "أ) 1",
+        "ب) 2",
+        "ج) 3",
+        "د) 4"
+      ],
+      "correct": "أ) 1",
+      "explanation": "تُكمل خطوط الأنابيب المثالية كل مرحلة في دورة ساعة واحدة للحفاظ على الإنتاجية."
+    },
+    {
+      "question": "لزيادة سرعة الوصول إلى الذاكرة في خط الأنابيب، نستخدم ______.",
+      "options": [
+        "أ) مواقع ذاكرة خاصة",
+        "ب) سجلات ذات أغراض خاصة",
+        "ج) ذاكرة التخزين المؤقت (Cache)",
+        "د) المخازن المؤقتة (Buffers)"
+      ],
+      "correct": "ج) ذاكرة التخزين المؤقت (Cache)",
+      "explanation": "تقلل ذاكرة التخزين المؤقت زمن وصول الذاكرة عن طريق تخزين البيانات التي يتم الوصول إليها بشكل متكرر بالقرب من وحدة المعالجة المركزية."
+    },
+    {
+      "question": "تتبع معالجات Sun Microsystems عادةً بنية ______.",
+      "options": [
+        "أ) CISC",
+        "ب) ISA",
+        "ج) ULTRA SPARC",
+        "د) RISC"
+      ],
+      "correct": "د) RISC",
+      "explanation": "تستخدم معالجات SPARC من Sun مبادئ RISC (كمبيوتر بمجموعة تعليمات مخفضة)."
+    },
+    {
+      "question": "تم تطوير كل من معماريات CISC و RISC لتقليل الـ ______.",
+      "options": [
+        "أ) التكلفة",
+        "ب) التأخير الزمني",
+        "ج) الفجوة الدلالية",
+        "د) جميع ما ذكر"
+      ],
+      "correct": "ج) الفجوة الدلالية",
+      "explanation": "تهدف هذه المعماريات إلى سد الفجوة بين اللغات عالية المستوى وتعليمات الآلة."
+    },
+    {
+      "question": "أي من الآلات التالية ليست آلة CISC.",
+      "options": [
+        "أ) IBM 370/168",
+        "ب) VAX 11/780",
+        "ج) Intel 80486",
+        "د) Motorola A567"
+      ],
+      "correct": "د) Motorola A567",
+      "explanation": "Motorola A567 هو معالج RISC، على عكس المعالجات الأخرى التي هي CISC."
+    },
+    {
+      "question": "خط الأنابيب هو ميزة فريدة لـ ______.",
+      "options": [
+        "أ) RISC",
+        "ب) CISC",
+        "ج) ISA",
+        "د) IANA"
+      ],
+      "correct": "أ) RISC",
+      "explanation": "بينما يوجد خط الأنابيب في كليهما، إلا أن تعليمات RISC الأبسط تسمح بخطوط أنابيب أعمق."
+    },
+    {
+      "question": "في بنية CISC، يتم تخزين معظم التعليمات المعقدة في ______.",
+      "options": [
+        "أ) سجل",
+        "ب) صمامات ثنائية",
+        "ج) CMOS",
+        "د) ترانزستورات"
+      ],
+      "correct": "د) ترانزستورات",
+      "explanation": "يتم ربط التعليمات المعقدة مباشرة في منطق الترانزستور الخاص بالمعالج."
+    },
+    {
+      "question": "تسمى مجموعة الكيانات المذكورة أعلاه حيث يتم تخزين البيانات بـ ______.",
+      "options": [
+        "أ) كتلة",
+        "ب) مجموعة",
+        "ج) كلمة",
+        "د) بايت"
+      ],
+      "correct": "ج) كلمة",
+      "explanation": "الكلمة هي الوحدة الأصلية للبيانات (مثل 32/64 بت) التي تعالجها وحدة المعالجة المركزية."
+    },
+    {
+      "question": "ينشئ العنوان ذو 24 بت مساحة عنونة تبلغ ______ موقعًا.",
+      "options": [
+        "أ) 1024",
+        "ب) 4096",
+        "ج) 248",
+        "د) 16,777,216"
+      ],
+      "correct": "د) 16,777,216",
+      "explanation": "$$2^{24} = 16,777,216$$ مواقع ذاكرة فريدة قابلة للعنونة."
+    },
+    {
+      "question": "إذا كان النظام آلة 64 بت، فسيكون طول كل كلمة ______.",
+      "options": [
+        "أ) 4 بايت",
+        "ب) 8 بايت",
+        "ج) 16 بايت",
+        "د) 12 بايت"
+      ],
+      "correct": "ب) 8 بايت",
+      "explanation": "64 بت = 8 بايت (1 بايت = 8 بت)."
+    },
+    {
+      "question": "نوع تعيين الذاكرة المستخدم في معالجات Intel هو ______.",
+      "options": [
+        "أ) Little Endian",
+        "ب) Big Endian",
+        "ج) Medium Endian",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) Little Endian",
+      "explanation": "تستخدم معالجات Intel x86/x64 Little Endian (أقل بايت أهمية في أدنى عنوان)."
+    },
+    {
+      "question": "للحصول على العنوان الفعلي من العنوان المنطقي الذي تم إنشاؤه بواسطة وحدة المعالجة المركزية، نستخدم ______.",
+      "options": [
+        "أ) MAR",
+        "ب) MMU",
+        "ج) تراكيب",
+        "د) TLB"
+      ],
+      "correct": "ب) MMU",
+      "explanation": "تقوم وحدة إدارة الذاكرة (MMU) بترجمة العناوين الافتراضية/المنطقية إلى عناوين فعلية."
+    },
+    {
+      "question": "تُستخدم طريقة ______ لتعيين العناوين المنطقية ذات الطول المتغير على الذاكرة الفعلية.",
+      "options": [
+        "أ) الترحيل",
+        "ب) التراكيب",
+        "ج) التجزئة",
+        "د) الترحيل مع التجزئة"
+      ],
+      "correct": "ج) التجزئة",
+      "explanation": "تدعم التجزئة كتل الذاكرة ذات الأحجام المتغيرة، على عكس الترحيل ذي الحجم الثابت."
+    },
+    {
+      "question": "أثناء نقل البيانات بين المعالج والذاكرة، نستخدم ______.",
+      "options": [
+        "أ) ذاكرة التخزين المؤقت",
+        "ب) TLB",
+        "ج) المخازن المؤقتة",
+        "د) السجلات"
+      ],
+      "correct": "د) السجلات",
+      "explanation": "تحتفظ السجلات (مثل MAR، MDR) بالبيانات أثناء عمليات نقل وحدة المعالجة المركزية والذاكرة."
+    },
+    {
+      "question": "تقسم الذاكرة الفعلية إلى مجموعات ذات حجم محدد تسمى ______.",
+      "options": [
+        "أ) إطارات",
+        "ب) صفحات",
+        "ج) كتل",
+        "د) متجهات"
+      ],
+      "correct": "أ) إطارات",
+      "explanation": "تقسم الذاكرة الفعلية إلى إطارات (عادة 4 كيلوبايت لكل منها) لأغراض الترحيل."
+    },
+    {
+      "question": "يشير CISC إلى ______.",
+      "options": [
+        "أ) مكمل مجموعة تعليمات الكمبيوتر",
+        "ب) مكمل مجموعة التعليمات الكاملة",
+        "ج) مكونات مجموعة التعليمات المفهرسة للكمبيوتر",
+        "د) كمبيوتر بمجموعة تعليمات معقدة"
+      ],
+      "correct": "د) كمبيوتر بمجموعة تعليمات معقدة",
+      "explanation": "تركز معماريات CISC على التعليمات الغنية متعددة الدورات."
+    },
+    {
+      "question": "بنية الكمبيوتر التي تهدف إلى تقليل وقت تنفيذ التعليمات هي ______.",
+      "options": [
+        "أ) CISC",
+        "ب) RISC",
+        "ج) ISA",
+        "د) ANNA"
+      ],
+      "correct": "ب) RISC",
+      "explanation": "تحقق RISC تنفيذًا أسرع عبر تعليمات أبسط ذات دورة واحدة."
+    },
+    {
+      "question": "يتمتع معالج RISC بتصميم أكثر تعقيدًا من CISC.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "ب) خطأ",
+      "explanation": "تُعد تصاميم RISC أبسط بسبب التعليمات الموحدة وخطوط الأنابيب."
+    },
+    {
+      "question": "الميزة البارزة لآلة RISC من بين ما يلي هي ______.",
+      "options": [
+        "أ) عدد أنماط العنونة المخفضة",
+        "ب) زيادة حجم الذاكرة",
+        "ج) وجود فتحة تأخير للفرع",
+        "د) جميع ما ذكر"
+      ],
+      "correct": "أ) عدد أنماط العنونة المخفضة",
+      "explanation": "تبسط RISC أنماط العنونة لتبسيط تنفيذ التعليمات."
+    },
+    {
+      "question": "أي من المعماريات التالية موفرة للطاقة؟",
+      "options": [
+        "أ) CISC",
+        "ب) RISC",
+        "ج) ISA",
+        "د) IANA"
+      ],
+      "correct": "ب) RISC",
+      "explanation": "تستهلك دوائر RISC الأبسط عادةً طاقة أقل من CISC."
+    },
+    {
+      "question": "يشير ARM إلى ______.",
+      "options": [
+        "أ) Advanced Rate Machines",
+        "ب) Advanced RISC Machines",
+        "ج) Artificial Running Machines",
+        "د) Aviary Running Machines"
+      ],
+      "correct": "ب) Advanced RISC Machines",
+      "explanation": "كان ARM في الأصل يعني Acorn RISC Machine، ثم أعيد تسميته لاحقًا."
+    },
+    {
+      "question": "الأهمية الرئيسية لمعالجات ARM الدقيقة هي توفير التشغيل بـ ______.",
+      "options": [
+        "أ) تكلفة منخفضة واستهلاك طاقة منخفض",
+        "ب) درجة أعلى من تعدد المهام",
+        "ج) أخطاء أو عيوب أقل",
+        "د) إدارة ذاكرة فعالة"
+      ],
+      "correct": "أ) تكلفة منخفضة واستهلاك طاقة منخفض",
+      "explanation": "يهيمن ARM على الأجهزة المحمولة بسبب كفاءته في استهلاك الطاقة وفعاليته من حيث التكلفة."
+    },
+    {
+      "question": "تم تصميم معالجات ARM في الأساس لـ ______.",
+      "options": [
+        "أ) أنظمة الحواسيب المركزية",
+        "ب) الأنظمة الموزعة",
+        "ج) الأنظمة المحمولة",
+        "د) أجهزة الكمبيوتر العملاقة"
+      ],
+      "correct": "ج) الأنظمة المحمولة",
+      "explanation": "يستهدف تصميم ARM منخفض الطاقة التطبيقات المدمجة والمحمولة."
+    },
+    {
+      "question": "لا تدعم معالجات ARM عنونة البايت.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "ب) خطأ",
+      "explanation": "يدعم ARM عنونة البايت عبر تعليمات مثل LDRB/STRB."
+    },
+    {
+      "question": "مساحة العنوان في ARM هي ______.",
+      "options": [
+        "أ) 224",
+        "ب) 264",
+        "ج) 216",
+        "د) 232"
+      ],
+      "correct": "د) 232",
+      "explanation": "تستخدم معماريات ARM ذات 32 بت عنونة 32 بت (مساحة عنوان 4 جيجابايت)."
+    },
+    {
+      "question": "نظام العنونة المدعوم بواسطة أنظمة ARM هو/هي ______.",
+      "options": [
+        "أ) Little Endian",
+        "ب) Big Endian",
+        "ج) X-Little Endian",
+        "د) كل من Little & Big Endian"
+      ],
+      "correct": "د) كل من Little & Big Endian",
+      "explanation": "يدعم ARM إمكانية التبديل بين Endianness للتوافق."
+    },
+    {
+      "question": "يمكن الوصول إلى الذاكرة في أنظمة ARM بواسطة تعليمات ______.",
+      "options": [
+        "ط) تخزين",
+        "ث) نقل",
+        "ج) تحميل",
+        "ح) حسابي",
+        "خ) منطقي",
+        "أ) ط، ث، ج",
+        "ب) ط، ث",
+        "ج) ط، ح، خ",
+        "د) ج، ح، خ"
+      ],
+      "correct": "ب) ط، ث",
+      "explanation": "تعليمات التحميل/التخزين فقط هي التي تصل إلى الذاكرة؛ بينما تستخدم العمليات الحسابية/المنطقية السجلات."
+    },
+    {
+      "question": "يشير RISC إلى ______.",
+      "options": [
+        "أ) Restricted Instruction Sequencing Computer",
+        "ب) Restricted Instruction Sequential Compiler",
+        "ج) Reduced Instruction Set Computer",
+        "د) Reduced Induction Set Computer"
+      ],
+      "correct": "ج) Reduced Instruction Set Computer",
+      "explanation": "تبسط RISC التعليمات من أجل تنفيذ أسرع وأكثر كفاءة."
+    },
+    {
+      "question": "في ARM، يتم تنفيذ PC باستخدام ______.",
+      "options": [
+        "أ) ذاكرات التخزين المؤقت (Caches)",
+        "ب) أكوام (Heaps)",
+        "ج) سجل الأغراض العامة",
+        "د) مكدس (Stack)"
+      ],
+      "correct": "ج) سجل الأغراض العامة",
+      "explanation": "عداد البرنامج (R15) في ARM هو جزء من ملف السجلات الخاص به."
+    },
+    {
+      "question": "تسمى السجلات المكررة الإضافية المستخدمة في آلات ARM بـ ______.",
+      "options": [
+        "أ) السجلات المنسوخة",
+        "ب) السجلات المترابطة",
+        "ج) السجلات الإضافية",
+        "د) السجلات الخارجية"
+      ],
+      "correct": "ب) السجلات المترابطة",
+      "explanation": "تبدل السجلات المترابطة السياق أثناء المقاطعات/تغييرات الامتياز."
+    },
+    {
+      "question": "تستخدم السجلات المترابطة لـ ______.",
+      "options": [
+        "أ) التبديل بين وضع الإشراف ووضع المقاطعة",
+        "ب) التخزين الممتد",
+        "ج) نفس سجلات الأغراض العامة الأخرى",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) التبديل بين وضع الإشراف ووضع المقاطعة",
+      "explanation": "تمكن هذه السجلات التبديل السريع للسياق لمعالجة الاستثناءات."
+    },
+    {
+      "question": "يتم ترميز كل تعليمة في آلات ARM في كلمة ______ بايت.",
+      "options": [
+        "أ) 2 بايت",
+        "ب) 3 بايت",
+        "ج) 4 بايت",
+        "د) 8 بايت"
+      ],
+      "correct": "ج) 4 بايت",
+      "explanation": "تستخدم ARM الكلاسيكية تعليمات بطول ثابت 32 بت (4 بايت)."
+    },
+    {
+      "question": "تنفذ جميع التعليمات في ARM بشكل مشروط.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "أ) صح",
+      "explanation": "تتضمن تعليمات ARM حقولًا شرطية (مثل ADDEQ) لتخطي التنفيذ."
+    },
+    {
+      "question": "وضع العنونة حيث EA (العنوان الفعلي) للمُعامل هو محتويات Rn هو ______.",
+      "options": [
+        "أ) وضع ما قبل الفهرسة",
+        "ب) وضع ما قبل الفهرسة مع الكتابة الخلفية",
+        "ج) وضع ما بعد الفهرسة",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) وضع ما قبل الفهرسة",
+      "explanation": "يستخدم الفهرسة المسبقة قيم السجل مباشرة كعناوين."
+    },
+    {
+      "question": "العنوان الفعلي للتعليمة المكتوبة في وضع ما بعد الفهرسة، MOVE[Rn]+Rm هو ______.",
+      "options": [
+        "أ) EA = [Rn]",
+        "ب) EA = [Rn + Rm]",
+        "ج) EA = [Rn] + Rm",
+        "د) EA = [Rm] + Rn"
+      ],
+      "correct": "أ) EA = [Rn]",
+      "explanation": "يستخدم الفهرسة اللاحقة القيمة الأولية لـ Rn، ثم يحدث Rn بعد العملية."
+    },
+    {
+      "question": "عادة ما يتم استخدام تنسيق ______ لتخزين البيانات.",
+      "options": [
+        "أ) BCD",
+        "ب) عشري",
+        "ج) سداسي عشري",
+        "د) ثماني"
+      ],
+      "correct": "أ) BCD",
+      "explanation": "يحافظ نظام الترميز الثنائي العشري (BCD) على القيم العشرية الدقيقة في التخزين."
+    },
+    {
+      "question": "تنسيق الترميز ذو الـ 8 بت المستخدم لتخزين البيانات في الكمبيوتر هو ______.",
+      "options": [
+        "أ) ASCII",
+        "ب) EBCDIC",
+        "ج) ANCI",
+        "د) USCII"
+      ],
+      "correct": "أ) ASCII",
+      "explanation": "ASCII هو الترميز القياسي ذو الـ 7 بت/8 بت للنصوص (مع امتدادات)."
+    },
+    {
+      "question": "عادة ما يكون البرنامج المصدر مكتوبًا بـ ______.",
+      "options": [
+        "أ) لغة التجميع",
+        "ب) لغة الآلة",
+        "ج) لغة عالية المستوى",
+        "د) اللغة الطبيعية"
+      ],
+      "correct": "ج) لغة عالية المستوى",
+      "explanation": "يكتب الكود المصدري بلغات قابلة للقراءة البشرية مثل C/Python."
+    },
+    {
+      "question": "أي جهاز ذاكرة مصنوع بشكل عام من أشباه الموصلات؟",
+      "options": [
+        "أ) RAM",
+        "ب) القرص الصلب",
+        "ج) القرص المرن",
+        "د) قرص CD"
+      ],
+      "correct": "أ) RAM",
+      "explanation": "تستخدم ذاكرة الوصول العشوائي (RAM) تقنية أشباه الموصلات (الترانزستورات/المكثفات)، على عكس التخزين المغناطيسي/الضوئي."
+    },
+    {
+      "question": "تسمى ذاكرات الوصول العشوائي (RAM) الصغيرة والسريعة للغاية بـ ______.",
+      "options": [
+        "أ) ذاكرة التخزين المؤقت (Cache)",
+        "ب) أكوام (Heaps)",
+        "ج) مجمعات (Accumulators)",
+        "د) مكدسات (Stacks)"
+      ],
+      "correct": "أ) ذاكرة التخزين المؤقت (Cache)",
+      "explanation": "ذاكرات التخزين المؤقت هي ذاكرات تعتمد على SRAM تسد الفجوات في سرعة سجلات وحدة المعالجة المركزية."
+    },
+    {
+      "question": "تستخدم وحدة المنطق الحسابي (ALU) ______ لتخزين النتائج الوسيطة.",
+      "options": [
+        "أ) المجمعات",
+        "ب) السجلات",
+        "ج) الكومة",
+        "د) المكدس"
+      ],
+      "correct": "ب) السجلات",
+      "explanation": "تحتفظ السجلات مؤقتًا بمخرجات وحدة المنطق الحسابي (ALU) أثناء العمليات متعددة الخطوات."
+    },
+    {
+      "question": "تتحكم وحدة التحكم في الوحدات الأخرى عن طريق توليد ______.",
+      "options": [
+        "أ) إشارات التحكم",
+        "ب) إشارات التوقيت",
+        "ج) إشارات النقل",
+        "د) إشارات الأوامر"
+      ],
+      "correct": "أ) إشارات التحكم",
+      "explanation": "تنسق إشارات التحكم مكونات مسار البيانات (مثل عمليات وحدة المنطق الحسابي، كتابة السجلات)."
+    },
+    {
+      "question": "______ هي أرقام وحروف مشفرة، تستخدم عمومًا كمعاملات.",
+      "options": [
+        "أ) المدخلات",
+        "ب) البيانات",
+        "ج) المعلومات",
+        "د) القيم المخزنة"
+      ],
+      "correct": "ب) البيانات",
+      "explanation": "تمثل البيانات القيم الخام التي تعالجها التعليمات."
+    },
+    {
+      "question": "يمكن لأجهزة الإدخال إرسال معلومات إلى المعالج.",
+      "options": [
+        "أ) عندما يتم تعيين علامة الحالة SIN",
+        "ب) عندما تصل البيانات بغض النظر عن علامة SIN",
+        "ج) لا شيء من الحالتين",
+        "د) أي من الحالتين"
+      ],
+      "correct": "د) أي من الحالتين",
+      "explanation": "تختلف طرق الإدخال: الإدخال/الإخراج بالاستقصاء يفحص العلامات، بينما الإدخال/الإخراج القائم على المقاطعة يشغل الأحداث."
+    },
+    {
+      "question": "يُستخدم هيكل الناقل ______ عادةً لتوصيل أجهزة الإدخال/الإخراج.",
+      "options": [
+        "أ) ناقل واحد",
+        "ب) نواقل متعددة",
+        "ج) ناقل نجمي",
+        "د) Rambus"
+      ],
+      "correct": "ب) نواقل متعددة",
+      "explanation": "تستخدم الأنظمة الحديثة نواقل هرمية (مثل نواقل الذاكرة مقابل نواقل الإدخال/الإخراج) من أجل التوازي."
+    },
+    {
+      "question": "تتكون واجهة الإدخال/الإخراج المطلوبة لتوصيل جهاز الإدخال/الإخراج بالناقل من ______.",
+      "options": [
+        "أ) جهاز فك تشفير العنوان والسجلات",
+        "ب) دوائر التحكم",
+        "ج) جهاز فك تشفير العنوان والسجلات ودوائر التحكم",
+        "د) دوائر التحكم فقط"
+      ],
+      "correct": "ج) جهاز فك تشفير العنوان والسجلات ودوائر التحكم",
+      "explanation": "تحتاج واجهات الإدخال/الإخراج إلى فك تشفير العنوان، وتخزين البيانات المؤقت (السجلات)، ومنطق التحكم."
+    },
+    {
+      "question": "لتقليل وقت الوصول إلى الذاكرة، نستخدم عمومًا ______.",
+      "options": [
+        "أ) أكوام",
+        "ب) ذاكرات RAM ذات سعة أعلى",
+        "ج) SDRAMs",
+        "د) ذاكرات التخزين المؤقت (Cache)"
+      ],
+      "correct": "د) ذاكرات التخزين المؤقت (Cache)",
+      "explanation": "تقوم ذاكرات التخزين المؤقت بتخزين البيانات التي يتم الوصول إليها بشكل متكرر لتقليل عمليات الوصول البطيئة إلى الذاكرة الرئيسية."
+    },
+    {
+      "question": "يستخدم ______ عادةً لزيادة الحجم الظاهري للذاكرة الفعلية.",
+      "options": [
+        "أ) الذاكرة الثانوية",
+        "ب) الذاكرة الافتراضية",
+        "ج) القرص الصلب",
+        "د) الأقراص"
+      ],
+      "correct": "ب) الذاكرة الافتراضية",
+      "explanation": "تستخدم الذاكرة الافتراضية مساحة القرص لتوسيع الذاكرة القابلة للعنونة عبر الترحيل."
+    },
+    {
+      "question": "يشير MFC إلى ______.",
+      "options": [
+        "أ) Memory Format Caches",
+        "ب) Memory Function Complete",
+        "ج) Memory Find Command",
+        "د) Mass Format Command"
+      ],
+      "correct": "ب) Memory Function Complete",
+      "explanation": "يشير MFC إلى اكتمال عمليات الذاكرة في بعض المعماريات."
+    },
+    {
+      "question": "الفاصل الزمني بين بدء عمليتين متتاليتين للذاكرة ______.",
+      "options": [
+        "أ) وقت الوصول إلى الذاكرة",
+        "ب) وقت البحث في الذاكرة",
+        "ج) وقت دورة الذاكرة",
+        "د) تأخير التعليمات"
+      ],
+      "correct": "ج) وقت دورة الذاكرة",
+      "explanation": "يتضمن وقت الدورة وقت الوصول بالإضافة إلى تأخيرات الاسترداد/الشحن المسبق."
+    },
+    {
+      "question": "في خط الأنابيب، يتم تنفيذ المهمة التي تتطلب أقل وقت أولاً.",
+      "options": [
+        "أ) صح",
+        "ب) خطأ"
+      ],
+      "correct": "ب) خطأ",
+      "explanation": "يعالج خط الأنابيب المهام في مراحل ثابتة؛ تتسبب الاختلافات في السرعة في توقفات."
+    },
+    {
+      "question": "إذا أكملت الوحدة مهمتها قبل الفترة الزمنية المخصصة لها، فإن ______.",
+      "options": [
+        "أ) ستقوم ببعض المهام الأخرى في الوقت المتبقي",
+        "ب) يتم إعادة تخصيص وقتها لمهمة مختلفة",
+        "ج) ستبقى خاملة للوقت المتبقي",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "ج) ستبقى خاملة للوقت المتبقي",
+      "explanation": "تتزامن مراحل خط الأنابيب مع دورة ساعة أبطأ مرحلة."
+    },
+    {
+      "question": "تسمى الفترات الزمنية التي تكون فيها الوحدة خاملة بـ ______.",
+      "options": [
+        "أ) التوقفات (Stalls)",
+        "ب) الفقاعات (Bubbles)",
+        "ج) المخاطر (Hazards)",
+        "د) كل من التوقفات والفقاعات"
+      ],
+      "correct": "د) كل من التوقفات والفقاعات",
+      "explanation": "الفقاعات هي توقفات في خط الأنابيب تحدث بسبب المخاطر أو التأخيرات."
+    },
+    {
+      "question": "يسمى التنافس على استخدام جهاز الأجهزة بـ ______.",
+      "options": [
+        "أ) خطر هيكلي",
+        "ب) توقف",
+        "ج) تعليق",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) خطر هيكلي",
+      "explanation": "تحدث المخاطر الهيكلية عندما تكون موارد الأجهزة مفرطة الطلب."
+    },
+    {
+      "question": "الحالة التي تكون فيها بيانات المعاملات غير متوفرة تسمى ______.",
+      "options": [
+        "أ) خطر البيانات",
+        "ب) مخزون",
+        "ج) تعليق",
+        "د) خطر هيكلي"
+      ],
+      "correct": "أ) خطر البيانات",
+      "explanation": "تنشأ مخاطر البيانات من التبعيات (مثل RAW—القراءة بعد الكتابة)."
+    },
+    {
+      "question": "يتم تخزين التعليمة المفككة في ______.",
+      "options": [
+        "أ) IR",
+        "ب) PC",
+        "ج) السجلات",
+        "د) MDR"
+      ],
+      "correct": "أ) IR",
+      "explanation": "يحتوي سجل التعليمات (IR) على التعليمات المفككة للتنفيذ."
+    },
+    {
+      "question": "تقوم التعليمة -> Add LOCA, R0 بـ ______.",
+      "options": [
+        "أ) تجمع قيمة LOCA إلى R0 وتخزنها في السجل المؤقت",
+        "ب) تجمع قيمة R0 إلى عنوان LOCA",
+        "ج) تجمع قيم LOCA و R0 وتخزنها في R0",
+        "د) تجمع قيمة LOCA بقيمة في المجمع وتخزنها في R0"
+      ],
+      "correct": "ج) تجمع قيم LOCA و R0 وتخزنها في R0",
+      "explanation": "هذه التعليمة تعني عادة: $$R0 \leftarrow [R0] + [LOCA]$$ (السجل + الذاكرة)."
+    },
+    {
+      "question": "أي السجلات يمكنها التفاعل مع التخزين الثانوي؟",
+      "options": [
+        "أ) MAR",
+        "ب) PC",
+        "ج) IR",
+        "د) R0"
+      ],
+      "correct": "أ) MAR",
+      "explanation": "يتفاعل سجل عنوان الذاكرة (MAR) مباشرة مع ناقل الذاكرة لنقل العناوين."
+    },
+    {
+      "question": "أثناء تنفيذ برنامج، ما الذي يتم تهيئته أولاً؟",
+      "options": [
+        "أ) MDR",
+        "ب) IR",
+        "ج) PC",
+        "د) MAR"
+      ],
+      "correct": "ج) PC",
+      "explanation": "يتم تهيئة عداد البرنامج (PC) إلى عنوان التعليمات الأولى."
+    },
+    {
+      "question": "أي من سجلات المعالج متصلة بناقل الذاكرة؟",
+      "options": [
+        "أ) PC",
+        "ب) MAR",
+        "ج) IR",
+        "د) كل من PC و MAR"
+      ],
+      "correct": "ب) MAR",
+      "explanation": "يتصل MAR مباشرة بناقل الذاكرة لنقل العناوين."
+    },
+    {
+      "question": "يشير ISP إلى ______.",
+      "options": [
+        "أ) معالج مجموعة التعليمات",
+        "ب) معالجة قياسية للمعلومات",
+        "ج) بروتوكول تبادل قياسي",
+        "د) إجراء خدمة المقاطعة"
+      ],
+      "correct": "أ) معالج مجموعة التعليمات",
+      "explanation": "يصف ISP بنية مجموعة تعليمات المعالج (ISA)."
+    },
+    {
+      "question": "ترتبط المكونات الداخلية للمعالج بـ ______.",
+      "options": [
+        "أ) دوائر الترابط الداخلية للمعالج",
+        "ب) ناقل المعالج",
+        "ج) ناقل الذاكرة",
+        "د) Rambus"
+      ],
+      "correct": "ب) ناقل المعالج",
+      "explanation": "تتيح النواقل الداخلية (مثل اتصالات ALU-السجل) اتصال المكونات."
+    },
+    {
+      "question": "يُستخدم ______ للاختيار بين زيادة PC أو إجراء عمليات ALU.",
+      "options": [
+        "أ) الرموز الشرطية",
+        "ب) المضاعفة",
+        "ج) وحدة التحكم",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "ج) وحدة التحكم",
+      "explanation": "توجه وحدة التحكم عمليات مسار البيانات بناءً على فك تشفير التعليمات."
+    },
+    {
+      "question": "يُطلق على السجلات ووحدة المنطق الحسابي (ALU) والترابط بينها مجتمعة اسم ______.",
+      "options": [
+        "أ) مسار المعالجة",
+        "ب) مسار المعلومات",
+        "ج) مسار المعلومات",
+        "د) مسار البيانات"
+      ],
+      "correct": "د) مسار البيانات",
+      "explanation": "يقوم مسار البيانات بإجراء عمليات معالجة البيانات ونقلها."
+    },
+    {
+      "question": "يُستخدم ______ لتخزين البيانات في السجلات.",
+      "options": [
+        "أ) D flip flop",
+        "ب) JK flip flop",
+        "ج) RS flip flop",
+        "د) لا شيء مما ذكر"
+      ],
+      "correct": "أ) D flip flop",
+      "explanation": "تُستخدم D flip-flops بشكل شائع لتخزين السجلات نظرًا لاستقرارها."
+    },
+    {
+      "question": "أي مما يلي صحيح حول تنظيم الكمبيوتر؟",
+      "options": [
+        "ط) يتعامل مع قضايا التصميم عالية المستوى.",
+        "ث) يتضمن المنطق (مجموعات التعليمات، أوضاع العنونة، أنواع البيانات، تحسين ذاكرة التخزين المؤقت).",
+        "ج) يخبرنا تنظيم الكمبيوتر بالضبط كيف يتم ترتيب جميع الوحدات في النظام وترابطها.",
+        "د) لا شيء مما سبق"
+      ],
+      "correct": "ج) يخبرنا تنظيم الكمبيوتر بالضبط كيف يتم ترتيب جميع الوحدات في النظام وترابطها.",
+      "explanation": "يركز تنظيم الكمبيوتر على تنفيذ الأجهزة والترابطات."
+    },
+    {
+      "question": "يُطلق على البرنامج المكتوب وقبل ترجمته أو تجميعه اسم ______.",
+      "options": [
+        "أ) برنامج البدء",
+        "ب) برنامج وسيط",
+        "ج) برنامج المصدر",
+        "د) برنامج طبيعي"
+      ],
+      "correct": "ج) برنامج المصدر",
+      "explanation": "الكود المصدري هو البرنامج القابل للقراءة البشرية قبل التجميع."
+    },
+    {
+      "question": "إن ______ هو مركز المعالجة في وحدة المعالجة المركزية.",
+      "options": [
+        "أ) السجلات",
+        "ب) وحدة المنطق الحسابي (ALU)",
+        "ج) Flip-Flop",
+        "د) Multiplexer"
+      ],
+      "correct": "ب) وحدة المنطق الحسابي (ALU)",
+      "explanation": "تنفذ وحدة المنطق الحسابي (ALU) جميع العمليات الحسابية/المنطقية."
+    },
+    {
+      "question": "تستخدم أجهزة الإدخال ______ لتخزين البيانات المستلمة.",
+      "options": [
+        "أ) الذاكرة الأولية",
+        "ب) الذاكرة الثانوية",
+        "ج) المخزن المؤقت",
+        "د) الذاكرة الخارجية"
+      ],
+      "correct": "ج) المخزن المؤقت",
+      "explanation": "تحتفظ المخازن المؤقتة مؤقتًا ببيانات الإدخال قبل المعالجة."
+    },
+    {
+      "question": "تتصل أجهزة الإدخال/الإخراج بوحدة المعالجة المركزية عبر ______.",
+      "options": [
+        "أ) SDRAMs",
+        "ب) دوائر التحكم",
+        "ج) الإشارات",
+        "د) الناقل"
+      ],
+      "correct": "د) الناقل",
+      "explanation": "توفر النواقل (مثل PCIe، USB) المسارات المادية لاتصال الإدخال/الإخراج."
+    },
+    {
+      "question": "يقوم المترجم المحسن بـ ______.",
+      "options": [
+        "أ) تجميع أفضل للتعليمات البرمجية المعطاة",
+        "ب) يستفيد من نوع المعالج ويقلل من وقت معالجته",
+        "ج) يقوم بإدارة ذاكرة أفضل",
+        "د) جميع ما سبق"
+      ],
+      "correct": "د) جميع ما سبق",
+      "explanation": "تعمل المترجمات المحسنة على تحسين كفاءة التعليمات البرمجية عبر أبعاد متعددة."
+    },
+    {
+      "question": "أي ناقل يستخدم لتوصيل الشاشة بوحدة المعالجة المركزية؟",
+      "options": [
+        "أ) ناقل واحد",
+        "ب) ناقل SCSI",
+        "ج) نواقل متعددة",
+        "د) Rambus"
+      ],
+      "correct": "ب) ناقل SCSI",
+      "explanation": "تصل واجهات SCSI والواجهات الحديثة (HDMI/DisplayPort) الشاشات بوحدات معالجة الرسومات/وحدات المعالجة المركزية."
+    },
+    {
+      "question": "في بنية ARM، تعليمات ______ فقط هي التي تصل إلى مواقع الذاكرة.",
+      "options": [
+        "أ) الفرع",
+        "ب) الوصول إلى سجل الحالة",
+        "ج) معالجة البيانات",
+        "د) التحميل والتخزين"
+      ],
+      "correct": "د) التحميل والتخزين",
+      "explanation": "تستخدم ARM بنية تحميل/تخزين حيث تصل تعليمات LDR/STR فقط إلى الذاكرة."
+    }
+  ],
+
 };
-
-
 
 
 
@@ -3995,7 +8242,13 @@ const chapterMapping = {
   'Chapter 7: ISA Tradeoffs': 'الفصل 7: المقايضات في ISA',
   'Chapter 8: Single-Cycle Microarchitecture': 'الفصل 8: البنية الدقيقة ذات الدورة الواحدة',
   'Chapter 9: Multi-Cycle and Pipelined Microarchitecture': 'الفصل 9: البنية الدقيقة متعددة الدورات والخطية',
-  'Chapter 10: Introduction to Microarchitecture': 'الفصل 10: مقدمة في البنية الدقيقة'
+  'Chapter 10: Introduction to Microarchitecture': 'الفصل 10: مقدمة في البنية الدقيقة',
+  'General 1': 'عام 1',
+  'General 2': 'عام 2',
+  'General 3': 'عام 3',
+
+
+
 };
 
 // Reverse mapping (Arabic to English)

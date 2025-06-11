@@ -15,6 +15,8 @@ const Quiz = () => {
   const [answeredQuestions, setAnsweredQuestions] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [showChapterResults, setShowChapterResults] = useState(false);
+  // NEW: Track which questions have been answered with their selected options
+  const [questionAnswers, setQuestionAnswers] = useState({});
 
   // Get the appropriate quiz data based on language
   const currentQuizData = language === 'en' ? quizData : quizDataArabic;
@@ -55,6 +57,20 @@ const Quiz = () => {
       }
     }
   }, [language, currentChapter]);
+
+  // NEW: Effect to handle question navigation and restore previous answers
+  useEffect(() => {
+    const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+    if (questionAnswers[questionKey] !== undefined) {
+      // This question was already answered, restore the previous selection
+      setSelectedOption(questionAnswers[questionKey]);
+      setShowExplanation(false); // Reset explanation state
+    } else {
+      // This is a new question, reset selection
+      setSelectedOption(null);
+      setShowExplanation(false);
+    }
+  }, [currentQuestionIndex, currentChapter, questionAnswers]);
 
   const chapters = Object.keys(currentQuizData);
   const currentQuestions = currentChapter && currentQuizData[currentChapter] ? currentQuizData[currentChapter] : [];
@@ -111,12 +127,23 @@ const Quiz = () => {
     setUserAnswers([]);
     setScore(0);
     setShowChapterResults(false);
+    // NEW: Reset question answers when changing chapters
+    setQuestionAnswers({});
   };
 
   const handleOptionSelect = (optionIndex) => {
-    if (selectedOption !== null || !currentQuestion) return; // Prevent changing answer after selection
+    const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+    
+    // NEW: Prevent selecting if this question was already answered
+    if (questionAnswers[questionKey] !== undefined || !currentQuestion) return;
 
     setSelectedOption(optionIndex);
+
+    // NEW: Store the answer for this specific question
+    setQuestionAnswers(prev => ({
+      ...prev,
+      [questionKey]: optionIndex
+    }));
 
     // Record user's answer
     const isCorrect = optionIndex === currentQuestion.correct;
@@ -141,8 +168,7 @@ const Quiz = () => {
 
     if (currentQuestionIndex < currentQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOption(null);
-      setShowExplanation(false);
+      // Note: selectedOption and showExplanation will be handled by the useEffect
     } else {
       // Chapter completed - show chapter results
       setShowChapterResults(true);
@@ -154,8 +180,7 @@ const Quiz = () => {
 
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
-      setSelectedOption(null);
-      setShowExplanation(false);
+      // Note: selectedOption and showExplanation will be handled by the useEffect
     }
   };
 
@@ -173,6 +198,8 @@ const Quiz = () => {
         setUserAnswers([]);
         setScore(0);
         setShowChapterResults(false);
+        // NEW: Reset question answers for new chapter
+        setQuestionAnswers({});
         nextChapterFound = true;
         break;
       }
@@ -209,12 +236,18 @@ const Quiz = () => {
     setAnsweredQuestions(0);
     setUserAnswers([]);
     setShowChapterResults(false);
+    // NEW: Reset question answers when restarting
+    setQuestionAnswers({});
   };
 
   const totalQuestions = Object.values(currentQuizData).reduce(
       (total, chapterQuestions) => total + (chapterQuestions ? chapterQuestions.length : 0),
       0
   );
+
+  // NEW: Check if current question was already answered
+  const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+  const isQuestionAnswered = questionAnswers[questionKey] !== undefined;
 
   // Translations
   const translations = {
@@ -248,7 +281,8 @@ const Quiz = () => {
       backToHome: 'Back to Home',
       yourAnswer: 'Your Answer',
       correctAnswer: 'Correct Answer',
-      backToChapters: 'Back to Chapters'
+      backToChapters: 'Back to Chapters',
+      alreadyAnswered: 'You have already answered this question'
     },
     ar: {
       title: 'اختبار هندسة الكمبيوتر',
@@ -280,7 +314,8 @@ const Quiz = () => {
       backToHome: 'العودة إلى الصفحة الرئيسية',
       yourAnswer: 'إجابتك',
       correctAnswer: 'الإجابة الصحيحة',
-      backToChapters: 'العودة إلى الفصول'
+      backToChapters: 'العودة إلى الفصول',
+      alreadyAnswered: 'لقد أجبت على هذا السؤال بالفعل'
     }
   };
 
@@ -363,6 +398,15 @@ const Quiz = () => {
 
                 {currentQuestions.length > 0 && currentQuestion ? (
                     <div>
+                      {/* NEW: Show indicator if question was already answered */}
+                      {isQuestionAnswered && (
+                          <div className="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg">
+                            <p className="text-blue-800 dark:text-blue-200 text-sm">
+                              {t.alreadyAnswered}
+                            </p>
+                          </div>
+                      )}
+
                       <div className="mb-8">
                         <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-4">
                           {currentQuestion.question}
@@ -383,8 +427,10 @@ const Quiz = () => {
                                               : index === currentQuestion.correct
                                                   ? 'border-green-500 bg-green-100 dark:bg-green-900/30'
                                                   : 'border-gray-300 dark:border-gray-600'
-                                  } transition-colors duration-200`}
-                                  disabled={selectedOption !== null}
+                                  } transition-colors duration-200 ${
+                                      isQuestionAnswered ? 'cursor-not-allowed opacity-75' : ''
+                                  }`}
+                                  disabled={isQuestionAnswered}
                               >
                                 <div className="flex items-start">
                                   <div className={`flex-shrink-0 h-6 w-6 rounded-full flex items-center justify-center mr-3 rtl:ml-3 rtl:mr-0 ${

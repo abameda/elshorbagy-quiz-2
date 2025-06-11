@@ -3070,8 +3070,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": 1,
-      "explanation": "While basic principles may seem simple, modern computers involve complex interactions between hardware and software components."
+      "correct": 0,
     },
     {
       "question": "A computer must be able to process, store, move, and control data.",
@@ -7158,8 +7157,7 @@ const quizDataArabic = {
         "أ) صح",
         "ب) خطأ"
       ],
-      "correct": 1,
-      "explanation": "على الرغم من أن المبادئ الأساسية قد تبدو بسيطة، إلا أن أجهزة الكمبيوتر الحديثة تتضمن تفاعلات معقدة بين مكونات الأجهزة والبرامج."
+      "correct": 0,
     },
     {
       "question": "يجب أن يكون الكمبيوتر قادرًا على معالجة البيانات وتخزينها ونقلها والتحكم فيها.",

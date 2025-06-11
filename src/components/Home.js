@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { quizData, quizDataArabic, chapterMapping, reverseChapterMapping } from '../data/questions';
+import { quizData, quizDataArabic, chapterMapping, reverseChapterMapping } from '../data/questions-v2';
 import TypewriterBanner from './TypewriterBanner';
 
 const Home = () => {

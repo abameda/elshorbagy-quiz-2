@@ -326,11 +326,11 @@ const quizData = {
     options: [
       "TCP/IP and HTTP",
       "SCSI and SATA",
-      "Fibre Channel and iSCSI",
+      "Fiber Channel and iSCSI",
       "Ethernet and WiFi"
     ],
-    correct: 1,
-    explanation: "The protocols that are used in SAN are SCSI and SATA."
+    correct: 2,
+    explanation: "The protocols that are used in SAN are Fiber Channel and iSCSI."
   },
   {
     question: "What is the main weakness of SAN mentioned in the document?",

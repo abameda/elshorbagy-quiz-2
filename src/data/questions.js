@@ -2889,8 +2889,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 1,
-      "explanation": "While basic principles may be simple, modern computer systems are extremely complex in both structure and operation."
+      "correct": 0,
     },
     {
       "question": "When data are moved over longer distances, to or from a remoted device, the process is known as data transport.",
@@ -2898,8 +2897,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 0,
-      "explanation": "Data transport refers to moving data across longer distances, typically involving network protocols and specialized hardware."
+      "correct": 1,
     },
     {
       "question": "The SAN advantage is no distance limitation.",
@@ -2907,7 +2905,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "SANs have practical distance limitations due to latency and protocol requirements, though technologies like FCIP can extend this."
     },
     {
@@ -6978,7 +6976,7 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "بينما قد تكون المبادئ الأساسية بسيطة، فإن أنظمة الكمبيوتر الحديثة معقدة للغاية في بنيتها وعملها."
     },
     {
@@ -6987,7 +6985,7 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "يشير نقل البيانات (data transport) إلى نقل البيانات عبر مسافات أطول، ويتضمن عادة بروتوكولات الشبكة والأجهزة المتخصصة."
     },
     {
@@ -6996,7 +6994,7 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "توجد قيود عملية على مسافة شبكات SAN بسبب زمن الاستجابة ومتطلبات البروتوكول، على الرغم من أن تقنيات مثل FCIP يمكن أن توسع هذا."
     },
     {

@@ -3062,14 +3062,15 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
       "explanation": "Superscalar refers to parallel execution within a single core. Multi-core means multiple CPUs on one chip."
     }
   ],
-  'General 3': [
+
+  "General 3": [
     {
       "question": "Both the structure and functioning of a computer are, in essence, simple.",
       "options": [
         "a) True",
         "b) False"
       ],
-      "correct": "b) False",
+      "correct": 1,
       "explanation": "While basic principles may seem simple, modern computers involve complex interactions between hardware and software components."
     },
     {
@@ -3078,7 +3079,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": "a) True",
+      "correct": 0,
       "explanation": "These four functions (processing, storage, data movement, and control) are fundamental to all computer systems."
     },
     {
@@ -3089,7 +3090,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Rapid",
         "D) Non-existent"
       ],
-      "correct": "C) Rapid",
+      "correct": 2,
       "explanation": "Advancements in computing follow exponential trends like Moore's Law, making technological change extremely rapid."
     },
     {
@@ -3100,7 +3101,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Design",
         "D) Architecture"
       ],
-      "correct": "D) Architecture",
+      "correct": 3,
       "explanation": "Computer architecture defines the logical interface visible to programmers (e.g., instruction set, addressing modes)."
     },
     {
@@ -3111,7 +3112,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Interfaces",
         "D) Memory technology used"
       ],
-      "correct": "A) I/O mechanisms",
+      "correct": 0,
       "explanation": "Architectural attributes refer to features visible to the programmer, like I/O mechanisms, instruction sets, and addressing methods—not hardware implementation details."
     },
     {
@@ -3122,7 +3123,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Memory",
         "D) Architectural"
       ],
-      "correct": "B) Organizational",
+      "correct": 1,
       "explanation": "Organizational attributes (e.g., pipeline depth, cache size) are hardware optimizations invisible to software."
     },
     {
@@ -3133,7 +3134,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Elementary",
         "D) Organizational"
       ],
-      "correct": "A) Architectural",
+      "correct": 0,
       "explanation": "Including specific instructions (like multiply) is an architectural decision affecting the ISA."
     },
     {
@@ -3144,7 +3145,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Mechanical",
         "D) Organizational"
       ],
-      "correct": "D) Organizational",
+      "correct": 3,
       "explanation": "Implementation choices (e.g., dedicated multiplier vs. iterative addition) are organizational/hardware decisions."
     },
     {
@@ -3155,7 +3156,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Complex",
         "D) Functional"
       ],
-      "correct": "B) Hierarchical",
+      "correct": 1,
       "explanation": "A hierarchical system is composed of interrelated subsystems arranged in a layered structure."
     },
     {
@@ -3166,7 +3167,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Peripheral",
         "D) Register"
       ],
-      "correct": "C) Peripheral",
+      "correct": 2,
       "explanation": "I/O devices (keyboards, printers, etc.) are peripherals that extend a computer's functionality."
     },
     {
@@ -3177,7 +3178,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Structuring",
         "D) Data transport"
       ],
-      "correct": "A) Data communications",
+      "correct": 0,
       "explanation": "Data communications it specifically refers to the process of transmitting data over long distances between remote devices or systems."
     },
     {
@@ -3188,7 +3189,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Main memory",
         "D) Control unit"
       ],
-      "correct": "C) Main memory",
+      "correct": 2,
       "explanation": "Main memory (RAM) is the primary volatile storage for data and instructions during execution."
     },
     {
@@ -3199,7 +3200,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Register",
         "D) CPU interconnection"
       ],
-      "correct": "B) I/O",
+      "correct": 1,
       "explanation": "I/O subsystems manage data exchange with external devices (disks, networks, etc.)."
     },
     {
@@ -3210,7 +3211,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Data transport",
         "D) Control device"
       ],
-      "correct": "B) System bus",
+      "correct": 1,
       "explanation": "Buses (e.g., PCIe, USB) interconnect CPU, memory, and I/O devices using shared electrical pathways."
     },
     {
@@ -3221,7 +3222,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Peripheral",
         "D) Processor"
       ],
-      "correct": "A) System interconnection",
+      "correct": 0,
       "explanation": "System interconnects (buses, networks) enable component communication across the entire computer."
     },
     {
@@ -3232,7 +3233,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Main memory",
         "D) Registers"
       ],
-      "correct": "D) Registers",
+      "correct": 3,
       "explanation": "Registers are the fastest storage locations directly accessible by the CPU for temporary data."
     },
     {
@@ -3243,7 +3244,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) ALU",
         "D) System bus"
       ],
-      "correct": "C) ALU",
+      "correct": 2,
       "explanation": "The Arithmetic Logic Unit (ALU) executes mathematical and logical operations for data processing."
     },
     {
@@ -3254,7 +3255,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Instance",
         "d) Unit"
       ],
-      "correct": "a) Cell",
+      "correct": 0,
       "explanation": "A memory cell stores one bit (0/1) and is the fundamental building block of memory hierarchies."
     },
     {
@@ -3265,7 +3266,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Can’t say",
         "d) None of the mentioned"
       ],
-      "correct": "a) The higher order byte of the word",
+      "correct": 0,
       "explanation": "Big-Endian stores the most significant byte (including sign bits) at the lowest memory address."
     },
     {
@@ -3276,7 +3277,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Speed",
         "d) Both Performance and Cost"
       ],
-      "correct": "d) Both Performance and Cost",
+      "correct": 3,
       "explanation": "Market success balances performance (speed, capability) with cost-effectiveness."
     },
     {
@@ -3287,7 +3288,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Optimizing compilers",
         "d) None of the mentioned"
       ],
-      "correct": "c) Optimizing compilers",
+      "correct": 2,
       "explanation": "Optimizing compilers rearrange code to minimize pipeline stalls (e.g., branch prediction, instruction scheduling)."
     },
     {
@@ -3298,7 +3299,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Special unit",
         "d) Control unit"
       ],
-      "correct": "Clock",
+      "correct": 1,
       "explanation": "The clock coordinates and interleaves the fetch and execution cycles by providing timing signals to synchronize operations."
     },
     {
@@ -3309,7 +3310,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Von Neumann cycle",
         "d) None of the mentioned"
       ],
-      "correct": "b) Assembly line operation",
+      "correct": 1,
       "explanation": "Pipelining parallels factory assembly lines, where tasks are divided into sequential stages."
     },
     {
@@ -3320,7 +3321,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) 3",
         "d) 4"
       ],
-      "correct": "a) 1",
+      "correct": 0,
       "explanation": "Ideal pipelines complete each stage in one clock cycle to maintain throughput."
     },
     {
@@ -3331,7 +3332,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Cache",
         "d) Buffers"
       ],
-      "correct": "c) Cache",
+      "correct": 2,
       "explanation": "Caches reduce memory latency by storing frequently accessed data close to the CPU."
     },
     {
@@ -3342,7 +3343,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ULTRA SPARC",
         "d) RISC"
       ],
-      "correct": "d) RISC",
+      "correct": 3,
       "explanation": "Sun's SPARC processors use RISC (Reduced Instruction Set Computer) principles."
     },
     {
@@ -3353,7 +3354,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Semantic gap",
         "d) All of the mentioned"
       ],
-      "correct": "c) Semantic gap",
+      "correct": 2,
       "explanation": "They aim to bridge the gap between high-level languages and machine instructions."
     },
     {
@@ -3364,7 +3365,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Intel 80486",
         "d) Motorola A567"
       ],
-      "correct": "d) Motorola A567",
+      "correct": 3,
       "explanation": "The Motorola A567 is a RISC processor, unlike the others which are CISC."
     },
     {
@@ -3375,7 +3376,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ISA",
         "d) IANA"
       ],
-      "correct": "a) RISC",
+      "correct": 0,
       "explanation": "While pipelining exists in both, RISC's simpler instructions enable deeper pipelines."
     },
     {
@@ -3386,7 +3387,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) CMOS",
         "d) Transistors"
       ],
-      "correct": "d) Transistors",
+      "correct": 3,
       "explanation": "Complex instructions are hardwired into the processor's transistor logic."
     },
     {
@@ -3397,7 +3398,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Word",
         "d) Byte"
       ],
-      "correct": "a) Block",
+      "correct": 0,
       "explanation": "A block is a collection of data units transferred between memory and cache/storage as a single unit."
     },
     {
@@ -3408,7 +3409,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) 248",
         "d) 16,777,216"
       ],
-      "correct": "d) 16,777,216",
+      "correct": 3,
       "explanation": "$$2^{24} = 16,777,216$$ unique addressable memory locations."
     },
     {
@@ -3419,7 +3420,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) 16 bytes",
         "d) 12 bytes"
       ],
-      "correct": "b) 8 bytes",
+      "correct": 1,
       "explanation": "64 bits = 8 bytes (1 byte = 8 bits)."
     },
     {
@@ -3430,7 +3431,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Medium Endian",
         "d) None of the mentioned"
       ],
-      "correct": "a) Little Endian",
+      "correct": 0,
       "explanation": "Intel x86/x64 uses Little Endian (LSB at lowest address)."
     },
     {
@@ -3441,7 +3442,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Overlays",
         "d) TLB"
       ],
-      "correct": "b) MMU",
+      "correct": 1,
       "explanation": "The Memory Management Unit (MMU) translates virtual/logical addresses to physical ones."
     },
     {
@@ -3452,7 +3453,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Segmentation",
         "d) Paging with segmentation"
       ],
-      "correct": "c) Segmentation",
+      "correct": 2,
       "explanation": "Segmentation supports variable-sized memory blocks, unlike fixed-size paging."
     },
     {
@@ -3463,7 +3464,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Buffers",
         "d) Registers"
       ],
-      "correct": "d) Registers",
+      "correct": 3,
       "explanation": "Registers (e.g., MAR, MDR) hold data during CPU-memory transfers."
     },
     {
@@ -3474,7 +3475,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Blocks",
         "d) Vectors"
       ],
-      "correct": "a) Frames",
+      "correct": 0,
       "explanation": "Physical memory is partitioned into frames (typically 4KB each) for paging."
     },
     {
@@ -3485,7 +3486,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Computer Indexed Set Components",
         "d) Complex Instruction set computer"
       ],
-      "correct": "d) Complex Instruction set computer",
+      "correct": 3,
       "explanation": "CISC architectures emphasize rich, multi-cycle instructions."
     },
     {
@@ -3496,7 +3497,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ISA",
         "d) ANNA"
       ],
-      "correct": "b) RISC",
+      "correct": 1,
       "explanation": "RISC achieves faster execution via simpler, single-cycle instructions."
     },
     {
@@ -3505,7 +3506,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": "b) False",
+      "correct": 1,
       "explanation": "RISC designs are simpler due to uniform instructions and pipelining."
     },
     {
@@ -3516,7 +3517,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Having a branch delay slot",
         "d) All of the mentioned"
       ],
-      "correct": "c) Having a branch delay slot",
+      "correct": 2,
       "explanation": "RISC simplifies addressing modes to streamline instruction execution."
     },
     {
@@ -3527,7 +3528,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ISA",
         "d) IANA"
       ],
-      "correct": "b) RISC",
+      "correct": 1,
       "explanation": "RISC's simpler circuitry typically consumes less power than CISC."
     },
     {
@@ -3538,7 +3539,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Artificial Running Machines",
         "d) Aviary Running Machines"
       ],
-      "correct": "b) Advanced RISC Machines",
+      "correct": 1,
       "explanation": "ARM originally stood for Acorn RISC Machine, later rebranded."
     },
     {
@@ -3549,7 +3550,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Lower error or glitches",
         "d) Efficient memory management"
       ],
-      "correct": "a) Low cost and low power consumption",
+      "correct": 0,
       "explanation": "ARM dominates mobile devices due to its energy efficiency and cost-effectiveness."
     },
     {
@@ -3560,7 +3561,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Mobile systems",
         "d) Super computers"
       ],
-      "correct": "c) Mobile systems",
+      "correct": 2,
       "explanation": "ARM's low-power design targets embedded and mobile applications."
     },
     {
@@ -3569,7 +3570,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": "b) False",
+      "correct": 1,
       "explanation": "ARM supports byte-addressable memory via instructions like LDRB/STRB."
     },
     {
@@ -3580,7 +3581,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) 216",
         "d) 232"
       ],
-      "correct": "d) 232",
+      "correct": 3,
       "explanation": "32-bit ARM architectures use 32-bit addressing (4GB address space)."
     },
     {
@@ -3591,7 +3592,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) X-Little Endian",
         "d) Both Little & Big Endian"
       ],
-      "correct": "d) Both Little & Big Endian",
+      "correct": 3,
       "explanation": "ARM supports configurable endianness for compatibility."
     },
     {
@@ -3607,7 +3608,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) i, iv, v",
         "d) iii, iv, v"
       ],
-      "correct": "a) i, ii",
+      "correct": 0
     },
     {
       "question": "RISC stands for ______.",
@@ -3617,7 +3618,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Reduced Instruction Set Computer",
         "d) Reduced Induction Set Computer"
       ],
-      "correct": "c) Reduced Instruction Set Computer",
+      "correct": 2,
       "explanation": "RISC simplifies instructions for faster, more efficient execution."
     },
     {
@@ -3628,7 +3629,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) General purpose register",
         "d) Stack"
       ],
-      "correct": "c) General purpose register",
+      "correct": 2,
       "explanation": "ARM's Program Counter (R15) is part of its register file."
     },
     {
@@ -3639,7 +3640,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Extra registers",
         "d) External registers"
       ],
-      "correct": "b) Banked registers",
+      "correct": 1,
       "explanation": "Banked registers switch context during interrupts/privilege changes."
     },
     {
@@ -3650,7 +3651,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Same as other general purpose registers",
         "d) None of the mentioned"
       ],
-      "correct": "a) Switching between supervisor and interrupt mode",
+      "correct": 0,
       "explanation": "They enable fast context switching for exception handling."
     },
     {
@@ -3661,7 +3662,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) 4 byte",
         "d) 8 byte"
       ],
-      "correct": "c) 4 byte",
+      "correct": 2,
       "explanation": "Classic ARM uses fixed-length 32-bit (4-byte) instructions."
     },
     {
@@ -3670,7 +3671,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": "a) True",
+      "correct": 0,
       "explanation": "ARM instructions include conditional fields (e.g., ADDEQ) to skip execution."
     },
     {
@@ -3681,7 +3682,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Post-indexed mode",
         "d) None of the mentioned"
       ],
-      "correct": "c) Post-indexed mode",
+      "correct": 2
     },
     {
       "question": "The effective address of the instruction written in Post-indexed mode, MOVE[Rn]+Rm is ______.",
@@ -3691,7 +3692,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) EA = [Rn] + Rm",
         "d) EA = [Rm] + Rn"
       ],
-      "correct": "a) EA = [Rn]",
+      "correct": 0,
       "explanation": "Post-indexing uses Rn's initial value, then updates Rn post-operation."
     },
     {
@@ -3702,7 +3703,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Hexadecimal",
         "d) Octal"
       ],
-      "correct": "a) BCD",
+      "correct": 0,
       "explanation": "Binary-Coded Decimal (BCD) preserves exact decimal values in storage."
     },
     {
@@ -3713,7 +3714,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ANCI",
         "d) USCII"
       ],
-      "correct": "b) EBCDIC",
+      "correct": 1
     },
     {
       "question": "A source program is usually in ______.",
@@ -3723,7 +3724,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) High-level language",
         "d) Natural language"
       ],
-      "correct": "c) High-level language",
+      "correct": 2,
       "explanation": "Source code is written in human-readable languages like C/Python."
     },
     {
@@ -3734,7 +3735,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Floppy disk",
         "d) Cd disk"
       ],
-      "correct": "a) RAM",
+      "correct": 0,
       "explanation": "RAM uses semiconductor technology (transistors/capacitors), unlike magnetic/optical storage."
     },
     {
@@ -3745,7 +3746,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Accumulators",
         "d) Stacks"
       ],
-      "correct": "a) Cache",
+      "correct": 0,
       "explanation": "Caches are SRAM-based memories that bridge CPU-register speed gaps."
     },
     {
@@ -3756,7 +3757,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Heap",
         "d) Stack"
       ],
-      "correct": "a) Accumulators",
+      "correct": 0
     },
     {
       "question": "The control unit controls other units by generating ______.",
@@ -3766,7 +3767,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Transfer signals",
         "d) Command Signals"
       ],
-      "correct": "b) Timing signals",
+      "correct": 1
     },
     {
       "question": "______ are numbers and encoded characters, generally used as operands.",
@@ -3776,7 +3777,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Information",
         "d) Stored Values"
       ],
-      "correct": "b) Data",
+      "correct": 1,
       "explanation": "Data represents raw values processed by instructions."
     },
     {
@@ -3787,7 +3788,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Neither of the cases",
         "d) Either of the cases"
       ],
-      "correct": "a) When the SIN status flag is set",
+      "correct": 0,
       "explanation": "Input devices send data to the processor only when the SIN (Serial Input) status flag indicates data is ready."
     },
     {
@@ -3798,7 +3799,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Star bus",
         "d) Rambus"
       ],
-      "correct": "a) Single bus",
+      "correct": 0,
       "explanation": "A single bus structure is commonly used to connect I/O devices due to its simplicity and cost-effectiveness."
     },
     {
@@ -3809,7 +3810,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Address decoder, registers and Control circuits",
         "d) Only Control circuits"
       ],
-      "correct": "c) Address decoder, registers and Control circuits",
+      "correct": 2,
       "explanation": "I/O interfaces need address decoding, data buffering (registers), and control logic."
     },
     {
@@ -3820,7 +3821,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) SDRAM’s",
         "d) Cache’s"
       ],
-      "correct": "d) Cache’s",
+      "correct": 3,
       "explanation": "Caches store frequently accessed data to minimize slow main memory accesses."
     },
     {
@@ -3831,7 +3832,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Hard-disk",
         "d) Disks"
       ],
-      "correct": "b) Virtual memory",
+      "correct": 1,
       "explanation": "Virtual memory uses disk space to extend addressable memory via paging."
     },
     {
@@ -3842,7 +3843,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Memory Find Command",
         "d) Mass Format Command"
       ],
-      "correct": "b) Memory Function Complete",
+      "correct": 1,
       "explanation": "MFC signals completion of memory operations in some architectures."
     },
     {
@@ -3853,7 +3854,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Memory cycle time",
         "d) Instruction delay"
       ],
-      "correct": "c) Memory cycle time",
+      "correct": 2,
       "explanation": "Cycle time includes access time plus recovery/precharge delays."
     },
     {
@@ -3862,7 +3863,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "a) True",
         "b) False"
       ],
-      "correct": "b) False",
+      "correct": 1,
       "explanation": "Pipelining processes tasks in fixed stages; speed variations cause stalls."
     },
     {
@@ -3873,7 +3874,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) It’ll remain idle for the remaining time",
         "d) None of the mentioned"
       ],
-      "correct": "c) It’ll remain idle for the remaining time",
+      "correct": 2,
       "explanation": "Pipeline stages synchronize to the slowest stage’s clock cycle."
     },
     {
@@ -3884,7 +3885,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Hazards",
         "d) Both Stalls and Bubbles"
       ],
-      "correct": "d) Both Stalls and Bubbles",
+      "correct": 3,
       "explanation": "Bubbles are pipeline stalls caused by hazards or delays."
     },
     {
@@ -3895,7 +3896,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Deadlock",
         "d) None of the mentioned"
       ],
-      "correct": "a) Structural hazard",
+      "correct": 0,
       "explanation": "Structural hazards occur when hardware resources are oversubscribed."
     },
     {
@@ -3906,7 +3907,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Deadlock",
         "d) Structural hazard"
       ],
-      "correct": "a) Data hazard",
+      "correct": 0,
       "explanation": "Data hazards arise from dependencies (e.g., RAW—Read After Write)."
     },
     {
@@ -3917,7 +3918,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Registers",
         "d) MDR"
       ],
-      "correct": "a) IR",
+      "correct": 0,
       "explanation": "The Instruction Register (IR) holds decoded instructions for execution."
     },
     {
@@ -3928,7 +3929,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Adds the values of both LOCA and R0 and stores it in R0",
         "d) Adds the value of LOCA with a value in accumulator and stores it in R0"
       ],
-      "correct": "c) Adds the values of both LOCA and R0 and stores it in R0",
+      "correct": 2,
       "explanation": "This instruction typically means: $$R0 \leftarrow [R0] + [LOCA]$$ (register + memory)."
     },
     {
@@ -3939,7 +3940,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) IR",
         "d) R0"
       ],
-      "correct": "a) MAR",
+      "correct": 0,
       "explanation": "The Memory Address Register (MAR) holds addresses for memory/disk access."
     },
     {
@@ -3950,7 +3951,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) PC",
         "d) MAR"
       ],
-      "correct": "c) PC",
+      "correct": 2,
       "explanation": "The Program Counter (PC) is initialized to the first instruction’s address."
     },
     {
@@ -3961,7 +3962,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) IR",
         "d) Both PC and MAR"
       ],
-      "correct": "b) MAR",
+      "correct": 1,
       "explanation": "The MAR interfaces directly with the memory bus for address transmission."
     },
     {
@@ -3972,7 +3973,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Interchange Standard Protocol",
         "d) Interrupt Service Procedure"
       ],
-      "correct": "a) Instruction Set Processor",
+      "correct": 0,
       "explanation": "ISP describes a processor’s instruction set architecture (ISA)."
     },
     {
@@ -3983,7 +3984,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Memory bus",
         "d) Rambus"
       ],
-      "correct": "b) Processor bus",
+      "correct": 1,
       "explanation": "Internal buses (e.g., ALU-register connections) enable component communication."
     },
     {
@@ -3994,7 +3995,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Control unit",
         "d) None of the mentioned"
       ],
-      "correct": "b) Multiplexer",
+      "correct": 1,
       "explanation": "A multiplexer selects between incrementing the program counter (PC) or performing ALU operations based on control signals."
     },
     {
@@ -4005,7 +4006,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) information path",
         "d) data path"
       ],
-      "correct": "d) data path",
+      "correct": 3,
       "explanation": "The datapath performs data processing and transfer operations."
     },
     {
@@ -4016,7 +4017,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) RS flip flop",
         "d) None of the mentioned"
       ],
-      "correct": "a) D flip flop",
+      "correct": 0,
       "explanation": "D flip-flops are commonly used for register storage due to their stability."
     },
     {
@@ -4027,7 +4028,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "iii) Computer Organization tells us how exactly all the units in the system are arranged and interconnected.",
         "iv) None of the Above"
       ],
-      "correct": "iii) Computer Organization tells us how exactly all the units in the system are arranged and interconnected.",
+      "correct": 2,
       "explanation": "Computer Organization focuses on hardware implementation and interconnections."
     },
     {
@@ -4038,7 +4039,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Source Program",
         "D) Natural Program"
       ],
-      "correct": "C) Source Program",
+      "correct": 2,
       "explanation": "Source code is the human-readable program before compilation."
     },
     {
@@ -4049,7 +4050,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Flip-Flop",
         "D) Multiplexer"
       ],
-      "correct": "B) ALU",
+      "correct": 1,
       "explanation": "The Arithmetic Logic Unit (ALU) performs all mathematical/logical operations."
     },
     {
@@ -4060,7 +4061,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Buffer",
         "D) External Memory"
       ],
-      "correct": "C) Buffer",
+      "correct": 2,
       "explanation": "Buffers temporarily hold input data before processing."
     },
     {
@@ -4071,7 +4072,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Signals",
         "D) BUS"
       ],
-      "correct": "D) BUS",
+      "correct": 3,
       "explanation": "Buses (e.g., PCIe, USB) provide the physical pathways for I/O communication."
     },
     {
@@ -4082,7 +4083,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Does better memory management",
         "D) All of the above"
       ],
-      "correct": "D) All of the above",
+      "correct": 3,
       "explanation": "An optimizing compiler improves code performance by enhancing compilation quality, processor-specific optimizations, and memory management.."
     },
     {
@@ -4093,7 +4094,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) PCIe",
         "D) Rambus"
       ],
-      "correct": "C) PCIe",
+      "correct": 2
     },
     {
       "question": "In the ARM Architecture Only ______ Instructions Access Memory Locations.",
@@ -4103,12 +4104,11 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Data Processing",
         "d) load and store"
       ],
-      "correct": "d) load and store",
+      "correct": 3,
       "explanation": "ARM uses a load/store architecture where only LDR/STR access memory."
     }
   ]
 };
-
 
 
 const quizDataArabic = {

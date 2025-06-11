@@ -112,11 +112,10 @@ const Quiz = () => {
     setLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
 
-    // FIXED: Only reset the selected option and explanation state, 
-    // but preserve the current question index to stay on the same question
-    setSelectedOption(null);
-    setShowExplanation(false);
-    // Removed: setCurrentQuestionIndex(0); - This was causing the issue
+    // FIXED: Do not reset selectedOption or showExplanation when changing language
+    // The useEffect will handle restoring the correct state based on questionAnswers
+    // Removed: setSelectedOption(null);
+    // Removed: setShowExplanation(false);
   };
 
   const handleChapterChange = (chapter) => {

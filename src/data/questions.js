@@ -2700,7 +2700,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "CPU interconnection (e.g., buses or point-to-point links) enables communication between the CPU, memory, and I/O devices to transfer data and control signals."
     },
     {
@@ -2862,7 +2862,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "RAID 4-6 use striping with parity, not virtual access. Parallel I/O is enabled by striping but limited by parity calculations."
     },
     {
@@ -2952,8 +2952,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 0,
-      "explanation": "Downloading files involves processing network data and storing it on disk, representing storage I/O operations."
+      "correct": 1,
+      "explanation": "downloading from the Internet to disk is a data transfer operation, not a processing task."
     },
     {
       "question": "Updating bank statement is example of processing from storage to I/O.",
@@ -3006,8 +3006,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 1,
-      "explanation": "Predication is a microarchitectural technique (though some ISAs like ARM expose it through conditional instructions)."
+      "correct": 0,
+      "explanation": "Predicated instruction execution is a feature defined at the Instruction Set Architecture (ISA) level to allow conditional execution without branching."
     },
     {
       "question": "A row-conflict memory access takes significantly longer than a row-hit access.",
@@ -3033,8 +3033,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "True",
         "False"
       ],
-      "correct": 0,
-      "explanation": "Non-uniform instruction decoding complicates hardware but doesn't restrict formats; it's variable-length encodings that may restrict formats."
+      "correct": 1,
+      "explanation": "n-uniform instruction decoding complicates hardware and pipeline design, but it doesn't inherently restrict instruction formats; rather, it often arises from complex, variable-length instruction formats (common in CISC architectures)."
     },
     {
       "question": "The RISC processor has a more complicated design than CISC.",
@@ -3113,8 +3113,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Interfaces",
         "D) Memory technology used"
       ],
-      "correct": "C) Interfaces",
-      "explanation": "Architectural attributes focus on visible interfaces like instruction sets, not implementation details like control signals."
+      "correct": "A) I/O mechanisms",
+      "explanation": "Architectural attributes refer to features visible to the programmer, like I/O mechanisms, instruction sets, and addressing methods—not hardware implementation details."
     },
     {
       "question": "______ attributes include hardware details transparent to the programmer.",
@@ -3157,8 +3157,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Complex",
         "D) Functional"
       ],
-      "correct": "D) Functional",
-      "explanation": "Computers are functionally organized into subsystems (CPU, memory, I/O) that collaborate to execute programs."
+      "correct": "B) Hierarchical",
+      "explanation": "A hierarchical system is composed of interrelated subsystems arranged in a layered structure."
     },
     {
       "question": "An I/O device is referred to as a ______.",
@@ -3179,8 +3179,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "C) Structuring",
         "D) Data transport"
       ],
-      "correct": "D) Data transport",
-      "explanation": "Data transport covers movement across networks or between remote systems, distinct from local I/O operations."
+      "correct": "A) Data communications",
+      "explanation": "Data communications it specifically refers to the process of transmitting data over long distances between remote devices or systems."
     },
     {
       "question": "The ______ stores data.",
@@ -3300,8 +3300,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Special unit",
         "d) Control unit"
       ],
-      "correct": "d) Control unit",
-      "explanation": "The control unit orchestrates pipelining by managing the fetch-decode-execute cycle stages."
+      "correct": "Clock",
+      "explanation": "The clock coordinates and interleaves the fetch and execution cycles by providing timing signals to synchronize operations."
     },
     {
       "question": "The pipelining process is also called as ______.",
@@ -3399,8 +3399,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Word",
         "d) Byte"
       ],
-      "correct": "c) Word",
-      "explanation": "A word is the native unit of data (e.g., 32/64 bits) processed by a CPU."
+      "correct": "a) Block",
+      "explanation": "A block is a collection of data units transferred between memory and cache/storage as a single unit."
     },
     {
       "question": "An 24-bit address generates an address space of ______ locations.",
@@ -3518,7 +3518,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Having a branch delay slot",
         "d) All of the mentioned"
       ],
-      "correct": "a) Reduced number of addressing modes",
+      "correct": "c) Having a branch delay slot",
       "explanation": "RISC simplifies addressing modes to streamline instruction execution."
     },
     {
@@ -3604,13 +3604,12 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "iii) Load",
         "iv) arithmetic",
         "v) logical",
-        "a) i, ii, iii",
+        "a) i, iii",
         "b) i, ii",
         "c) i, iv, v",
         "d) iii, iv, v"
       ],
-      "correct": "b) i, ii",
-      "explanation": "Only load/store instructions access memory; arithmetic/logical ops use registers."
+      "correct": "a) i, ii",
     },
     {
       "question": "RISC stands for ______.",
@@ -3684,8 +3683,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Post-indexed mode",
         "d) None of the mentioned"
       ],
-      "correct": "a) Pre-indexed mode",
-      "explanation": "Pre-indexing uses register values directly as addresses."
+      "correct": "c) Post-indexed mode",
     },
     {
       "question": "The effective address of the instruction written in Post-indexed mode, MOVE[Rn]+Rm is ______.",
@@ -3717,8 +3715,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) ANCI",
         "d) USCII"
       ],
-      "correct": "a) ASCII",
-      "explanation": "ASCII is the standard 7-bit/8-bit encoding for text (with extensions)."
+      "correct": "b) EBCDIC",
     },
     {
       "question": "A source program is usually in ______.",
@@ -3761,8 +3758,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Heap",
         "d) Stack"
       ],
-      "correct": "b) Registers",
-      "explanation": "Registers temporarily hold ALU outputs during multi-step operations."
+      "correct": "a) Accumulators",
     },
     {
       "question": "The control unit controls other units by generating ______.",
@@ -3772,8 +3768,7 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Transfer signals",
         "d) Command Signals"
       ],
-      "correct": "a) Control signals",
-      "explanation": "Control signals coordinate datapath components (e.g., ALU ops, register writes)."
+      "correct": "b) Timing signals",
     },
     {
       "question": "______ are numbers and encoded characters, generally used as operands.",
@@ -3794,8 +3789,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Neither of the cases",
         "d) Either of the cases"
       ],
-      "correct": "d) Either of the cases",
-      "explanation": "Input methods vary: polled I/O checks flags, interrupt-driven I/O triggers events."
+      "correct": "a) When the SIN status flag is set",
+      "explanation": "Input devices send data to the processor only when the SIN (Serial Input) status flag indicates data is ready."
     },
     {
       "question": "______ bus structure is usually used to connect I/O devices.",
@@ -3805,8 +3800,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Star bus",
         "d) Rambus"
       ],
-      "correct": "b) Multiple bus",
-      "explanation": "Modern systems use hierarchical buses (e.g., memory vs. I/O buses) for parallelism."
+      "correct": "a) Single bus",
+      "explanation": "A single bus structure is commonly used to connect I/O devices due to its simplicity and cost-effectiveness."
     },
     {
       "question": "The I/O interface required to connect the I/O device to the bus consists of ______.",
@@ -4001,8 +3996,8 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "c) Control unit",
         "d) None of the mentioned"
       ],
-      "correct": "c) Control unit",
-      "explanation": "The control unit directs datapath operations based on instruction decoding."
+      "correct": "b) Multiplexer",
+      "explanation": "A multiplexer selects between incrementing the program counter (PC) or performing ALU operations based on control signals."
     },
     {
       "question": "The registers, ALU and the interconnection between them are collectively called as ______.",
@@ -4090,18 +4085,17 @@ explanation: "MemtoReg selects whether the writeback data comes from the ALU res
         "D) All of the above"
       ],
       "correct": "D) All of the above",
-      "explanation": "Optimizing compilers improve code efficiency across multiple dimensions."
+      "explanation": "An optimizing compiler improves code performance by enhancing compilation quality, processor-specific optimizations, and memory management.."
     },
     {
       "question": "Which bus is used to connect the monitor to the CPU?",
       "options": [
         "A) Single Bus",
         "B) SCSI Bus",
-        "C) Multiple Bus",
+        "C) PCIe",
         "D) Rambus"
       ],
-      "correct": "B) SCSI Bus",
-      "explanation": "SCSI and modern interfaces (HDMI/DisplayPort) connect displays to GPUs/CPUs."
+      "correct": "C) PCIe",
     },
     {
       "question": "In the ARM Architecture Only ______ Instructions Access Memory Locations.",
@@ -7047,8 +7041,8 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 0,
-      "explanation": "يتضمن تنزيل الملفات معالجة بيانات الشبكة وتخزينها على القرص، مما يمثل عمليات إدخال/إخراج التخزين (storage I/O operations)."
+      "correct": 1,
+      "explanation": "يتضمن تنزيل الملفات معالجة بيانات الشبكة وتخزينها على القرص، مما يمثل عمليات إدخال/إخراج التنزيل من الإنترنت إلى القرص هو عملية نقل بيانات، وليس مهمة معالجة."
     },
     {
       "question": "تحديث كشف الحساب البنكي هو مثال على المعالجة من التخزين إلى الـ I/O.",
@@ -7101,8 +7095,8 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 1,
-      "explanation": "الـ Predication هي تقنية microarchitectural (على الرغم من أن بعض ISAs مثل ARM تكشف عنها من خلال التعليمات الشرطية)."
+      "correct": 0,
+      "explanation": "تنفيذ التعليمات المشروطة (Predicated instruction execution) هو ميزة تُعرف على مستوى بنية مجموعة التعليمات (ISA) للسماح بالتنفيذ الشرطي بدون استخدام الفروع."
     },
     {
       "question": "يستغرق الوصول إلى الذاكرة المتعارض مع الصف (row-conflict memory access) وقتًا أطول بكثير من الوصول إلى الصف المتاح (row-hit access).",
@@ -7128,8 +7122,7 @@ const quizDataArabic = {
         "صحيح",
         "خطأ"
       ],
-      "correct": 0,
-      "explanation": "يعقد فك التشفير غير الموحد الأجهزة ولكنه لا يقيد التنسيقات؛ فالترميزات ذات الطول المتغير هي التي قد تقيد التنسيقات."
+      "correct": 1,
     },
     {
       "question": "معالج RISC لديه تصميم أكثر تعقيدًا من CISC.",
@@ -7205,11 +7198,10 @@ const quizDataArabic = {
       "options": [
         "أ) آليات الإدخال/الإخراج",
         "ب) إشارات التحكم",
-        "ج) الواجهات",
+        "أ) آليات الإدخال/الإخراج",
         "د) تقنية الذاكرة المستخدمة"
       ],
       "correct": "ج) الواجهات",
-      "explanation": "تركز السمات المعمارية على الواجهات المرئية مثل مجموعات التعليمات، وليس تفاصيل التنفيذ مثل إشارات التحكم."
     },
     {
       "question": "تشمل السمات ______ تفاصيل الأجهزة الشفافة للمبرمج.",
@@ -7252,8 +7244,7 @@ const quizDataArabic = {
         "ج) معقد",
         "د) وظيفي"
       ],
-      "correct": "د) وظيفي",
-      "explanation": "تنظم أجهزة الكمبيوتر وظيفيًا إلى أنظمة فرعية (وحدة المعالجة المركزية، الذاكرة، الإدخال/الإخراج) تتعاون لتنفيذ البرامج."
+      "correct": "ب) هرمي",
     },
     {
       "question": "يشار إلى جهاز الإدخال/الإخراج باسم ______.",
@@ -7274,8 +7265,8 @@ const quizDataArabic = {
         "ج) الهيكلة",
         "د) نقل البيانات"
       ],
-      "correct": "د) نقل البيانات",
-      "explanation": "يشمل نقل البيانات الحركة عبر الشبكات أو بين الأنظمة البعيدة، وهو يختلف عن عمليات الإدخال/الإخراج المحلية."
+      "correct": "أ) اتصالات البيانات",
+      "explanation": "تشير اتصالات البيانات على وجه التحديد إلى عملية نقل البيانات عبر مسافات طويلة بين الأجهزة أو الأنظمة البعيدة."
     },
     {
       "question": "يخزن ______ البيانات.",
@@ -7395,8 +7386,7 @@ const quizDataArabic = {
         "ج) وحدة خاصة",
         "د) وحدة التحكم"
       ],
-      "correct": "د) وحدة التحكم",
-      "explanation": "تنظم وحدة التحكم خط الأنابيب عن طريق إدارة مراحل دورة الجلب-الفك-التنفيذ."
+      "correct": "ب) الساعة",
     },
     {
       "question": "تُعرف عملية خط الأنابيب أيضًا باسم ______.",
@@ -7494,8 +7484,7 @@ const quizDataArabic = {
         "ج) كلمة",
         "د) بايت"
       ],
-      "correct": "ج) كلمة",
-      "explanation": "الكلمة هي الوحدة الأصلية للبيانات (مثل 32/64 بت) التي تعالجها وحدة المعالجة المركزية."
+      "correct": "أ) كتلة",
     },
     {
       "question": "ينشئ العنوان ذو 24 بت مساحة عنونة تبلغ ______ موقعًا.",
@@ -7699,13 +7688,12 @@ const quizDataArabic = {
         "ج) تحميل",
         "ح) حسابي",
         "خ) منطقي",
-        "أ) ط، ث، ج",
+        "أ) ط، ج",
         "ب) ط، ث",
         "ج) ط، ح، خ",
         "د) ج، ح، خ"
       ],
-      "correct": "ب) ط، ث",
-      "explanation": "تعليمات التحميل/التخزين فقط هي التي تصل إلى الذاكرة؛ بينما تستخدم العمليات الحسابية/المنطقية السجلات."
+      "correct": "أ) ط، ج",
     },
     {
       "question": "يشير RISC إلى ______.",
@@ -7779,8 +7767,7 @@ const quizDataArabic = {
         "ج) وضع ما بعد الفهرسة",
         "د) لا شيء مما ذكر"
       ],
-      "correct": "أ) وضع ما قبل الفهرسة",
-      "explanation": "يستخدم الفهرسة المسبقة قيم السجل مباشرة كعناوين."
+      "correct": "ج) وضع ما بعد الفهرسة",
     },
     {
       "question": "العنوان الفعلي للتعليمة المكتوبة في وضع ما بعد الفهرسة، MOVE[Rn]+Rm هو ______.",
@@ -7812,8 +7799,7 @@ const quizDataArabic = {
         "ج) ANCI",
         "د) USCII"
       ],
-      "correct": "أ) ASCII",
-      "explanation": "ASCII هو الترميز القياسي ذو الـ 7 بت/8 بت للنصوص (مع امتدادات)."
+      "correct": "ب) EBCDIC",
     },
     {
       "question": "عادة ما يكون البرنامج المصدر مكتوبًا بـ ______.",
@@ -7856,8 +7842,7 @@ const quizDataArabic = {
         "ج) الكومة",
         "د) المكدس"
       ],
-      "correct": "ب) السجلات",
-      "explanation": "تحتفظ السجلات مؤقتًا بمخرجات وحدة المنطق الحسابي (ALU) أثناء العمليات متعددة الخطوات."
+      "correct": "أ) المجمعات",
     },
     {
       "question": "تتحكم وحدة التحكم في الوحدات الأخرى عن طريق توليد ______.",
@@ -7867,8 +7852,7 @@ const quizDataArabic = {
         "ج) إشارات النقل",
         "د) إشارات الأوامر"
       ],
-      "correct": "أ) إشارات التحكم",
-      "explanation": "تنسق إشارات التحكم مكونات مسار البيانات (مثل عمليات وحدة المنطق الحسابي، كتابة السجلات)."
+      "correct": "ب) إشارات التوقيت",
     },
     {
       "question": "______ هي أرقام وحروف مشفرة، تستخدم عمومًا كمعاملات.",
@@ -7889,8 +7873,7 @@ const quizDataArabic = {
         "ج) لا شيء من الحالتين",
         "د) أي من الحالتين"
       ],
-      "correct": "د) أي من الحالتين",
-      "explanation": "تختلف طرق الإدخال: الإدخال/الإخراج بالاستقصاء يفحص العلامات، بينما الإدخال/الإخراج القائم على المقاطعة يشغل الأحداث."
+      "correct": "أ) عندما يتم تعيين علامة الحالة SIN",
     },
     {
       "question": "يُستخدم هيكل الناقل ______ عادةً لتوصيل أجهزة الإدخال/الإخراج.",
@@ -7900,8 +7883,7 @@ const quizDataArabic = {
         "ج) ناقل نجمي",
         "د) Rambus"
       ],
-      "correct": "ب) نواقل متعددة",
-      "explanation": "تستخدم الأنظمة الحديثة نواقل هرمية (مثل نواقل الذاكرة مقابل نواقل الإدخال/الإخراج) من أجل التوازي."
+      "correct": "أ) ناقل واحد",
     },
     {
       "question": "تتكون واجهة الإدخال/الإخراج المطلوبة لتوصيل جهاز الإدخال/الإخراج بالناقل من ______.",
@@ -8096,8 +8078,7 @@ const quizDataArabic = {
         "ج) وحدة التحكم",
         "د) لا شيء مما ذكر"
       ],
-      "correct": "ج) وحدة التحكم",
-      "explanation": "توجه وحدة التحكم عمليات مسار البيانات بناءً على فك تشفير التعليمات."
+      "correct": "ب) المضاعفة",
     },
     {
       "question": "يُطلق على السجلات ووحدة المنطق الحسابي (ALU) والترابط بينها مجتمعة اسم ______.",
@@ -8192,11 +8173,10 @@ const quizDataArabic = {
       "options": [
         "أ) ناقل واحد",
         "ب) ناقل SCSI",
-        "ج) نواقل متعددة",
+        "ج) PCIe",
         "د) Rambus"
       ],
-      "correct": "ب) ناقل SCSI",
-      "explanation": "تصل واجهات SCSI والواجهات الحديثة (HDMI/DisplayPort) الشاشات بوحدات معالجة الرسومات/وحدات المعالجة المركزية."
+      "correct": "ج) PCIe",
     },
     {
       "question": "في بنية ARM، تعليمات ______ فقط هي التي تصل إلى مواقع الذاكرة.",

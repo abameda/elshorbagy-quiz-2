@@ -96,10 +96,11 @@ const Quiz = () => {
     setLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
 
-    // Reset quiz state when changing language
+    // FIXED: Only reset the selected option and explanation state, 
+    // but preserve the current question index to stay on the same question
     setSelectedOption(null);
     setShowExplanation(false);
-    setCurrentQuestionIndex(0);
+    // Removed: setCurrentQuestionIndex(0); - This was causing the issue
   };
 
   const handleChapterChange = (chapter) => {
@@ -400,89 +401,92 @@ const Quiz = () => {
                                     {String.fromCharCode(65 + index)}
                                   </div>
                                   <span className={`${
-                                      selectedOption !== null && (selectedOption === index || index === currentQuestion.correct)
-                                          ? 'font-medium'
-                                          : ''
-                                  } text-gray-800 dark:text-white`}>
-                            {option}
-                          </span>
+                                      selectedOption === null
+                                          ? 'text-gray-800 dark:text-white'
+                                          : selectedOption === index
+                                              ? index === currentQuestion.correct
+                                                  ? 'text-green-800 dark:text-green-200'
+                                                  : 'text-red-800 dark:text-red-200'
+                                              : index === currentQuestion.correct
+                                                  ? 'text-green-800 dark:text-green-200'
+                                                  : 'text-gray-800 dark:text-white'
+                                  }`}>
+                                    {option}
+                                  </span>
                                 </div>
                               </button>
                           ))}
                         </div>
+
+                        {selectedOption !== null && (
+                            <div className="mt-6">
+                              <div className={`p-4 rounded-lg ${
+                                  selectedOption === currentQuestion.correct
+                                      ? 'bg-green-100 dark:bg-green-900/30 border border-green-500'
+                                      : 'bg-red-100 dark:bg-red-900/30 border border-red-500'
+                              }`}>
+                                <p className={`font-medium ${
+                                    selectedOption === currentQuestion.correct
+                                        ? 'text-green-800 dark:text-green-200'
+                                        : 'text-red-800 dark:text-red-200'
+                                }`}>
+                                  {selectedOption === currentQuestion.correct ? t.correct : t.incorrect}
+                                </p>
+                              </div>
+
+                              {currentQuestion.explanation && (
+                                  <div className="mt-4">
+                                    <button
+                                        onClick={() => setShowExplanation(!showExplanation)}
+                                        className="text-primary-600 dark:text-primary-400 hover:underline"
+                                    >
+                                      {showExplanation ? t.hideExplanation : t.showExplanation}
+                                    </button>
+                                    {showExplanation && (
+                                        <div className="mt-2 p-4 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg">
+                                          <p className="text-blue-800 dark:text-blue-200">
+                                            {currentQuestion.explanation}
+                                          </p>
+                                        </div>
+                                    )}
+                                  </div>
+                              )}
+                            </div>
+                        )}
                       </div>
 
-                      {selectedOption !== null && (
-                          <div className={`p-4 rounded-lg mb-6 ${
-                              selectedOption === currentQuestion.correct
-                                  ? 'bg-green-100 dark:bg-green-900/30 border border-green-500'
-                                  : 'bg-red-100 dark:bg-red-900/30 border border-red-500'
-                          }`}>
-                            <div className="flex items-center mb-2">
-                              {selectedOption === currentQuestion.correct ? (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 rtl:ml-2 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                  </svg>
-                              ) : (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500 mr-2 rtl:ml-2 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                  </svg>
-                              )}
-                              <h4 className={`font-medium ${
-                                  selectedOption === currentQuestion.correct
-                                      ? 'text-green-800 dark:text-green-400'
-                                      : 'text-red-800 dark:text-red-400'
-                              }`}>
-                                {selectedOption === currentQuestion.correct ? t.correct : t.incorrect}
-                              </h4>
-                            </div>
-
-                            <button
-                                onClick={() => setShowExplanation(!showExplanation)}
-                                className="text-primary-600 dark:text-primary-400 hover:underline focus:outline-none text-sm flex items-center"
-                            >
-                              {showExplanation ? t.hideExplanation : t.showExplanation}
-                              <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 ml-1 rtl:mr-1 rtl:ml-0 transition-transform ${showExplanation ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                              </svg>
-                            </button>
-
-                            {showExplanation && (
-                                <div className="mt-2 text-gray-700 dark:text-gray-300">
-                                  {currentQuestion.explanation}
-                                </div>
-                            )}
-                          </div>
-                      )}
-
-                      <div className="flex justify-between">
+                      <div className="flex justify-between items-center">
                         <button
                             onClick={handlePrevQuestion}
-                            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none"
                             disabled={currentQuestionIndex === 0}
+                            className={`px-4 py-2 rounded-md ${
+                                currentQuestionIndex === 0
+                                    ? 'bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
+                                    : 'bg-gray-600 hover:bg-gray-700 text-white'
+                            }`}
                         >
                           {t.previous}
                         </button>
 
                         <button
                             onClick={handleNextQuestion}
-                            className={`px-4 py-2 rounded-lg focus:outline-none ${
+                            disabled={selectedOption === null}
+                            className={`px-4 py-2 rounded-md ${
                                 selectedOption === null
-                                    ? 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
+                                    ? 'bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
                                     : 'bg-primary-600 hover:bg-primary-700 text-white'
                             }`}
-                            disabled={selectedOption === null}
                         >
-                          {t.next}
+                          {currentQuestionIndex === currentQuestions.length - 1 ? t.finish : t.next}
                         </button>
                       </div>
                     </div>
                 ) : (
-                    <div className="py-8 text-center">
-                      <p className="text-gray-700 dark:text-gray-300">{t.emptyChapter}</p>
+                    <div className="text-center py-8">
+                      <p className="text-gray-600 dark:text-gray-400">{t.emptyChapter}</p>
                       <button
                           onClick={goToHome}
-                          className="mt-4 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg focus:outline-none"
+                          className="mt-4 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-md"
                       >
                         {t.backToHome}
                       </button>
@@ -490,65 +494,37 @@ const Quiz = () => {
                 )}
               </div>
           ) : (
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6">
-                  {t.results}
-                </h2>
-
-                <div className="flex flex-col items-center mb-8">
-                  <div className="relative w-48 h-48 mb-4">
-                    <svg className="w-full h-full" viewBox="0 0 100 100">
-                      <circle
-                          className="text-gray-200 dark:text-gray-700 stroke-current"
-                          strokeWidth="10"
-                          cx="50"
-                          cy="50"
-                          r="40"
-                          fill="transparent"
-                      ></circle>
-                      <circle
-                          className="text-primary-600 dark:text-primary-400 progress-ring stroke-current"
-                          strokeWidth="10"
-                          strokeLinecap="round"
-                          cx="50"
-                          cy="50"
-                          r="40"
-                          fill="transparent"
-                          strokeDasharray={`${2 * Math.PI * 40}`}
-                          strokeDashoffset={`${2 * Math.PI * 40 * (1 - score / totalQuestions)}`}
-                          transform="rotate(-90 50 50)"
-                      ></circle>
-                    </svg>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-4xl font-bold text-gray-800 dark:text-white">{Math.round((score / totalQuestions) * 100)}%</span>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">{t.score}</span>
-                    </div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">{t.results}</h2>
+                <div className="mb-6">
+                  <div className="text-6xl font-bold text-primary-600 dark:text-primary-400 mb-2">
+                    {Math.round((score / totalQuestions) * 100)}%
                   </div>
-
-                  <div className="text-center">
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
-                      {t.answered} <span className="font-semibold">{score}</span> {t.outOf} <span className="font-semibold">{totalQuestions}</span> {t.questionsCorrectly}
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      {score / totalQuestions >= 0.8
-                          ? t.excellent
-                          : score / totalQuestions >= 0.6
-                              ? t.good
-                              : t.keepStudying}
-                    </p>
-                  </div>
+                  <p className="text-lg text-gray-600 dark:text-gray-400">
+                    {t.answered} {score} {t.outOf} {totalQuestions} {t.questionsCorrectly}
+                  </p>
                 </div>
 
-                <div className="flex justify-center space-x-4 rtl:space-x-reverse">
+                <div className="mb-8">
+                  {score / totalQuestions >= 0.8 ? (
+                      <p className="text-green-600 dark:text-green-400 text-lg">{t.excellent}</p>
+                  ) : score / totalQuestions >= 0.6 ? (
+                      <p className="text-blue-600 dark:text-blue-400 text-lg">{t.good}</p>
+                  ) : (
+                      <p className="text-orange-600 dark:text-orange-400 text-lg">{t.keepStudying}</p>
+                  )}
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button
                       onClick={restartQuiz}
-                      className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg focus:outline-none"
+                      className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-md"
                   >
                     {t.restart}
                   </button>
                   <button
                       onClick={goToHome}
-                      className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none"
+                      className="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white rounded-md"
                   >
                     {t.backToHome}
                   </button>
@@ -591,3 +567,4 @@ const Quiz = () => {
 };
 
 export default Quiz;
+

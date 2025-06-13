@@ -908,225 +908,333 @@ const quizData = {
   }
 ],
 'Chapter 4: Introduction and Basics': [
+  // Cache Hierarchy (8 Questions)
   {
-    question: "According to Richard Hamming, what is the purpose of computing?",
+    question: "What is the primary purpose of cache hierarchy?",
     options: [
-      "To generate numbers and data",
-      "To solve mathematical equations",
-      "To gain insight, not numbers",
-      "To process information quickly"
+      "To replace main memory entirely",
+      "To balance storage capacity and access speed",
+      "To increase processor clock frequency",
+      "To reduce manufacturing costs"
     ],
-    correct: 2,
-    explanation: "Richard Hamming stated that 'The purpose of computing is insight, not numbers'. The true value of computing lies not just in generating numbers (data), but in using that data to gain understanding and knowledge (insight)."
+    correct: 1,
+    explanation: "Cache hierarchy balances capacity (larger storage in higher levels) and speed (faster access in lower levels), optimizing data retrieval efficiency."
   },
   {
-    question: "What are the levels of transformation in computer systems from top to bottom?",
+    question: "Which characteristic BEST describes L1 cache?",
     options: [
-      "Problem → Algorithm → Program → ISA → Microarchitecture → Logic → Circuits → Electrons",
-      "Algorithm → Problem → Program → ISA → Logic → Microarchitecture → Circuits → Electrons",
-      "Problem → Program → Algorithm → ISA → Microarchitecture → Logic → Circuits → Electrons",
-      "Problem → Algorithm → ISA → Program → Microarchitecture → Logic → Circuits → Electrons"
+      "Largest and slowest cache",
+      "Medium size with moderate speed",
+      "Smallest and fastest cache",
+      "Shared between multiple cores"
+    ],
+    correct: 2,
+    explanation: "L1 cache is located closest to the processor core, offering the highest access speed but smallest capacity (typically 10s of KB)."
+  },
+  {
+    question: "What is the primary function of L2 cache?",
+    options: [
+      "Store operating system kernel",
+      "Act as buffer between L1 and main memory",
+      "Replace L1 cache when full",
+      "Handle graphics processing"
+    ],
+    correct: 1,
+    explanation: "L2 cache bridges L1 and RAM, storing data not in L1 but likely needed soon, with larger capacity (100s of KB) than L1."
+  },
+  {
+    question: "Which cache level typically ranges from MBs to 10s of MBs?",
+    options: [
+      "L1 cache",
+      "L2 cache",
+      "L3 cache",
+      "Register file"
+    ],
+    correct: 2,
+    explanation: "L3 cache is the largest (MBs to 10s of MBs) and slowest cache level, storing less frequently accessed data."
+  },
+  {
+    question: "What critical problem does cache hierarchy solve?",
+    options: [
+      "Processor overheating",
+      "Memory access latency",
+      "Software compatibility",
+      "Power supply instability"
+    ],
+    correct: 1,
+    explanation: "By keeping frequently accessed data near the processor, cache hierarchy reduces access latency to slower main memory."
+  },
+  {
+    question: "What is a 'cache miss'?",
+    options: [
+      "When cache memory is full",
+      "When data isn't found in any cache level",
+      "When L1 cache overflows to L2",
+      "When cache synchronization fails"
+    ],
+    correct: 1,
+    explanation: "A cache miss occurs when requested data isn't in L1/L2/L3 caches, requiring slower retrieval from main memory."
+  },
+  {
+    question: "What is a key trade-off of multi-level caches?",
+    options: [
+      "Simplified processor design",
+      "Increased cost and complexity",
+      "Reduced instruction throughput",
+      "Higher RAM requirements"
+    ],
+    correct: 1,
+    explanation: "Implementing multiple cache levels increases processor design complexity and manufacturing costs."
+  },
+  {
+    question: "Which benefit is NOT provided by cache hierarchy?",
+    options: [
+      "Reduced memory access latency",
+      "Lower main memory usage",
+      "Improved system performance",
+      "Frequent data accessibility"
+    ],
+    correct: 1,
+    correct: 1,
+    explanation: "Cache hierarchy doesn't reduce main memory usage; it optimizes access to frequently used data stored in memory."
+  },
+
+  // Architecture vs. Organization (4 Questions)
+  {
+    question: "According to Gene Amdahl, computer architecture refers to:",
+    options: [
+      "Physical circuit wiring",
+      "Attributes visible to programmers",
+      "Silicon manufacturing process",
+      "Heat dissipation design"
+    ],
+    correct: 1,
+    explanation: "Architecture describes 'attributes seen by programmers' - functional behavior rather than implementation."
+  },
+  {
+    question: "Which aspect belongs to COMPUTER ORGANIZATION?",
+    options: [
+      "Instruction Set Architecture (ISA)",
+      "Memory hierarchy design",
+      "Pipeline stage implementation",
+      "I/O system specifications"
+    ],
+    correct: 2,
+    explanation: "Computer organization deals with physical implementation details like pipeline stages, unlike architectural abstractions."
+  },
+  {
+    question: "In the house-building analogy, what represents architecture?",
+    options: [
+      "Electrical wiring diagrams",
+      "Concrete mixing techniques",
+      "Room layouts and functionality",
+      "Brick-laying methods"
+    ],
+    correct: 2,
+    explanation: "Architecture defines high-level structure (room layouts/functionality), while organization handles construction details."
+  },
+  {
+    question: "What is designed during computer architecture phase?",
+    options: [
+      "Transistor-level circuits",
+      "Processor cooling systems",
+      "Instruction set for new processor",
+      "Motherboard PCB traces"
+    ],
+    correct: 2,
+    explanation: "Architecture phase defines abstract components like instruction sets, not physical implementation."
+  },
+
+  // Levels of Transformation (3 Questions)
+  {
+    question: "What is the correct order of computer system abstraction layers?",
+    options: [
+      "Problem → Algorithm → Program → ISA → Microarchitecture",
+      "Electrons → Circuits → Logic → Microarchitecture → ISA",
+      "Algorithm → Problem → ISA → Program → Microarchitecture",
+      "Program → Algorithm → Problem → Circuits → ISA"
     ],
     correct: 0,
-    explanation: "The correct hierarchy is: Problem → Algorithm → Program/Language → Runtime System → ISA (Architecture) → Microarchitecture → Logic → Circuits → Electrons, representing the transformation from high-level problems to physical implementation."
+    explanation: "Correct transformation: Problem → Algorithm → Program → Runtime → ISA → Microarchitecture → Logic → Circuits → Electrons."
   },
   {
-    question: "What is abstraction in the context of computer systems?",
+    question: "What property must EVERY step in an algorithm have?",
     options: [
-      "A method to make systems more complex",
-      "A higher level only needs to know about the interface to the lower level, not how it's implemented",
-      "A way to combine multiple levels into one",
-      "A technique to eliminate unnecessary components"
-    ],
-    correct: 1,
-    explanation: "Abstraction means that a higher level only needs to know about the interface to the lower level, not how the lower level is implemented. For example, a high-level language programmer doesn't need to know what the ISA is or how a computer executes instructions."
-  },
-  {
-    question: "Why might you need to understand what happens in underlying abstraction layers?",
-    options: [
-      "Only for academic purposes",
-      "When programs run slow, incorrectly, or consume too much energy",
-      "To make programming more difficult",
-      "It's never necessary to understand underlying layers"
-    ],
-    correct: 1,
-    explanation: "Understanding underlying layers becomes crucial when: the program runs slow, doesn't run correctly, consumes too much energy, or when designing more efficient and higher performance systems."
-  },
-  {
-    question: "In the multi-core system memory performance attack example, what causes the disparity in slowdowns between applications?",
-    options: [
-      "Different CPU speeds",
-      "Cache size differences",
-      "DRAM scheduling policy unfairness due to row buffer locality",
-      "Operating system scheduling"
+      "Parallelizability",
+      "Machine independence",
+      "Definite and computable",
+      "Variable time complexity"
     ],
     correct: 2,
-    explanation: "The disparity is caused by DRAM scheduling policies being unfair to some applications. Row-hit first policy unfairly prioritizes apps with high row buffer locality, while oldest-first unfairly prioritizes memory-intensive applications."
+    explanation: "Algorithms require definite (precisely defined), computable, and terminating steps."
   },
   {
-    question: "What is the FR-FCFS scheduling policy in DRAM controllers?",
+    question: "Why might programmers need to understand lower abstraction layers?",
     options: [
-      "First-Request, First-Come-First-Service",
-      "First-Ready, First-Come-First-Service",
-      "First-Row, First-Column-First-Service",
-      "Fast-Response, First-Come-First-Service"
+      "To write operating system kernels",
+      "When programs run slow or incorrectly",
+      "To design hardware components",
+      "For academic certification only"
     ],
     correct: 1,
-    explanation: "FR-FCFS stands for First-Ready, First-Come-First-Service. It has two rules: (1) Row-hit first: Service row-hit memory accesses first, (2) Oldest-first: Then service older accesses first."
-  },
+    explanation: "Understanding lower layers helps debug performance, correctness, or efficiency issues in software."
+    },
+  // Moore's Law (4 Questions)
   {
-    question: "What makes a DRAM row-conflict access significantly slower than a row-hit access?",
+    question: "What does Moore's Law state about transistors?",
     options: [
-      "CPU processing delays",
-      "Cache miss penalties",
-      "Need to close current row and open new row in DRAM",
-      "Network latency"
+      "Transistor speed doubles annually",
+      "Transistor cost halves every 5 years",
+      "Transistor count doubles ~every 18 months",
+      "Transistor size stabilizes at 5nm"
     ],
     correct: 2,
-    explanation: "A row-conflict access requires closing the currently open row and opening a new row in DRAM, which takes significantly longer than accessing data from an already open row (row-hit)."
+    explanation: "Moore observed transistor counts double every ~18 months, enabling exponential computing growth."
   },
   {
-    question: "In the memory performance hog example, what characterizes the STREAM access pattern?",
+    question: "Which is NOT a consequence of Moore's Law?",
     options: [
-      "Random memory access with low row buffer locality",
-      "Sequential memory access with very high row buffer locality (96% hit rate)",
-      "Scattered memory access with medium locality",
-      "Circular memory access pattern"
-    ],
-    correct: 1,
-    explanation: "STREAM is characterized by sequential memory access with very high row buffer locality (96% hit rate) and is memory intensive, making it a memory performance hog."
-  },
-  {
-    question: "What characterizes the RANDOM access pattern in the memory performance example?",
-    options: [
-      "Sequential access with high locality",
-      "Random memory access with very low row buffer locality (3% hit rate)",
-      "Structured access with medium locality",
-      "Predictable access pattern"
-    ],
-    correct: 1,
-    explanation: "RANDOM is characterized by random memory access with very low row buffer locality (3% hit rate) and is similarly memory intensive compared to STREAM."
-  },
-  {
-    question: "What does a DRAM cell consist of?",
-    options: [
-      "Two transistors and a resistor",
-      "A capacitor and an access transistor",
-      "Three capacitors in series",
-      "A flip-flop circuit"
-    ],
-    correct: 1,
-    explanation: "A DRAM cell consists of a capacitor and an access transistor. It stores data in terms of charge in the capacitor."
-  },
-  {
-    question: "Why does DRAM need to be refreshed?",
-    options: [
-      "To improve performance",
-      "Because capacitor charge leaks over time",
-      "To reduce power consumption",
-      "To increase storage capacity"
-    ],
-    correct: 1,
-    explanation: "DRAM capacitor charge leaks over time, so the memory controller needs to refresh each row periodically to restore charge. Typically each row must be refreshed every 64ms."
-  },
-  {
-    question: "What are the main downsides of DRAM refresh?",
-    options: [
-      "Only increased cost",
-      "Only performance degradation",
-      "Energy consumption, performance degradation, QoS impact, and capacity scaling limits",
-      "Only energy consumption"
+      "Dramatic cost reduction",
+      "Shorter electrical paths",
+      "Increased cooling requirements",
+      "Fewer interchip connections"
     ],
     correct: 2,
-    explanation: "DRAM refresh has multiple downsides: energy consumption (each refresh consumes energy), performance degradation (DRAM unavailable while refreshed), QoS/predictability impact (long pause times), and refresh rate limits DRAM capacity scaling."
+    explanation: "Moore's Law REDUCES power/cooling needs through miniaturization, contrary to increased requirements."
   },
   {
-    question: "What is the typical refresh period for DRAM rows?",
+    question: "Gordon Moore first observed transistor trends in:",
     options: [
-      "64 microseconds",
-      "64 milliseconds",
-      "64 seconds",
-      "64 nanoseconds"
-    ],
-    correct: 1,
-    explanation: "The typical refresh period is 64 milliseconds (64 ms). Each row must be activated (refreshed) every 64 ms to restore the charge in the capacitors."
-  },
-  {
-    question: "What key observation does RAIDR make about DRAM refresh?",
-    options: [
-      "All rows need frequent refresh",
-      "Most DRAM rows can be refreshed much less often without losing data",
-      "Refresh is unnecessary",
-      "Only some rows need any refresh"
-    ],
-    correct: 1,
-    explanation: "RAIDR observes that most DRAM rows can be refreshed much less often without losing data, leading to the idea of refreshing rows containing weak cells more frequently and other rows less frequently."
-  },
-  {
-    question: "How does RAIDR achieve refresh reduction?",
-    options: [
-      "By eliminating refresh entirely",
-      "By profiling retention times, binning rows, and refreshing different bins at different rates",
-      "By using different DRAM technology",
-      "By increasing refresh frequency for all rows"
-    ],
-    correct: 1,
-    explanation: "RAIDR works in three steps: (1) Profiling retention time of all rows, (2) Binning rows by retention time in memory controller using Bloom Filters, (3) Refreshing rows in different bins at different rates."
-  },
-  {
-    question: "What are the benefits achieved by RAIDR?",
-    options: [
-      "Only performance improvement",
-      "74.6% refresh reduction, ~16%/20% DRAM power reduction, ~9% performance improvement",
-      "Only power reduction",
-      "Only refresh reduction"
-    ],
-    correct: 1,
-    explanation: "RAIDR achieves multiple benefits: 74.6% refresh reduction with only 1.25KB storage overhead, ~16%/20% DRAM dynamic/idle power reduction, and ~9% performance improvement, with benefits increasing with DRAM capacity."
-  },
-  {
-    question: "What is one of the two key goals of the computer architecture course mentioned in the lecture?",
-    options: [
-      "To learn programming languages",
-      "To understand how a processor works underneath the software layer",
-      "To design operating systems",
-      "To build hardware components"
-    ],
-    correct: 1,
-    explanation: "One key goal is to understand how a processor works underneath the software layer and how decisions made in hardware affect the software/programmer."
-  },
-  {
-    question: "What is the second key goal of the computer architecture course?",
-    options: [
-      "To memorize instruction sets",
-      "To enable making design and optimization decisions that cross boundaries of different layers",
-      "To focus only on hardware design",
-      "To specialize in one abstraction layer"
-    ],
-    correct: 1,
-    explanation: "The second key goal is to enable students to be comfortable in making design and optimization decisions that cross the boundaries of different layers and system components."
-  },
-  {
-    question: "In the memory performance hog scenario, approximately how many requests of the STREAM application (T0) are serviced before the RANDOM application (T1) gets served?",
-    options: [
-      "64 requests",
-      "96 requests",
-      "128 requests",
-      "256 requests"
+      "1984 with x86 processors",
+      "2001 with Pentium 4",
+      "1965 at Intel",
+      "1978 with Zilog Z80"
     ],
     correct: 2,
-    explanation: "With a row size of 8KB and cache block size of 64B, there are 128 (8KB/64B) requests of T0 (STREAM) serviced before T1 (RANDOM) gets a chance, demonstrating the unfairness of the row-hit first policy."
+    explanation: "Moore published his observation in 1965 in 'Cramming More Components onto Integrated Circuits'."
   },
   {
-    question: "What is the main takeaway about abstraction layers from this lecture?",
+    question: "What technology trend does Moore's Law directly enable?",
     options: [
-      "Abstraction layers should never be crossed",
-      "Breaking abstraction layers and knowing what is underneath enables problem solving",
-      "Only hardware designers need to understand multiple layers",
-      "Abstraction layers are only theoretical concepts"
+      "Higher-voltage processors",
+      "Mechanical computing revival",
+      "Smaller, more powerful devices",
+      "Analog signal dominance"
+    ],
+    correct: 2,
+    explanation: "Doubling transistor counts allows smaller, faster, more energy-efficient devices over time."
+  },
+  // Processor Design (6 Questions)
+  {
+    question: "In which design phase is RTL (Register-Transfer Level) implemented?",
+    options: [
+      "Performance Evaluation",
+      "Place and Route",
+      "Architecture Design",
+      "Logic Design"
+    ],
+    correct: 3,
+    explanation: "RTL design uses HDLs like Verilog/VHDL to define register/logic gate behavior before physical implementation."
+  },
+  {
+    question: "What is the purpose of pipelining in processors?",
+    options: [
+      "Increase clock frequency",
+      "Enable parallel instruction execution",
+      "Reduce cache size requirements",
+      "Simplify ISA design"
     ],
     correct: 1,
-    explanation: "The main takeaway is that breaking the abstraction layers (between components and transformation hierarchy levels) and knowing what is underneath enables you to solve problems and design better future systems. Cooperation between multiple components and layers can enable more effective solutions."
+    explanation: "Pipelining breaks instructions into stages (fetch/decode/execute) allowing parallel processing for higher throughput."
+  },
+  {
+    question: "Which component is the 'brain' directing processor operations?",
+    options: [
+      "ALU (Arithmetic Logic Unit)",
+      "Cache controller",
+      "Control Unit",
+      "Memory management unit"
+    ],
+    correct: 2,
+    explanation: "The Control Unit fetches/decodes instructions and sends control signals to coordinate all processor components."
+  },
+  {
+    question: "What critical step follows RTL simulation?",
+    options: [
+      "Functional verification",
+      "Logic synthesis",
+      "Power management",
+      "Market analysis"
+    ],
+    correct: 1,
+    explanation: "After RTL simulation verifies logic, synthesis converts RTL code into gate-level netlists for physical implementation."
+  },
+  {
+    question: "What does 'Place and Route' determine?",
+    options: [
+      "Software compiler optimization",
+      "Processor instruction set",
+      "Physical gate layout and interconnects",
+      "Cache replacement policies"
+    ],
+    correct: 2,
+    explanation: "Place and Route maps logic gates to physical locations on silicon and defines connecting wires, impacting performance/power."
+  },
+  {
+    question: "DVFS (Dynamic Voltage and Frequency Scaling) addresses:",
+    options: [
+      "Memory wall issues",
+      "Power consumption optimization",
+      "Cache coherency problems",
+      "Instruction decoding errors"
+    ],
+    correct: 1,
+    explanation: "DVFS dynamically adjusts voltage/frequency based on workload to reduce power usage during low activity."
+  },
+  // Modern Challenges & Importance (4 Questions)
+  {
+    question: "Why is computer architecture study crucial today?",
+    options: [
+      "Decline of Moore's Law",
+      "Shift to multi-core paradigms",
+      "Elimination of cache hierarchies",
+      "Standardization of ISAs"
+    ],
+    correct: 1,
+    explanation: "Industry shifts (multi-core, power constraints, memory walls) require architectural innovations for future systems."
+  },
+  {
+    question: "Which is NOT a current challenge in computer architecture?",
+    options: [
+      "Memory wall",
+      "Reliability wall",
+      "Programmability wall",
+      "Transistor abundance wall"
+    ],
+    correct: 3,
+    explanation: "Current challenges include memory/reliability/programmability walls, not 'transistor abundance' which Moore's Law addresses."
+  },
+  {
+    question: "What enables >50% annual performance improvements?",
+    options: [
+      "Larger cache sizes",
+      "Software bloat reduction",
+      "Architecture-level innovations",
+      "Manual code optimization"
+    ],
+    correct: 2,
+    explanation: "Architectural advances (pipelining, caches, parallelism) historically enabled sustained performance gains beyond transistor scaling."
+  },
+  {
+    question: "Which course goal involves RTL implementation?",
+    options: [
+      "Understanding tradeoffs",
+      "Designing/evaluating processors",
+      "Memorizing historical systems",
+      "Studying quantum computing"
+    ],
+    correct: 1,
+    explanation: "Hands-on RTL implementation is key to designing/evaluating modern processors in practical labs."
   }
 ],
 'Chapter 5: What is A Computer and Von Neumann Model': [
@@ -5020,227 +5128,337 @@ const quizDataArabic = {
     }
   ],
   'الفصل 4: مقدمة وأساسيات': [
-    {
-      question: "وفقًا لريتشارد هامينغ، ما هو الغرض من الحوسبة؟",
-      options: [
-        "لتوليد الأرقام والبيانات",
-        "لحل المعادلات الرياضية",
-        "لاكتساب البصيرة، وليس الأرقام",
-        "لمعالجة المعلومات بسرعة"
-      ],
-      correct: 2,
-      explanation: "صرح ريتشارد هامينغ بأن 'الغرض من الحوسبة هو البصيرة، وليس الأرقام'. القيمة الحقيقية للحوسبة لا تكمن فقط في توليد الأرقام (البيانات)، بل في استخدام تلك البيانات لاكتساب الفهم والمعرفة (البصيرة)."
-    },
-    {
-      question: "ما هي مستويات التحويل في أنظمة الكمبيوتر من الأعلى إلى الأسفل؟",
-      options: [
-        "المشكلة ← الخوارزمية ← البرنامج ← ISA ← البنية الدقيقة ← المنطق ← الدوائر ← الإلكترونات",
-        "الخوارزمية ← المشكلة ← البرنامج ← ISA ← المنطق ← البنية الدقيقة ← الدوائر ← الإلكترونات",
-        "المشكلة ← البرنامج ← الخوارزمية ← ISA ← البنية الدقيقة ← المنطق ← الدوائر ← الإلكترونات",
-        "المشكلة ← الخوارزمية ← ISA ← البرنامج ← البنية الدقيقة ← المنطق ← الدوائر ← الإلكترونات"
-      ],
-      correct: 0,
-      explanation: "التسلسل الهرمي correct هو: المشكلة ← الخوارزمية ← البرنامج/اللغة ← نظام وقت التشغيل ← ISA (البنية) ← البنية الدقيقة ← المنطق ← الدوائر ← الإلكترونات، ويمثل التحويل من المشكلات عالية المستوى إلى التنفيذ المادي."
-    },
-    {
-      question: "ما هو التجريد في سياق أنظمة الكمبيوتر؟",
-      options: [
-        "طريقة لجعل الأنظمة أكثر تعقيدًا",
-        "مستوى أعلى يحتاج فقط إلى معرفة الواجهة للمستوى الأدنى، وليس كيفية تنفيذها",
-        "طريقة لدمج مستويات متعددة في مستوى واحد",
-        "تقنية للتخلص من المكونات غير الضرورية"
-      ],
-      correct: 1,
-      explanation: "يعني التجريد أن المستوى الأعلى يحتاج فقط إلى معرفة الواجهة للمستوى الأدنى، وليس كيفية تنفيذ المستوى الأدنى. على سبيل المثال، لا يحتاج مبرمج لغة عالية المستوى إلى معرفة ما هو ISA أو كيفية تنفيذ الكمبيوتر للتعليمات."
-    },
-    {
-      question: "لماذا قد تحتاج إلى فهم ما يحدث في طبقات التجريد الأساسية؟",
-      options: [
-        "لأغراض أكاديمية فقط",
-        "عندما تعمل البرامج ببطء، بشكل غير صحيح، أو تستهلك الكثير من الطاقة",
-        "لجعل البرمجة أكثر صعوبة",
-        "ليس من الضروري أبدًا فهم الطبقات الأساسية"
-      ],
-      correct: 1,
-      explanation: "يصبح فهم الطبقات الأساسية أمرًا حاسمًا عندما: يعمل البرنامج ببطء، لا يعمل بشكل صحيح، يستهلك الكثير من الطاقة، أو عند تصميم أنظمة أكثر كفاءة وأداءً أعلى."
-    },
-    {
-      question: "في مثال هجوم أداء الذاكرة في النظام متعدد النواة، ما الذي يسبب التفاوت في التباطؤ بين التطبيقات؟",
-      options: [
-        "سرعات وحدة المعالجة المركزية المختلفة",
-        "اختلافات حجم ذاكرة التخزين المؤقت",
-        "عدم عدالة سياسة جدولة DRAM بسبب تموضع مخزن الصفوف",
-        "جدولة نظام التشغيل"
-      ],
-      correct: 2,
-      explanation: "ينجم التفاوت عن سياسات جدولة DRAM التي تكون غير عادلة لبعض التطبيقات. سياسة 'أول صف إصابة' تعطي أولوية غير عادلة للتطبيقات ذات التموضع العالي لمخزن الصفوف، بينما سياسة 'الأقدم أولاً' تعطي أولوية غير عادلة للتطبيقات كثيفة الذاكرة."
-    },
-    {
-      question: "ما هي سياسة جدولة FR-FCFS في متحكمات DRAM؟",
-      options: [
-        "First-Request, First-Come-First-Service",
-        "First-Ready, First-Come-First-Service",
-        "First-Row, First-Column-First-Service",
-        "Fast-Response, First-Come-First-Service"
-      ],
-      correct: 1,
-      explanation: "FR-FCFS تعني First-Ready, First-Come-First-Service. لديها قاعدتان: (1) 'أول صف إصابة': خدمة عمليات الوصول إلى الذاكرة التي تصيب الصف أولاً، (2) 'الأقدم أولاً': ثم خدمة عمليات الوصول الأقدم أولاً."
-    },
-    {
-      question: "ما الذي يجعل الوصول إلى صف متعارض في DRAM أبطأ بكثير من الوصول إلى صف مصاب؟",
-      options: [
-        "تأخيرات معالجة وحدة المعالجة المركزية",
-        "عقوبات عدم إصابة ذاكرة التخزين المؤقت",
-        "الحاجة إلى إغلاق الصف الحالي وفتح صف جديد في DRAM",
-        "زمن انتقال الشبكة"
-      ],
-      correct: 2,
-      explanation: "يتطلب الوصول إلى صف متعارض إغلاق الصف المفتوح حاليًا وفتح صف جديد في DRAM، الأمر الذي يستغرق وقتًا أطول بكثير من الوصول إلى البيانات من صف مفتوح بالفعل (إصابة الصف)."
-    },
-    {
-      question: "في مثال استهلاك أداء الذاكرة، ما الذي يميز نمط الوصول STREAM؟",
-      options: [
-        "وصول عشوائي للذاكرة بتموضع منخفض لمخزن الصفوف",
-        "وصول تسلسلي للذاكرة بتموضع عالٍ جدًا لمخزن الصفوف (معدل إصابة 96%)",
-        "وصول ذاكرة مبعثر بتموضع متوسط",
-        "نمط وصول ذاكرة دائري"
-      ],
-      correct: 1,
-      explanation: "يتميز STREAM بالوصول التسلسلي إلى الذاكرة بتموضع عالٍ جدًا لمخزن الصفوف (معدل إصابة 96%) وهو كثيف الذاكرة، مما يجعله مستهلكًا لأداء الذاكرة."
-    },
-    {
-      question: "ما الذي يميز نمط الوصول RANDOM في مثال أداء الذاكرة؟",
-      options: [
-        "وصول تسلسلي بتموضع عالٍ",
-        "وصول عشوائي للذاكرة بتموضع منخفض جدًا لمخزن الصفوف (معدل إصابة 3%)",
-        "وصول منظم بتموضع متوسط",
-        "نمط وصول يمكن التنبؤ به"
-      ],
-      correct: 1,
-      explanation: "يتميز RANDOM بالوصول العشوائي إلى الذاكرة بتموضع منخفض جدًا لمخزن الصفوف (معدل إصابة 3%) وهو كثيف الذاكرة بالمثل مقارنة بـ STREAM."
-    },
-    {
-      question: "ما الذي تتكون منه خلية DRAM؟",
-      options: [
-        "ترانزستوران ومقاوم",
-        "مكثف وترانزستور وصول",
-        "ثلاثة مكثفات متسلسلة",
-        "دائرة قلب (Flip-flop)"
-      ],
-      correct: 1,
-      explanation: "تتكون خلية DRAM من مكثف وترانزستور وصول. تخزن البيانات من حيث الشحنة في المكثف."
-    },
-    {
-      question: "لماذا تحتاج DRAM إلى التحديث؟",
-      options: [
-        "لتحسين الأداء",
-        "لأن شحنة المكثف تتسرب بمرور الوقت",
-        "لتقليل استهلاك الطاقة",
-        "لزيادة سعة التخزين"
-      ],
-      correct: 1,
-      explanation: "تتسرب شحنة مكثف DRAM بمرور الوقت، لذا يحتاج متحكم الذاكرة إلى تحديث كل صف بشكل دوري لاستعادة الشحنة. عادة ما يجب تحديث كل صف كل 64 مللي ثانية."
-    },
-    {
-      question: "ما هي العيوب الرئيسية لتحديث DRAM؟",
-      options: [
-        "زيادة التكلفة فقط",
-        "تدهور الأداء فقط",
-        "استهلاك الطاقة، تدهور الأداء، تأثير جودة الخدمة، وقيود توسيع السعة",
-        "استهلاك الطاقة فقط"
-      ],
-      correct: 2,
-      explanation: "يحتوي تحديث DRAM على العديد من العيوب: استهلاك الطاقة (كل تحديث يستهلك طاقة)، تدهور الأداء (DRAM غير متاحة أثناء التحديث)، تأثير جودة الخدمة/القدرة على التنبؤ (أوقات توقف طويلة)، ومعدل التحديث يحد من توسيع سعة DRAM."
-    },
-    {
-      question: "ما هي الفترة الزمنية النموذجية لتحديث صفوف DRAM؟",
-      options: [
-        "64 ميكروثانية",
-        "64 مللي ثانية",
-        "64 ثانية",
-        "64 نانوثانية"
-      ],
-      correct: 1,
-      explanation: "الفترة الزمنية النموذجية للتحديث هي 64 مللي ثانية (64 ms). يجب تنشيط (تحديث) كل صف كل 64 مللي ثانية لاستعادة الشحنة في المكثفات."
-    },
-    {
-      question: "ما هي الملاحظة الرئيسية التي يقدمها RAIDR حول تحديث DRAM؟",
-      options: [
-        "جميع الصفوف تحتاج إلى تحديث متكرر",
-        "يمكن تحديث معظم صفوف DRAM بشكل أقل تكرارًا دون فقدان البيانات",
-        "التحديث غير ضروري",
-        "فقط بعض الصفوف تحتاج إلى أي تحديث"
-      ],
-      correct: 1,
-      explanation: "يلاحظ RAIDR أن معظم صفوف DRAM يمكن تحديثها بشكل أقل تكرارًا دون فقدان البيانات، مما يؤدي إلى فكرة تحديث الصفوف التي تحتوي على خلايا ضعيفة بشكل متكرر والصفوف الأخرى بشكل أقل."
-    },
-    {
-      question: "كيف يحقق RAIDR تقليل التحديث؟",
-      options: [
-        "عن طريق إلغاء التحديث تمامًا",
-        "عن طريق تنميط أوقات الاحتفاظ، وتجميع الصفوف، وتحديث المجموعات المختلفة بمعدلات مختلفة",
-        "عن طريق استخدام تقنية DRAM مختلفة",
-        "عن طريق زيادة تردد التحديث لجميع الصفوف"
-      ],
-      correct: 1,
-      explanation: "يعمل RAIDR في ثلاث خطوات: (1) تنميط وقت الاحتفاظ بجميع الصفوف، (2) تجميع الصفوف حسب وقت الاحتفاظ في متحكم الذاكرة باستخدام فلاتر بلوم، (3) تحديث الصفوف في سلال مختلفة بمعدلات مختلفة."
-    },
-    {
-      question: "ما هي الفوائد التي حققها RAIDR؟",
-      options: [
-        "تحسين الأداء فقط",
-        "74.6% تقليل التحديث، ~16%/20% تقليل طاقة DRAM، ~9% تحسين الأداء",
-        "تقليل الطاقة فقط",
-        "تقليل التحديث فقط"
-      ],
-      correct: 1,
-      explanation: "يحقق RAIDR فوائد متعددة: 74.6% تقليل التحديث مع حمل تخزين إضافي يبلغ 1.25 كيلوبايت فقط، ~16%/20% تقليل طاقة DRAM الديناميكية/الخاملة، و ~9% تحسين الأداء، مع زيادة الفوائد بزيادة سعة DRAM."
-    },
-    {
-      question: "ما هو أحد الهدفين الرئيسيين لدورة هندسة الكمبيوتر المذكورة في المحاضرة؟",
-      options: [
-        "تعلم لغات البرمجة",
-        "فهم كيفية عمل المعالج تحت طبقة البرامج",
-        "تصميم أنظمة التشغيل",
-        "بناء مكونات الأجهزة"
-      ],
-      correct: 1,
-      explanation: "أحد الأهداف الرئيسية هو فهم كيفية عمل المعالج تحت طبقة البرامج وكيف تؤثر القرارات المتخذة في الأجهزة على البرامج/المبرمج."
-    },
-    {
-      question: "ما هو الهدف الرئيسي الثاني لدورة هندسة الكمبيوتر؟",
-      options: [
-        "حفظ مجموعات التعليمات",
-        "التمكين من اتخاذ قرارات التصميم والتحسين التي تتجاوز حدود الطبقات المختلفة",
-        "التركيز فقط على تصميم الأجهزة",
-        "التخصص في طبقة تجريد واحدة"
-      ],
-      correct: 1,
-      explanation: "الهدف الرئيسي الثاني هو تمكين الطلاب من الشعور بالراحة في اتخاذ قرارات التصميم والتحسين التي تتجاوز حدود الطبقات والمكونات المختلفة للنظام."
-    },
-    {
-      question: "في سيناريو استهلاك أداء الذاكرة، كم عدد الطلبات تقريبًا لتطبيق STREAM (T0) يتم خدمتها قبل خدمة تطبيق RANDOM (T1)؟",
-      options: [
-        "64 طلبًا",
-        "96 طلبًا",
-        "128 طلبًا",
-        "256 طلبًا"
-      ],
-      correct: 2,
-      explanation: "مع حجم صف يبلغ 8 كيلوبايت وحجم كتلة ذاكرة تخزين مؤقت يبلغ 64 بايت، هناك 128 (8 كيلوبايت/64 بايت) طلبًا من T0 (STREAM) يتم خدمتها قبل أن يحصل T1 (RANDOM) على فرصة، مما يوضح عدم عدالة سياسة 'أول صف إصابة'."
-    },
-    {
-      question: "ما هي الفكرة الرئيسية حول طبقات التجريد من هذه المحاضرة؟",
-      options: [
-        "يجب عدم عبور طبقات التجريد أبدًا",
-        "كسر طبقات التجريد ومعرفة ما هو تحتها يمكّن من حل المشكلات",
-        "مصممو الأجهزة فقط هم من يحتاجون إلى فهم طبقات متعددة",
-        "طبقات التجريد هي مفاهيم نظرية فقط"
-      ],
-      correct: 1,
-      explanation: "الفكرة الرئيسية هي أن كسر طبقات التجريد (بين المكونات ومستويات التسلسل الهرمي للتحويل) ومعرفة ما هو تحتها يمكّنك من حل المشكلات وتصميم أنظمة مستقبلية أفضل. يمكن أن يتيح التعاون بين مكونات وطبقات متعددة حلولًا أكثر فعالية."
-    }
-  ],
+  // التسلسل الهرمي للذاكرة المؤقتة (8 أسئلة)
+  {
+    question: "ما الهدف الرئيسي للتسلسل الهرمي للذاكرة المؤقتة؟",
+    options: [
+      "استبدال الذاكرة الرئيسية بالكامل",
+      "موازنة سعة التخزين وسرعة الوصول",
+      "زيادة تردد ساعة المعالج",
+      "تقليل تكاليف التصنيع"
+    ],
+    correct: 1,
+    explanation: "يحقق التسلسل الهرمي توازنًا بين السعة (تخزين أكبر في المستويات الأعلى) والسرعة (وصول أسرع في المستويات الأدنى)."
+  },
+  {
+    question: "أي خاصية تصف ذاكرة التخزين المؤقت L1 بشكل أفضل؟",
+    options: [
+      "الأكبر حجمًا والأبطأ سرعة",
+      "حجم متوسط بسرعة معتدلة",
+      "الأصغر حجمًا والأسرع سرعة",
+      "مشتركة بين عدة نوى معالجة"
+    ],
+    correct: 2,
+    explanation: "ذاكرة L1 هي الأقرب لنواة المعالج، وتتميز بأعلى سرعة وصول ولكن بأصغر سعة (عادة عشرات الكيلوبايت)."
+  },
+  {
+    question: "ما الوظيفة الأساسية لـ L2 Cache؟",
+    options: [
+      "تخزين نواة نظام التشغيل",
+      "التصرف كمنطقة وسيطة بين L1 والذاكرة الرئيسية",
+      "استبدال L1 عند امتلائها",
+      "معالجة الرسوميات"
+    ],
+    correct: 1,
+    explanation: "تكون L2 جسرًا بين L1 والذاكرة الرئيسية، وتخزن البيانات غير الموجودة في L1 ولكن قد يحتاجها المعالج قريبًا."
+  },
+  {
+    question: "أي مستوى من الذاكرة المؤقتة يتراوح عادةً بين ميغابايت وعشرات الميغابايت؟",
+    options: [
+      "L1 Cache",
+      "L2 Cache",
+      "L3 Cache",
+      "سجلات المعالج"
+    ],
+    correct: 2,
+    explanation: "ذاكرة L3 هي الأكبر (ميغابايت إلى عشرات الميغابايت) والأبطأ في التسلسل الهرمي."
+  },
+  {
+    question: "ما المشكلة الأساسية التي يحلها التسلسل الهرمي؟",
+    options: [
+      "ارتفاع حرارة المعالج",
+      "زمن الوصول للذاكرة",
+      "توافق البرمجيات",
+      "عدم استقرار إمداد الطاقة"
+    ],
+    correct: 1,
+    explanation: "يقلل التسلسل الهرمي زمن الوصول عن طريق إبقاء البيانات المتكررة قريبة من المعالج."
+  },
+  {
+    question: "ما المقصود بـ 'غفوة الذاكرة المؤقتة' (Cache Miss)؟",
+    options: [
+      "عند امتلاء الذاكرة المؤقتة",
+      "عند عدم العثور على البيانات في أي مستوى",
+      "عند انتقال البيانات من L1 إلى L2",
+      "عند فشل مزامنة الذاكرة المؤقتة"
+    ],
+    correct: 1,
+    explanation: "تحدث الغفوة عند عدم وجود البيانات في L1/L2/L3، مما يتطلب جلبها من الذاكرة الرئيسية الأبطأ."
+  },
+  {
+    question: "ما إحدى مقايضات الذواكر المتعددة المستويات؟",
+    options: [
+      "تبسيط تصميم المعالج",
+      "زيادة التكلفة والتعقيد",
+      "تقليل إنتاجية التعليمات",
+      "زيادة متطلبات الذاكرة الرئيسية"
+    ],
+    correct: 1,
+    explanation: "تزيد المستويات المتعددة من تعقيد التصميم وتكلفة التصنيع."
+  },
+  {
+    question: "أي مما يلي ليس من فوائد التسلسل الهرمي؟",
+    options: [
+      "تقليل زمن الوصول",
+      "تقليل استخدام الذاكرة الرئيسية",
+      "تحسين أداء النظام",
+      "توفير البيانات المتكررة بسرعة"
+    ],
+    correct: 1,
+    explanation: "لا يقلل التسلسل الهرمي من استخدام الذاكرة الرئيسية، بل يحسن الوصول للبيانات المخزنة فيها."
+  },
+
+  // الهندسة المعمارية vs التنظيم (4 أسئلة)
+  {
+    question: "حسب جين أمدال، تشير هندسة الحاسوب إلى:",
+    options: [
+      "التوصيلات الفيزيائية للدوائر",
+      "الخصائص المرئية للمبرمجين",
+      "عمليات تصنيع السيليكون",
+      "تصميم تبديد الحرارة"
+    ],
+    correct: 1,
+    explanation: "الهندسة المعمارية تصف 'الخصائب التي يراها المبرمج' - السلوك الوظيفي وليس التنفيذ."
+  },
+  {
+    question: "أي جانب ينتمي لـ'تنظيم الحاسوب'؟",
+    options: [
+      "هندسة مجموعة التعليمات (ISA)",
+      "تصميم التسلسل الهرمي للذاكرة",
+      "تنفيذ مراحل الأنابيب",
+      "مواصفات أنظمة الإدخال/الإخراج"
+    ],
+    correct: 2,
+    explanation: "يتعامل تنظيم الحاسوب مع تفاصيل التنفيذ مثل مراحل الأنابيب، بخلاف التجريدات المعمارية."
+  },
+  {
+    question: "في تشبيه بناء المنزل، ماذا تمثل الهندسة المعمارية؟",
+    options: [
+      "مخططات التوصيلات الكهربائية",
+      "تقنيات خلط الخرسانة",
+      "تخطيط الغرف ووظائفها",
+      "طرق وضع الطوب"
+    ],
+    correct: 2,
+    explanation: "تعرف الهندسة المعمارية الهيكل العام (تخطيط الغرف/الوظائف)، بينما يتولى التنظيم التفاصيل الإنشائية."
+  },
+  {
+    question: "ماذا يُصمم في مرحلة الهندسة المعمارية؟",
+    options: [
+      "دوائر مستوى الترانزستورات",
+      "أنظمة تبريد المعالج",
+      "مجموعة التعليمات لمعالج جديد",
+      "مسارات لوحة الأم"
+    ],
+    correct: 2,
+    explanation: "تحدد المرحلة المعمارية مكونات تجريدية مثل مجموعات التعليمات، وليس التنفيذ المادي."
+  },
+
+  // مستويات التحول (3 أسئلة)
+  {
+    question: "ما الترتيب الصحيح لمستويات التجريد في أنظمة الحاسوب؟",
+    options: [
+      "المشكلة → الخوارزمية → البرنامج → ISA → البنية الدقيقة",
+      "الإلكترونات → الدوائر → المنطق → البنية الدقيقة → ISA",
+      "الخوارزمية → المشكلة → ISA → البرنامج → البنية الدقيقة",
+      "البرنامج → الخوارزمية → المشكلة → الدوائر → ISA"
+    ],
+    correct: 0,
+    explanation: "التحول الصحيح: المشكلة → الخوارزمية → البرنامج → نظام التشغيل → ISA → البنية الدقيقة → المنطق → الدوائر → الإلكترونات."
+  },
+  {
+    question: "ما الخاصية التي يجب أن تتوفر في كل خطوة خوارزمية؟",
+    options: [
+      "القدرة على التنفيذ المتوازي",
+      "الاستقلالية عن الآلة",
+      "محددة وقابلة للحساب",
+      "تعقيد زمني متغير"
+    ],
+    correct: 2,
+    explanation: "تتطلب الخوارزميات خطوات محددة (مُعرفة بدقة)، قابلة للحساب، وذات نهاية."
+  },
+  {
+    question: "لماذا قد يحتاج المبرمجون لفهم المستويات الدنيا؟",
+    options: [
+      "لكتابة نوى أنظمة التشغيل",
+      "عند بطء أو خطأ في البرامج",
+      "لتصميم مكونات العتاد",
+      "للشهادات الأكاديمية فقط"
+    ],
+    correct: 1,
+    explanation: "يساعد فهم المستويات الدنيا في تشخيص مشاكل الأداء أو الأخطاء."
+  },
+
+  // قانون مور (4 أسئلة)
+  {
+    question: "ماذا ينص قانون مور عن الترانزستورات؟",
+    options: [
+      "تتضاعف سرعة الترانزستورات سنويًا",
+      "ينخفض سعر الترانزستورات للنصف كل 5 سنوات",
+      "يتضاعف عدد الترانزستورات كل ~18 شهرًا",
+      "يستقر حجم الترانزستور عند 5 نانومتر"
+    ],
+    correct: 2,
+    explanation: "لاحظ مور تضاعف أعداد الترانزستورات كل ~18 شهرًا، مما يمكّن النمو الأسي في الحوسبة."
+  },
+  {
+    question: "أي مما يلي ليس نتيجة لقانون مور؟",
+    options: [
+      "انخفاض التكلفة بشكل كبير",
+      "مسارات كهربائية أقصر",
+      "زيادة متطلبات التبريد",
+      "وصلات أقل بين الشرائح"
+    ],
+    correct: 2,
+    explanation: "يقلل قانون مور احتياجات الطاقة/التبريد عبر التصغير، بعكس متطلبات التبريد المتزايدة."
+  },
+  {
+    question: "متى لاحظ غوردون مور اتجاهات الترانزستورات أولاً؟",
+    options: [
+      "1984 مع معالجات x86",
+      "2001 مع بنتيوم 4",
+      "1965 في إنتل",
+      "1978 مع Zilog Z80"
+    ],
+    correct: 2,
+    explanation: "نشر مور ملاحظته عام 1965 في 'حشر مكونات أكثر على الدوائر المتكاملة'."
+  },
+  {
+    question: "ما الاتجاه التكنولوجي الذي يمكّنه قانون مور مباشرةً؟",
+    options: [
+      "معالجات ذات جهد أعلى",
+      "إحياء الحوسبة الميكانيكية",
+      "أجهزة أصغر وأقوى",
+      "هيمنة الإشارات التناظرية"
+    ],
+    correct: 2,
+    explanation: "يتيح تضاعف الترانزستورات أجهزة أصغر، أسرع، وأكثر كفاءة في الطاقة."
+  },
+
+  // تصميم المعالج (6 أسئلة)
+  {
+    question: "في أي مرحلة تصميم يُنفّذ مستوى RTL؟",
+    options: [
+      "تقييم الأداء",
+      "وضع المسارات والتوصيلات",
+      "التصميم المعماري",
+      "التصميم المنطقي"
+    ],
+    correct: 3,
+    explanation: "يستخدم RTL لغات مثل Verilog/VHDL لوصف سلوك السجلات والبوابات قبل التنفيذ المادي."
+  },
+  {
+    question: "ما هدف 'المعالجة بالأنابيب' (Pipelining)؟",
+    options: [
+      "زيادة تردد الساعة",
+      "تمكين التنفيذ المتوازي للتعليمات",
+      "تقليل متطلبات حجم الذاكرة المؤقتة",
+      "تبسيط تصميم ISA"
+    ],
+    correct: 1,
+    explanation: "تقسم المعالجة بالأنابيب التعليمات لمراحل (جلب/فك تشفير/تنفيذ) للسماح بمعالجة متوازية."
+  },
+  {
+    question: "أي مكون هو 'الدماغ' الذي يوجه عمليات المعالج؟",
+    options: [
+      "وحدة الحساب والمنطق (ALU)",
+      "متحكم الذاكرة المؤقتة",
+      "وحدة التحكم",
+      "وحدة إدارة الذاكرة"
+    ],
+    correct: 2,
+    explanation: "تجلب وحدة التحكم التعليمات وتفك تشفيرها وترسل إشارات التحكم لتنسيق مكونات المعالج."
+  },
+  {
+    question: "ما الخطوة الحاسمة التي تتبع محاكاة RTL؟",
+    options: [
+      "التحقق الوظيفي",
+      "التوليف المنطقي",
+      "إدارة الطاقة",
+      "تحليل السوق"
+    ],
+    correct: 1,
+    explanation: "بعد التحقق من صحة المنطق بالمحاكاة، يحول التوليف المنطقي شفرة RTL إلى تمثيل بالبوابات الأساسية."
+  },
+  {
+    question: "ما الذي يحدده 'الوضع والمسارات' (Place and Route)؟",
+    options: [
+      "تحسين مترجم البرمجيات",
+      "مجموعة تعليمات المعالج",
+      "تخطيط البوابات الفيزيائي والتوصيلات",
+      "سياسات استبدال الذاكرة المؤقتة"
+    ],
+    correct: 2,
+    explanation: "يحدد الوضع والمسارات مواقع البوابات المنطقية على السيليكون والوصلات بينها، مؤثرًا على الأداء والطاقة."
+  },
+  {
+    question: "تتعامل تقنية DVFS مع:",
+    options: [
+      "مشاكل جدار الذاكرة",
+      "تحسين استهلاك الطاقة",
+      "مشاكل تماسك الذاكرة المؤقتة",
+      "أخطاء فك تشفير التعليمات"
+    ],
+    correct: 1,
+    explanation: "يضبط DVFS الجهد والتردد ديناميكيًا حسب الحمل لتقليل الاستهلاك عند انخفاض النشاط."
+  },
+
+  // التحديات الحديثة (4 أسئلة)
+  {
+    question: "لماذا دراسة هندسة الحاسوب حاسمة اليوم؟",
+    options: [
+      "انحسار قانون مور",
+      "التحول لنماذج متعددة النوى",
+      "إلغاء التسلسل الهرمي للذاكرة المؤقتة",
+      "توحيد مقاييس ISA"
+    ],
+    correct: 1,
+    explanation: "يتطلب التحول الصناعي (للمعالجات متعددة النوى، قيود الطاقة) ابتكارات معمارية."
+  },
+  {
+    question: "أي مما يلي ليس تحديًا حاليًا في الهندسة المعمارية؟",
+    options: [
+      "جدار الذاكرة",
+      "جدار الموثوقية",
+      "جدار القابلية للبرمجة",
+      "جدار وفرة الترانزستورات"
+    ],
+    correct: 3,
+    explanation: "التحديات الحالية تشمل جدران الذاكرة/الموثوقية/القابلية للبرمجة، وليس 'وفرة الترانزستورات'."
+  },
+  {
+    question: "ما الذي يمكّن تحسينات أداء سنوية >50%؟",
+    options: [
+      "ذاكرة مؤقتة أكبر",
+      "تقليل تضخم البرمجيات",
+      "ابتكارات على مستوى الهندسة المعمارية",
+      "تحسين يدوي للشفرة"
+    ],
+    correct: 2,
+    explanation: "مكّنت الابتكارات المعمارية (المعالجة بالأنابيب، الذواكر المؤقتة) تحسينات الأداء المستدامة."
+  },
+  {
+    question: "أي هدف دراسي يتضمن تنفيذ RTL؟",
+    options: [
+      "فهم المقايضات",
+      "تصميم/تقييم المعالجات",
+      "حفظ الأنظمة التاريخية",
+      "دراسة الحوسبة الكمية"
+    ],
+    correct: 1,
+    explanation: "يعد تنفيذ RTL عمليًا أساسيًا لتصميم وتقييم المعالجات الحديثة في المختبرات."
+  }
+],
   "الفصل الخامس: ما هو الكمبيوتر ونموذج فون نيومان": [
     {
       question: "ما هي المكونات الرئيسية الثلاثة التي تحدد الكمبيوتر؟",

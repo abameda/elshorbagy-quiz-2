@@ -3269,8 +3269,7 @@ const quizDataArabic = {
     "options": ["صحيح", "خطأ"],
     "correct": 0,
     "explanation": "يتم تعريف تقرير الرحلة الميدانية على أنه 'as is written by an engineer, agricultural specialist, or technologist just back from a field assignment'."
-  }
-  [
+  },
   {
     "questionNumber": 31,
     "question": "إذا كان المرشح يبحث عن وظيفة مماثلة لمناصبه السابقة، يمكنه كتابة سيرة ذاتية...",
@@ -3482,8 +3481,6 @@ const quizDataArabic = {
     "explanation": "يجب تجنب المصطلحات إلا إذا كنت تعرف أن القراء على دراية بها ، أو شرحها إذا لزم الأمر، مما يجعل الخيار (ب) هو الممارسة الأفضل."
   }
 ]
-]
-
 
 };
 

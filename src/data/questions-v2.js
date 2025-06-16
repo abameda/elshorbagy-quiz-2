@@ -1322,7 +1322,212 @@ const quizData = {
     correct: 3,
     explanation: "Conclusion: This is your last chance to convince the reader; be persuasive! "
   }
-]
+],
+  'final exam' : [
+  {
+    "questionNumber": 1,
+    "question": "A document may also have one audience (the primary reader) or multiple audiences (the secondary readers).",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "The source states, 'A document may also have one audience (the primary reader) or multiple audiences (the secondary readers)'."
+  },
+  {
+    "questionNumber": 2,
+    "question": "Term of reference is one of the components of the end matter in the technical report.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "'Terms of Reference' is listed under 'Preliminary Matter', not 'End Matter'."
+  },
+  {
+    "questionNumber": 3,
+    "question": "The title page of technical writing reports shouldn't carry the month and year of the report.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The lecture states that the title page 'should also carry the month and year of the report'."
+  },
+  {
+    "questionNumber": 4,
+    "question": "Components of the technical writing reports are fixed in all the types.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "Reports vary by type, length, and purpose, meaning not all components are present in every type. For instance, an informal report may lack many components of a formal one."
+  },
+  {
+    "questionNumber": 5,
+    "question": "A user manual is a document provided to a user that helps in using a particular system, product, or service seamlessly.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This aligns with the definition of technical writing that provides instructions. 'Instruction manuals' are listed as a key example of technical writing."
+  },
+  {
+    "questionNumber": 6,
+    "question": "A memo usually contains step-by-step instructions guiding users through how to use your product and potential troubleshooting in case something goes wrong.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This description fits an 'instruction manual', not a memo. A memo is a brief, internal form of correspondence."
+  },
+  {
+    "questionNumber": 7,
+    "question": "It's helpful to review information about resumes and learn what to include in a resume to make yours as effective as possible. One of the aspects of preparing the presentation is to know your audience and content.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "Knowing your audience is a cornerstone of technical communication, which applies to presentations. The first part of the statement, while true, seems mismatched, but the core idea about audience and presentation is correct."
+  },
+  {
+    "questionNumber": 8,
+    "question": "All resume types contain the same structure.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The lecture outlines three different types of resumes (Reverse Chronological, Functional, Combination), each with a distinct structure and emphasis."
+  },
+  {
+    "questionNumber": 9,
+    "question": "Reverse Chronological resumes are more common for older individuals who are changing jobs or career fields.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "Functional resumés are more common for this demographic, not Reverse-chronological resumes."
+  },
+  {
+    "questionNumber": 10,
+    "question": "The 'V's' in presentation meaning stands for planning, purpose, and process.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This information is not present in the provided PDF files."
+  },
+  {
+    "questionNumber": 11,
+    "question": "To prepare enough material for your presentation you should consider about 65% of the allowed time.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This specific time allocation percentage is not mentioned in the provided PDF files."
+  },
+  {
+    "questionNumber": 12,
+    "question": "One of the PowerPoint Criteria is to use red or green colors for the text.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "No specific criteria regarding the use of red or green text in PowerPoint are mentioned in the provided files."
+  },
+  {
+    "questionNumber": 13,
+    "question": "It is preferable to use graphics instead of details in the PowerPoint presentation.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "Technical writing uses visual elements, such as charts and graphs, to clarify written concepts, a principle that applies to presentations for better understanding."
+  },
+  {
+    "questionNumber": 15,
+    "question": "In the 3 V's of Communication, visuals have the highest percentage of importance.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The '3 V's of Communication' are not discussed in the provided PDF files, so this claim cannot be verified."
+  },
+  {
+    "questionNumber": 16,
+    "question": "User guides usually are shorter and more-focused documents than the user manuals.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The statement is contradictory and illogical. User guides and user manuals are often used interchangeably or describe documents with the same purpose."
+  },
+  {
+    "questionNumber": 17,
+    "question": "When writing a proposal, you can skip the procedure or the methodology as they are optional.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The 'Procedure/Methodology' section is described as 'the heart of the proposal' and is essential for convincing the reader."
+  },
+  {
+    "questionNumber": 18,
+    "question": "In the title page of a proposal should contain, title of the project, and name(s) of the author(s). The abstract of the proposal should be detailed about the topic.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The title page and abstract are separate sections. The abstract should be a brief statement, not detailed."
+  },
+  {
+    "questionNumber": 19,
+    "question": "The abstract of the proposal should be detailed about the topic.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "The abstract should be a 'brief statement of the topic, procedure, and the projected outcome... in three or four sentences'."
+  },
+  {
+    "questionNumber": 20,
+    "question": "References usually contain or footnotes and a bibliography.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "References usually consist of footnotes and a bibliography."
+  },
+  {
+    "questionNumber": 21,
+    "question": "When writing the instruction in the user manual you should break the instructions down into sequential steps than the presented in order as a numbered list.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "Presenting instructions in sequential steps, often as a numbered or bulleted list, is a key feature of good technical writing for clarity and ease of use."
+  },
+  {
+    "questionNumber": 22,
+    "question": "You should tell the audience about the details of the main points during the opening of the presentation.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "A good opening provides an overview. Giving all the details upfront would be overwhelming and is poor presentation structure."
+  },
+  {
+    "questionNumber": 23,
+    "question": "One of the good skills in the presentation is to avoid eye contact.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This contradicts standard effective presentation practices, where eye contact is crucial for engagement."
+  },
+  {
+    "questionNumber": 24,
+    "question": "The followed-up word phrase 'And - so as the result' is the same meaning as 'Thus'.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "In general usage, both phrases are used to introduce a result or conclusion."
+  },
+  {
+    "questionNumber": 25,
+    "question": "A resume summary is a 2-3 sentence paragraph that gives recruiters a gist of your relevant experience and boasts about your accomplishments in the field.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is the exact definition provided for a resume summary in the lecture."
+  },
+  {
+    "questionNumber": 26,
+    "question": "In order to create an ATS-friendly resume, we should neglect the job description and look for resume keywords related to your responsibilities.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "On the contrary, you must 'refer to the job description and look for resume keywords' to create an ATS-friendly resume."
+  },
+  {
+    "questionNumber": 27,
+    "question": "Memos replace the eight letter essential components with four components.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "Memos replace the eight letter essential components with the memo identification lines: Date, To, From, and Subject."
+  },
+  {
+    "questionNumber": 28,
+    "question": "E-mail is similar to memos in that both use date.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "E-mail is similar to memos in that both use identification lines, which include the date."
+  },
+  {
+    "questionNumber": 29,
+    "question": "Technical reports can be classified according to the degree of formality as alarm form, letter form, schematic form, or mixed form.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is the classification according to 'Format', not 'Degree of formality'. The degree of formality is formal and informal."
+  },
+  {
+    "questionNumber": 30,
+    "question": "Field trip report, is written by an engineer, or technologist just back from a field assignment.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "A field trip report is defined as being 'written by an engineer, agricultural specialist, or technologist just back from a field assignment'."
+  }
+],
 };
 
 
@@ -2650,7 +2855,425 @@ const quizDataArabic = {
     "correct": 3,
     "explanation": "الخاتمة: هذه هي فرصتك الأخيرة لإقناع القارئ؛ كن مقنعًا!"
   }
+],
+'امتحان سابق': [
+  {
+    "questionNumber": 1,
+    "question": "قد يكون للمستند جمهور واحد (القارئ الأساسي) أو جماهير متعددة (القراء الثانويون).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "ينص المصدر على أن 'A document may also have one audience (the primary reader) or multiple audiences (the secondary readers)'."
+  },
+  {
+    "questionNumber": 2,
+    "question": "صلاحيات التكليف (Term of reference) هي أحد مكونات المادة الختامية (end matter) في التقرير الفني.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "يتم إدراج 'Terms of Reference' ضمن 'Preliminary Matter' (المادة التمهيدية)، وليس 'End Matter'."
+  },
+  {
+    "questionNumber": 3,
+    "question": "يجب ألا تحمل صفحة عنوان تقارير الكتابة الفنية شهر وسنة التقرير.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "تنص المحاضرة على أن صفحة العنوان 'should also carry the month and year of the report'."
+  },
+  {
+    "questionNumber": 4,
+    "question": "مكونات تقارير الكتابة الفنية مدرجة في جميع الأنواع.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "المعلومات غير متوفرة بشكل مباشر، لكن هيكل التقارير يختلف حسب النوع والطول والغرض، مما يعني أن ليس كل المكونات تكون موجودة في كل نوع. على سبيل المثال، التقرير غير الرسمي قد لا يحتوي على كل مكونات التقرير الرسمي."
+  },
+  {
+    "questionNumber": 5,
+    "question": "دليل المستخدم هو مستند يتم توفيره لمساعدة المستخدم في استخدام نظام أو منتج أو خدمة معينة بسلاسة.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذا يتوافق مع تعريف الكتابة التقنية التي تقدم إرشادات ، والأدلة مثل 'Instruction manuals' هي أمثلة على ذلك."
+  },
+  {
+    "questionNumber": 6,
+    "question": "تحتوي المذكرة عادةً على إرشادات خطوة بخطوة توجه المستخدمين خلال كيفية استخدام منتجك واستكشاف الأخطاء وإصلاحها المحتملة في حالة حدوث خطأ ما.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذا الوصف ينطبق على 'دليل التعليمات' (instruction manual)  وليس المذكرة (memo) التي هي مراسلات داخلية موجزة."
+  },
+  {
+    "questionNumber": 7,
+    "question": "أحد جوانب التحضير للعرض التقديمي هو معرفة جمهورك وما يجب تضمينه في المحتوى.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "تعتبر معرفة الجمهور أمرًا أساسيًا في التواصل التقني لتكييف المعلومات مع احتياجاتهم ومستوى فهمهم."
+  },
+  {
+    "questionNumber": 8,
+    "question": "كل أنواع التقارير تحتوي على نفس الهيكل.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "تصنف التقارير حسب الشكل والطول والنوع، مما يعني أن هيكلها يختلف. على سبيل المثال، التقرير الرسمي يختلف عن غير الرسمي."
+  },
+  {
+    "questionNumber": 9,
+    "question": "السير الذاتية ذات الترتيب الزمني العكسي أكثر شيوعًا للأفراد الأكبر سنًا الذين يغيرون وظائفهم أو مجالاتهم المهنية.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "السير الذاتية الوظيفية (Functional resumés) هي الأكثر شيوعًا لهذه الفئة، وليس ذات الترتيب الزمني العكسي."
+  },
+  {
+    "questionNumber": 10,
+    "question": "يرمز الحرف 'V' في العروض التقديمية إلى التخطيط والتفكير.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "لا توجد معلومات في الملفات المرفقة تربط الحرف 'V' في العروض التقديمية بالتخطيط والتفكير."
+  },
+  {
+    "questionNumber": 11,
+    "question": "لتحضير مادة للعرض التقديمي، يجب أن تفكر في تخصيص حوالي 65% من الوقت المسموح به للنص.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه المعلومة المحددة حول تخصيص الوقت غير موجودة في ملفات PDF المقدمة."
+  },
+  {
+    "questionNumber": 12,
+    "question": "أحد معايير PowerPoint هو استخدام اللون الأحمر أو الأخضر للنص.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "لا توجد معلومات في الملفات المقدمة تحدد استخدام اللون الأحمر أو الأخضر كمعيار في عروض PowerPoint."
+  },
+  {
+    "questionNumber": 13,
+    "question": "يفضل استخدام الرسومات بدلاً من التفاصيل في عرض PowerPoint.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "تستخدم الكتابة التقنية العناصر المرئية مثل الرسوم البيانية والصور لتوضيح المفاهيم المكتوبة ، وهذا المبدأ ينطبق على العروض التقديمية لزيادة الوضوح."
+  },
+  {
+    "questionNumber": 15,
+    "question": "في الـ 3 V's للتواصل، تعد المرئيات (visuals) ذات أهمية قصوى.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "لا توجد معلومات حول '3 V's of Communication' في الملفات المقدمة لتأكيد أو نفي هذه العبارة."
+  },
+  {
+    "questionNumber": 16,
+    "question": "عادةً ما توجه أدلة المستخدم القراء بشكل أقل تركيزًا من أدلة المستخدم.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "العبارة متناقضة وغير منطقية. من المفترض أن أدلة المستخدم مصممة لتوجيه القراء بشكل فعال."
+  },
+  {
+    "questionNumber": 17,
+    "question": "عند كتابة مقترح، يمكنك شحن الإجراء أو المنهجية لأنها اختيارية.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "قسم الإجراء / المنهجية هو 'قلب المقترح' (the heart of the proposal) وهو ضروري لإقناع القارئ."
+  },
+  {
+    "questionNumber": 18,
+    "question": "في صفحة عنوان المقترح، يجب أن يحتوي الملخص على الموضوع والمنهجية واسم (أسماء) المؤلف (المؤلفين).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "يتم وضع هذه المعلومات في صفحة العنوان والملخص كأقسام منفصلة، وليس الملخص داخل صفحة العنوان."
+  },
+  {
+    "questionNumber": 19,
+    "question": "يجب أن يكون ملخص المقترح مفصلاً حول الموضوع.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "الملخص يجب أن يكون 'بيانًا موجزًا' (a brief statement) من ثلاث أو أربع جمل فقط."
+  },
+  {
+    "questionNumber": 20,
+    "question": "عادة ما تستشهد المراجع بالحواشي أو قائمة المراجع.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "يتكون قسم المراجع عادةً من الحواشي وقائمة المراجع (bibliography)."
+  },
+  {
+    "questionNumber": 21,
+    "question": "عند كتابة التعليمات في دليل المستخدم، يجب عليك تقسيم التعليمات إلى خطوات متسلسلة بدلاً من تقديمها كقائمة مرقمة.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "يتم تقديم التعليمات عادةً في شكل خطوات منطقية ومتسلسلة، وغالبًا ما تكون في قائمة مرقمة أو منقطة للمساعدة في التنقل."
+  },
+  {
+    "questionNumber": 22,
+    "question": "يجب أن تخبر الجمهور بتفاصيل النقاط الرئيسية خلال افتتاح العرض التقديمي.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "يجب أن تقدم المقدمة نظرة عامة، بينما تأتي التفاصيل في متن العرض. تزويد الجمهور بكل التفاصيل في البداية يمكن أن يكون مربكًا."
+  },
+  {
+    "questionNumber": 23,
+    "question": "إحدى المهارات الجيدة في العرض التقديمي هي تجنب الاتصال البصري.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه المعلومة تتعارض مع ممارسات العرض التقديمي الفعالة القياسية، والتي تعتبر الاتصال البصري فيها أمرًا بالغ الأهمية."
+  },
+  {
+    "questionNumber": 24,
+    "question": "تستخدم الكلمة الثالثة 'And-so' نفس معنى 'Thus'.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "من حيث المعنى العام، كلاهما يستخدم للإشارة إلى نتيجة أو استنتاج."
+  },
+  {
+    "questionNumber": 25,
+    "question": "ملخص السيرة الذاتية هو فقرة من 2-3 جمل تعطي للقائمين بالتوظيف لمحة عن خبرتك ذات الصلة وتتباهى بإنجازاتك في هذا المجال.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذا هو التعريف الدقيق المقدم في المحاضرة لملخص السيرة الذاتية."
+  },
+  {
+    "questionNumber": 26,
+    "question": "لإنشاء سيرة ذاتية ATS-friendly، يجب أن نتجاهل الوصف الوظيفي ونبحث عن الكلمات الرئيسية المتعلقة بمسؤولياتك.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "على العكس، يجب عليك 'الرجوع إلى الوصف الوظيفي والبحث عن الكلمات الرئيسية للسيرة الذاتية' (refer to the job description and look for resume keywords) لإنشاء سيرة ذاتية صديقة لـ ATS."
+  },
+  {
+    "questionNumber": 27,
+    "question": "تستبدل المذكرات المكونات الأساسية الثمانية للخطاب بأربعة مكونات.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "تستبدل المذكرات المكونات الأساسية الثمانية للخطاب بأسطر التعريف التالية: التاريخ، إلى، من، الموضوع."
+  },
+  {
+    "questionNumber": 28,
+    "question": "البريد الإلكتروني مشابه للمذكرات في أنهما يستخدمان التاريخ.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "البريد الإلكتروني مشابه للمذكرات في أن كلاهما يستخدم أسطر التعريف (التاريخ، إلى، من، والموضوع)."
+  },
+  {
+    "questionNumber": 29,
+    "question": "يمكن تصنيف التقارير الفنية حسب درجة الرسمية كإنذار، أو خطاب، أو تخطيطي، أو مختلط.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذا هو التصنيف حسب 'الشكل' (Format)، وليس 'درجة الرسمية' (Degree of formality) التي هي رسمية وغير رسمية."
+  },
+  {
+    "questionNumber": 30,
+    "question": "تقرير الرحلة الميدانية يكتبه مهندس أو تقني عاد لتوه من مهمة ميدانية.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "يتم تعريف تقرير الرحلة الميدانية على أنه 'as is written by an engineer, agricultural specialist, or technologist just back from a field assignment'."
+  }
+  [
+  {
+    "questionNumber": 31,
+    "question": "إذا كان المرشح يبحث عن وظيفة مماثلة لمناصبه السابقة، يمكنه كتابة سيرة ذاتية...",
+    "options": ["ذات ترتيب زمني عكسي", "وظيفية", "مختلطة", "تقنية"],
+    "correct": 0,
+    "explanation": "السيرة الذاتية ذات الترتيب الزمني العكسي مثالية لـ 'المرشحين الذين يبحثون عن وظيفة مماثلة لمناصبهم السابقة' (Candidates seeking a job similar to their previous positions)."
+  },
+  {
+    "questionNumber": 32,
+    "question": "ما هي الدراسات أو التقنيات ذات الصلة التي يجب إتقانها لمشروعك؟ في أي قسم من مقترح المشروع يجب طرح هذا السؤال؟",
+    "options": ["المقدمة", "مراجعة الأدبيات (أو الخلفية)", "الإجراء أو المنهجية", "جميع ما سبق"],
+    "correct": 1,
+    "explanation": "تحت قسم 'مراجعة الأدبيات (أو الخلفية)'، أحد الأسئلة الجيدة للإجابة عليها هو 'What relevant kinds of studies or techniques need to be mastered to do your project?'."
+  },
+  {
+    "questionNumber": 33,
+    "question": "تستخدم طريقة 'most cleaver' لعمل أي نوع من الجمل؟",
+    "options": ["دقيقة", "صحيحة نحوياً", "طويلة", "قصيرة"],
+    "correct": 3,
+    "explanation": "على الرغم من أن عبارة 'most cleaver' تبدو خطأ إملائياً في السؤال، إلا أن مبادئ الكتابة التقنية تشدد على استخدام 'short sentences and paragraphs' (جمل وفقرات قصيرة)  و 'Keep sentences short' (اجعل الجمل قصيرة)."
+  },
+  {
+    "questionNumber": 34,
+    "question": "أي صفتين تصفان المذكرة بشكل أفضل؟",
+    "options": ["طويلة ومعمقة", "قصيرة وموجزة", "مفصلة ورسمية", "مطولة وناجحة"],
+    "correct": 1,
+    "explanation": "توصف المذكرة بأنها 'Short and direct format' (تنسيق قصير ومباشر)."
+  },
+  {
+    "questionNumber": 35,
+    "question": "كيف نخاطب المستلم عند كتابة خطاب غير رسمي؟",
+    "options": ["سيدي العزيز/سيدتي العزيزة", "عزيزي السيد/السيدة،", "عزيزي/عزيزتي،", "عزيزي"],
+    "correct": 2,
+    "explanation": "تستخدم الصيغ الرسمية مثل 'Dear Sir/Madam' في السياقات الرسمية. 'Dear' متبوعًا بالاسم الأول أو لقب أقل رسمية."
+  },
+  {
+    "questionNumber": 36,
+    "question": "ماذا تقول في الجزء الافتتاحي من الخطاب؟",
+    "options": ["اسأل كيف هو الطقس في مدينة المستلم.", "اسأل كيف حال المستلم ولماذا تكتب الخطاب.", "مناقشة كيف أن المستلم مدين لك.", "مناقشة مدى روعة مدينتك."],
+    "correct": 1,
+    "explanation": "تتطلب مقدمة الخطاب الفعال تقديم نفسك والغرض من الكتابة بوضوح، كما هو موضح في مكونات خطاب الاستفسار."
+  },
+  {
+    "questionNumber": 37,
+    "question": "في الكتابة الفنية، يتم تعريف وجهة المذكرة بأنها؟",
+    "options": ["شركة خارجية", "خارج المدينة", "من خلال البريد الإلكتروني للشركة", "داخل الشركة"],
+    "correct": 3,
+    "explanation": "المذكرات هي 'internal correspondence' (مراسلات داخلية)، مكتوبة من قبل موظفين إلى موظفين آخرين في نفس الشركة."
+  },
+  {
+    "questionNumber": 38,
+    "question": "أي من التالي هو خطاب يوضح للقراء ما يتلقونه، ويسمى عادة؟",
+    "options": ["خطابات الشكوى", "خطابات التغطية", "النشرات الإخبارية الجيدة", "الخطابات الرسمية"],
+    "correct": 1,
+    "explanation": "خطاب التغطية (أو خطاب طلب الوظيفة) يشرح لصاحب العمل ما يتلقاه (سيرتك الذاتية) ولماذا يجب اختياره."
+  },
+  {
+    "questionNumber": 39,
+    "question": "أي من التقارير التالية هو مثال على تقرير خاص؟",
+    "options": ["تقرير يلخص تفاصيل ندوة حديثة.", "تقرير يوضح إجراءات الشركة الجديدة لإصابات مكان العمل.", "تقرير يوضح مخصصات ميزانية الدولة للتعليم.", "تقرير يقدم بيانات أو نتائج وتحليلات واستنتاجات."],
+    "correct": 1,
+    "explanation": "التقارير الخاصة أو الظرفية (Occasional reports)  مثل تقرير الحادثة (Occurrence report)  أو تقرير التحقيق (Investigation report)  ستوضح إجراءات أو نتائج محددة، مما يجعل الخيار (ب) هو الأنسب."
+  },
+  {
+    "questionNumber": 40,
+    "question": "للتواصل بشكل أكثر فعالية مع القراء متعددي الثقافات، يجب عليك؟",
+    "options": ["استخدام التعليمات والمفاهيم الفنية وشرح المصطلحات البيئية.", "تجنب المصطلحات إلا إذا كنت تعرف أن القراء على دراية بها.", "استخدام المصطلحات العامية واللغة غير الرسمية.", "لا شيء مما سبق."],
+    "correct": 1,
+    "explanation": "تنص المبادئ التوجيهية على: 'Avoid jargon unless you know your readers are familiar with it' (تجنب المصطلحات إلا إذا كنت تعرف أن القراء على دراية بها)."
+  },
+  {
+    "questionNumber": 41,
+    "question": "رسالة سيتم إرسالها إلى شخص ما داخل المنظمة ستكون بتنسيق؟",
+    "options": ["مذكرة", "مطبوعة مسبقاً", "خطاب", "لا شيء"],
+    "correct": 0,
+    "explanation": "المذكرات (Memos) هي مراسلات داخلية، تُكتب من قبل الموظفين في شركة إلى الموظفين في نفس الشركة."
+  },
+  {
+    "questionNumber": 42,
+    "question": "عند إرسال سيرتهم الذاتية، يجب على المتقدمين للوظائف إرسال خطاب تغطية؟",
+    "options": ["قبل", "بعد", "متى", "متى"],
+    "correct": 1,
+    "explanation": "خطاب طلب الوظيفة (خطاب التغطية) يجب 'إرساله أو تحميله مع سيرتك الذاتية' (be sent or uploaded with your resume)."
+  },
+  {
+    "questionNumber": 43,
+    "question": "أي خطاب هو مطالبة بالتعويض؟",
+    "options": ["خطاب توصية", "خطاب تقدير", "خطاب تسوية", "خطاب تحديد طلبية"],
+    "correct": 2,
+    "explanation": "خطاب التسوية (Adjustment Letter) يُكتب ردًا على شكوى ويهدف إلى 'تقديم تعويض' (offer reparation) عن الإجراءات."
+  },
+  {
+    "questionNumber": 44,
+    "question": "متى يكون الخطاب رسميًا؟",
+    "options": [],
+    "correct": null,
+    "explanation": "السؤال غير مكتمل في الصورة."
+  },
+  {
+    "questionNumber": 45,
+    "question": "تهدف الكتابة الفنية إلى التواصل مع ... معين من أجل ... معين.",
+    "options": ["منتج، تقرير", "جمهور، غرض", "شخص، رسالة", "مجموعة، تحدي"],
+    "correct": 1,
+    "explanation": "التواصل التقني هو إيصال المعلومات الفنية للقراء (الجمهور) بطريقة تتكيف مع احتياجاتهم ، ويهدف إلى تحقيق غرض محدد (إعلام، إرشاد، إقناع)."
+  },
+  {
+    "questionNumber": 46,
+    "question": "الوضوح والإيجاز والمكونات الرئيسية للكتابة الفنية الفعالة.",
+    "options": ["مفهومة", "معقدة"],
+    "correct": 0,
+    "explanation": "الوضوح والإيجاز من الميزات الأساسية للكتابة الفنية، مما يجعلها سهلة الفهم. (السؤال غير مكتمل في الصورة، لكن هذا هو الاستنتاج المنطقي)."
+  },
+  {
+    "questionNumber": 47,
+    "question": "في الكتابة الفنية، يجب أن تكون الجملة؟",
+    "options": ["20 كلمة", "أقل من 20 كلمة"],
+    "correct": 1,
+    "explanation": "القاعدة العامة هي أن 'الجمل عادة ما تكون 15-20 كلمة' (Sentences are usually 15-20 words) ، مما يعني أن 'أقل من 20 كلمة' هو الخيار الأدق."
+  },
+  {
+    "questionNumber": 48,
+    "question": "أي من المهام التالية يؤديها كل من السيرة الذاتية وخطاب طلب الوظيفة؟",
+    "options": ["مهمتان", "نفس المهمة"],
+    "correct": 0,
+    "explanation": "السيرة الذاتية تقدم تاريخًا موجزًا للخبرة، بينما يشرح خطاب طلب الوظيفة سبب كونك مؤهلاً. لذلك، هما يكملان بعضهما البعض ولكنهما يؤديان مهام مختلفة قليلاً لتحقيق هدف مشترك."
+  },
+  {
+    "questionNumber": 49,
+    "question": "تقرير موجز عن توزيع وتصرف الموظفين خلال فترة معينة.",
+    "options": ["تقرير الموظفين", "تقرير المراجعة"],
+    "correct": 0,
+    "explanation": "تقرير الموظفين (staff report) 'يعطي حسابًا موجزًا عن توزيع وتصرف الموظفين خلال فترة معينة'."
+  },
+  {
+    "questionNumber": 50,
+    "question": "أي من التقارير التالية متشابهة، ولكن ليست متطابقة تمامًا؟",
+    "options": ["تقارير الجدوى والتحقيق", "تقارير الجدوى والحوادث"],
+    "correct": 0,
+    "explanation": "كلا من تقرير الجدوى وتقرير التحقيق يتضمنان فحصًا وتحليلاً، ولكنهما يختلفان في الغرض. تقرير الجدوى يقيّم فكرة مستقبلية ، بينما يفحص تقرير التحقيق بيانات أو اختبارات."
+  },
+  {
+    "questionNumber": 51,
+    "question": "أي مما يلي هي خصائص التقارير الفنية؟",
+    "options": ["الدقة والاتساق والوضوح", "الإيجاز، تقديم التقارير بالتفصيل، والإقناع", "الدقة الميكانيكية، الوضوح، والصوت السلبي"],
+    "correct": 0,
+    "explanation": "الدقة والوضوح والإيجاز والمنطق كلها سمات أساسية للكتابة الفنية والتقارير. الخيار (أ) هو الأنسب."
+  },
+  {
+    "questionNumber": 52,
+    "question": "البريد الإلكتروني مشابه للمذكرات في؟",
+    "options": ["كلاهما يستخدم أسطر التعريف", "كلاهما يستخدم (التاريخ، التوقيع، والموضوع)", "كلاهما مراسلات خارجية"],
+    "correct": 0,
+    "explanation": "البريد الإلكتروني مشابه للمذكرات في أن كلاهما يستخدم أسطر التعريف (التاريخ، إلى، من، والموضوع)."
+  },
+  {
+    "questionNumber": 53,
+    "question": "يعتبر التعبير المكتوب؟",
+    "options": ["دلالي وتعبيري", "موضوعي"],
+    "correct": 0,
+    "explanation": "الكتابة التعبيرية (Expressive Writing) هي 'ذاتية، تستند إلى تجربة شخصية، وتستخدم كلمات دلالية وتعبيرية'."
+  },
+  {
+    "questionNumber": 54,
+    "question": "أي من الأسطر التالية للمقترح يخبر القارئ كيف تقترح تنفيذ مشروعك؟",
+    "options": ["المقدمة", "مراجعة الأدبيات (أو الخلفية)", "الإجراء (أو المنهجية)", "الميزانية"],
+    "correct": 2,
+    "explanation": "الإجراء أو المنهجية 'هو قلب المقترح لأنه يجب أن يخبر القارئ كيف تقترح تنفيذ مشروعك'."
+  },
+  {
+    "questionNumber": 55,
+    "question": "في أي من التقارير التالية: تبدأ بالفكرة التي سيتم تطويرها؟",
+    "options": ["تقرير حادثة", "تقرير جدوى", "تقرير تحقيق", "تقرير تقييم"],
+    "correct": 3,
+    "explanation": "في تقرير التقييم 'تبدأ بالفكرة التي سيتم تطويرها (تقييمها)'."
+  },
+  {
+    "questionNumber": 56,
+    "question": "نظرية النسبية لآينشتاين القائلة بأن ... قابلة للاختزال إلى خمسة رموز، هذا يمكن أن يكون مثالاً على ... في الكتابة الفنية.",
+    "options": ["وضوح", "دقة", "إيجاز"],
+    "correct": 2,
+    "explanation": "اختزال فكرة معقدة إلى شكل بسيط ومختصر هو مثال رئيسي على الإيجاز (Conciseness)."
+  },
+  {
+    "questionNumber": 57,
+    "question": "ما الذي ترمز إليه الـ 3 V's للتواصل؟",
+    "options": ["صوت، لفظي، وسرعة", "صوت، لفظي، وبصري", "حجم، سرعة، وتنوع"],
+    "correct": null,
+    "explanation": "المعلومات حول '3 V's of Communication' غير موجودة في أي من ملفات PDF المقدمة."
+  },
+  {
+    "questionNumber": 58,
+    "question": "عند مراجعة مستند تقني، من الضروري؟",
+    "options": ["التركيز فقط على القواعد والآليات", "ضمان الوضوح، الدقة، والتدفق المنطقي للمعلومات", "كتابة جمل معقدة بغض النظر عن الوضوح"],
+    "correct": 1,
+    "explanation": "تتطلب الكتابة التقنية الفعالة أن تكون واضحة ودقيقة ومنظمة منطقياً وسهلة الوصول إليها."
+  },
+  {
+    "questionNumber": 59,
+    "question": "أي مما يلي ليس سمة أساسية للكتابة الفنية الفعالة؟",
+    "options": ["الوضوح والإيجاز", "التنظيم المنطقي", "هيكل الجملة المعقد", "دقة المعلومات"],
+    "correct": 2,
+    "explanation": "الكتابة التقنية الفعالة تتميز بجمل وفقرات قصيرة، وليس بهياكل جمل معقدة."
+  },
+  {
+    "questionNumber": 60,
+    "question": "عند الكتابة لجمهور تقني، من المهم؟",
+    "options": ["استخدام مصطلحات غامضة وغير رسمية", "تحديد المصطلحات الفنية واستخدام المصطلحات بشكل مناسب", "افتراض أن القارئ لديه معرفة متعمقة بالموضوع", "الكتابة بنبرة حوارية وغير رسمية"],
+    "correct": 1,
+    "explanation": "يجب تجنب المصطلحات إلا إذا كنت تعرف أن القراء على دراية بها ، أو شرحها إذا لزم الأمر، مما يجعل الخيار (ب) هو الممارسة الأفضل."
+  }
 ]
+]
+
 
 };
 
@@ -2665,7 +3288,9 @@ const chapterMapping = {
   'Chapter 3: Applications in Technical Writing - Letters': 'الفصل الثالث: تطبيقات في الكتابة الفنية - الخطابات',
   'Chapter 4: Memos and Emails': 'الفصل الرابع: المذكرات ورسائل البريد الإلكتروني',
   'Chapter 5: Resumes': 'الفصل الخامس: السير الذاتية',
-  'Chapter 6: Technical Proposal': 'الفصل السادس: المقترح الفني'
+  'Chapter 6: Technical Proposal': 'الفصل السادس: المقترح الفني',
+  'final exam': 'امتحان سابق'
+
 
 
 

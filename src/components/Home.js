@@ -59,8 +59,8 @@ const Home = () => {
   
   // Banner messages
   const bannerMessages = {
-    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in technical writing.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza in your prayers.",
-    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة الكتابة التقتية.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة."
+    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in technical writing.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza 🇵🇸 in your prayers.",
+    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة الكتابة التقتية.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة 🇵🇸."
   };
   
   // Translations

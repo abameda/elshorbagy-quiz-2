@@ -294,7 +294,7 @@ const Quiz = () => {
       alreadyAnswered: 'You have already answered this question'
     },
     ar: {
-      title: 'اختبار هندسة الكمبيوتر',
+      title: 'اختبار الكتابة التقتية',
       question: 'سؤال',
       of: 'من',
       correct: 'صحيح!',

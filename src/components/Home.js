@@ -59,15 +59,15 @@ const Home = () => {
   
   // Banner messages
   const bannerMessages = {
-    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in Computer Architecture.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza in your prayers.",
-    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة معمارية الحاسوب.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة."
+    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in technical writing.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza in your prayers.",
+    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة الكتابة التقتية.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة."
   };
   
   // Translations
   const translations = {
     en: {
-      title: 'Computer Architecture Quiz',
-      subtitle: 'Test your knowledge on Computer Architecture concepts',
+      title: 'technical writing Quiz',
+      subtitle: 'Test your knowledge on technical writing concepts',
       selectChapter: 'Select a chapter to start the quiz:',
       startQuiz: 'Start Quiz',
       questionsAvailable: 'questions available',

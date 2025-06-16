@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { quizData, quizDataArabic, chapterMapping, reverseChapterMapping } from '../data/questions-v2';
 import ChapterResults from './ChapterResults';
 
@@ -17,6 +17,16 @@ const Quiz = () => {
   const [showChapterResults, setShowChapterResults] = useState(false);
   // NEW: Track which questions have been answered with their selected options
   const [questionAnswers, setQuestionAnswers] = useState({});
+
+  // Helper function to create language-agnostic question key
+  const getQuestionKey = useCallback((chapter, questionIndex) => {
+    // Use English chapter name as the base key to ensure consistency
+    let baseChapter = chapter;
+    if (language === 'ar' && chapter in reverseChapterMapping) {
+      baseChapter = reverseChapterMapping[chapter];
+    }
+    return `${baseChapter}-${questionIndex}`;
+  }, [language]);
 
   // Get the appropriate quiz data based on language
   const currentQuizData = language === 'en' ? quizData : quizDataArabic;
@@ -60,7 +70,7 @@ const Quiz = () => {
 
   // NEW: Effect to handle question navigation and restore previous answers
   useEffect(() => {
-    const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+    const questionKey = getQuestionKey(currentChapter, currentQuestionIndex);
     if (questionAnswers[questionKey] !== undefined) {
       // This question was already answered, restore the previous selection
       setSelectedOption(questionAnswers[questionKey]);
@@ -70,7 +80,7 @@ const Quiz = () => {
       setSelectedOption(null);
       setShowExplanation(false);
     }
-  }, [currentQuestionIndex, currentChapter, questionAnswers]);
+  }, [currentQuestionIndex, currentChapter, questionAnswers, getQuestionKey]);
 
   const chapters = Object.keys(currentQuizData);
   const currentQuestions = currentChapter && currentQuizData[currentChapter] ? currentQuizData[currentChapter] : [];
@@ -131,7 +141,7 @@ const Quiz = () => {
   };
 
   const handleOptionSelect = (optionIndex) => {
-    const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+    const questionKey = getQuestionKey(currentChapter, currentQuestionIndex);
     
     // NEW: Prevent selecting if this question was already answered
     if (questionAnswers[questionKey] !== undefined || !currentQuestion) return;
@@ -245,13 +255,13 @@ const Quiz = () => {
   );
 
   // NEW: Check if current question was already answered
-  const questionKey = `${currentChapter}-${currentQuestionIndex}`;
+  const questionKey = getQuestionKey(currentChapter, currentQuestionIndex);
   const isQuestionAnswered = questionAnswers[questionKey] !== undefined;
 
   // Translations
   const translations = {
     en: {
-      title: 'Computer Architecture Quiz',
+      title: 'technical writing Quiz',
       question: 'Question',
       of: 'of',
       correct: 'Correct!',
@@ -266,8 +276,8 @@ const Quiz = () => {
       answered: 'You answered',
       outOf: 'out of',
       questionsCorrectly: 'questions correctly.',
-      excellent: 'Excellent work! You have a strong understanding of Computer Architecture.',
-      good: 'Good job! You have a solid grasp of Computer Architecture concepts.',
+      excellent: 'Excellent work! You have a strong understanding of technical writing.',
+      good: 'Good job! You have a solid grasp of technical writing concepts.',
       keepStudying: 'Keep studying! Review the chapters to improve your understanding.',
       restart: 'Restart Quiz',
       createdBy: 'Created by',

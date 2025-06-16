@@ -1323,7 +1323,7 @@ const quizData = {
     explanation: "Conclusion: This is your last chance to convince the reader; be persuasive! "
   }
 ],
-  'final exam' : [
+  'final exam 2023-2024' : [
   {
     "questionNumber": 1,
     "question": "A document may also have one audience (the primary reader) or multiple audiences (the secondary readers).",
@@ -2856,7 +2856,7 @@ const quizDataArabic = {
     "explanation": "الخاتمة: هذه هي فرصتك الأخيرة لإقناع القارئ؛ كن مقنعًا!"
   }
 ],
-'امتحان سابق': [
+'امتحان سابق 2023-2024': [
   {
     "questionNumber": 1,
     "question": "قد يكون للمستند جمهور واحد (القارئ الأساسي) أو جماهير متعددة (القراء الثانويون).",
@@ -3289,7 +3289,7 @@ const chapterMapping = {
   'Chapter 4: Memos and Emails': 'الفصل الرابع: المذكرات ورسائل البريد الإلكتروني',
   'Chapter 5: Resumes': 'الفصل الخامس: السير الذاتية',
   'Chapter 6: Technical Proposal': 'الفصل السادس: المقترح الفني',
-  'final exam': 'امتحان سابق'
+  'final exam 2023-2024': 'امتحان سابق 2023-2024'
 
 
 

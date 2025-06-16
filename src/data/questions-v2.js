@@ -1526,6 +1526,216 @@ const quizData = {
     "options": ["True", "False"],
     "correct": 0,
     "explanation": "A field trip report is defined as being 'written by an engineer, agricultural specialist, or technologist just back from a field assignment'."
+  },
+  {
+    "questionNumber": 31,
+    "question": "If a candidate is seeking a job similar to their previous positions, he/she can write a ... resume.",
+    "options": ["Reverse-chronological resume", "Functional resume", "Combination resume", "Technical resume"],
+    "correct": 0,
+    "explanation": "The Chronological Resume (or Reverse-chronological) is ideal for 'Candidates seeking a job similar to their previous positions'."
+  },
+  {
+    "questionNumber": 32,
+    "question": "What relevant studies or techniques need to be mastered for your project? in which section of the project proposal this question should be asked?",
+    "options": ["Introduction", "Literature Review (or Background)", "Procedure (or Methodology)", "All of the above"],
+    "correct": 1,
+    "explanation": "Under the 'Literature Review (or Background)' section, a key question to answer is, 'What relevant kinds of studies or techniques need to be mastered to do your project?'."
+  },
+  {
+    "questionNumber": 33,
+    "question": "'most cleaver' method is used to make which kind of sentences?",
+    "options": ["accurate", "grammatically correct", "lengthy", "short"],
+    "correct": 3,
+    "explanation": "Although the phrase 'most cleaver' appears to be a typo in the exam, the principles of technical writing emphasize using 'short sentences and paragraphs'  and keeping sentences short."
+  },
+  {
+    "questionNumber": 34,
+    "question": "Which two adjectives best describe a memo?",
+    "options": ["(A) Lengthy and in-depth", "(B) Short and concise", "(C) Detailed and formal", "(D) Verbose and succinct"],
+    "correct": 1,
+    "explanation": "A memo is described as having a 'Short and direct format'. This aligns best with 'Short and concise'."
+  },
+  {
+    "questionNumber": 35,
+    "question": "How can we address the recipient when we are writing an informal letter?",
+    "options": ["A. Dear Mr.", "B. Hello Sir/Madam.", "C. Dear Sir/Madam.", "D. My dear"],
+    "correct": null,
+    "explanation": "This is subjective, but standard informal greetings in English often use the recipient's first name (e.g., Dear John). Of the choices, 'Dear Sir/Madam' [C] is formal, not informal. The informality depends heavily on the relationship with the recipient."
+  },
+  {
+    "questionNumber": 36,
+    "question": "What would you say in the opening part of a letter?",
+    "options": ["Ask how good the weather is in the recipient's city.", "Ask how the recipient is and why you are writing the letter.", "Discussing how the recipient if he is half-read history.", "Discussing how good the weather is in your city."],
+    "correct": 1,
+    "explanation": "The introduction of a letter, such as an inquiry letter, should 'Introduce yourself and where you are from' and 'Provide a statement of purpose', which aligns with stating why you are writing."
+  },
+  {
+    "questionNumber": 37,
+    "question": "In technical writing, the destination of the memo is defined as?",
+    "options": ["A. outside company", "B. outside city", "C. through the Email", "D. within a company"],
+    "correct": 3,
+    "explanation": "Memos are 'internal correspondence, written by employees in a company to employees in the same company'."
+  },
+  {
+    "questionNumber": 38,
+    "question": "Which of the following is a letter stating readers for what they are receiving, is commonly called?",
+    "options": ["A. Complaint letters", "B. Cover letter", "C. Good newsletters", "D. Official letters"],
+    "correct": 1,
+    "explanation": "A job application letter, also known as a cover letter, is sent with your resume to explain 'why you are qualified for the position', effectively telling the reader what they are receiving and why."
+  },
+  {
+    "questionNumber": 39,
+    "question": "Which of the following reports is an example of an occasional report?",
+    "options": ["A. a report summarizing the details of a recent seminar you attended.", "B. A report outlining the new company procedure for reporting workplace injuries.", "C. a report showing state budget allocations for education.", "D. a report providing a data or findings, analyses, and conclusions."],
+    "correct": 1,
+    "explanation": "An occasional report is written for a specific, non-recurring event. A report on new procedures for workplace injuries would be an example of an occurrence or investigation report, which falls under the 'occasional' category."
+  },
+  {
+    "questionNumber": 40,
+    "question": "To communicate more effectively with multicultural readers you should?",
+    "options": ["A. Use instructions and explain technical concepts regarding environmental regulations.", "B. Avoid jargon even if you know your readers are not familiar with it.", "C. Use idioms and slang.", "D. None of the above."],
+    "correct": 1,
+    "explanation": "The guidelines explicitly state to 'Avoid jargon unless you know your readers are familiar with it'. Option B is slightly misworded but captures this principle best. Option C is incorrect."
+  },
+  {
+    "questionNumber": 41,
+    "question": "A message sent to somebody within the organization will be in a ______ format.",
+    "options": ["A. Memo", "B. Pre-printed", "C. Letter", "D. Memo"],
+    "correct": 0,
+    "explanation": "Memos are used for internal correspondence within an organization."
+  },
+  {
+    "questionNumber": 42,
+    "question": "sending their resume the job applicants must send a cover letter.",
+    "options": ["A. Before.", "B. When.", "C. After."],
+    "correct": 1,
+    "explanation": "A cover letter should be 'sent or uploaded with your resume', meaning at the same time (When)."
+  },
+  {
+    "questionNumber": 43,
+    "question": "An offer by one party to provide a product or service to another party in exchange for money is known as a",
+    "options": ["A. Technical Description", "B. Technical letter", "C. Technical Proposal", "D. Technical letter"],
+    "correct": 2,
+    "explanation": "A technical proposal is prepared by a company 'to convince another company or institution of its technical capability to offer a specific service or perform a specific task', often in exchange for payment."
+  },
+  {
+    "questionNumber": 44,
+    "question": "Which letter is the reply of claim letter?",
+    "options": ["A. Recommendation Letter.", "B. Appreciation Letter.", "C. Adjustment Letter.", "D. Order Placement Letter."],
+    "correct": 2,
+    "explanation": "An adjustment letter is 'written in response to someone who has complained about a product or service', which is a reply to a claim or complaint."
+  },
+  {
+    "questionNumber": 45,
+    "question": "Technical writing is intended to communicate to a specific ______ for a specific ______.",
+    "options": ["A. Product, report.", "B. Audience, purpose.", "C. Person, message.", "D. Group, challenge."],
+    "correct": 1,
+    "explanation": "Technical communication is adapted to the 'needs, level of understanding, and background' of the audience  and has a clear purpose (to inform, instruct, or persuade)."
+  },
+  {
+    "questionNumber": 46,
+    "question": "Concise, clear and ______ are the key components of effective technical writing.",
+    "options": ["A. Understandable.", "B. Accurate.", "C. Complicated."],
+    "correct": 1,
+    "explanation": "Effective technical documents must be 'clear, concise, accessible, accurate'."
+  },
+  {
+    "questionNumber": 47,
+    "question": "In a technical writing content the sentence should be?",
+    "options": ["A. 20 words.", "B. Less than 20 words.", "C. More than 20 words."],
+    "correct": 1,
+    "explanation": "The general rule for sentence length is 'usually 15-20 words', which means 'Less than 20 words' or '20 words' would be appropriate. 'Less than 20 words' is a safer general rule."
+  },
+  {
+    "questionNumber": 48,
+    "question": "The resume and job application letter perform which of the following tasks?",
+    "options": ["A. Two different tasks.", "B. Two same tasks.", "C. The same one task."],
+    "correct": 0,
+    "explanation": "The resume offers a history of experience, while the job application letter (cover letter) explains why you are qualified for the position. They serve different but complementary tasks."
+  },
+  {
+    "questionNumber": 49,
+    "question": "A a brief account of the deployment and disposition of staff within a given period.",
+    "options": ["A. Staff report.", "B. Investigation report.", "C. Audit report."],
+    "correct": 0,
+    "explanation": "A staff report 'gives a brief account of the deployment and disposition of staff within a given period'."
+  },
+  {
+    "questionNumber": 50,
+    "question": "Which of the following reports are similar to, but not exactly?",
+    "options": ["A. Feasibility and investigation reports.", "B. Feasibility and occurrence reports.", "C. Occurrence and field trip reports."],
+    "correct": 0,
+    "explanation": "An evaluation report is described as being 'similar to, but not exactly the same as the investigation or feasibility report'."
+  },
+  {
+    "questionNumber": 51,
+    "question": "Which of the following are characteristics of Technical Reports?",
+    "options": ["A. Accuracy, Consistency, and Clarity", "B. Conciseness, presenting reports in detail, and Persuasiveness", "C. Mechanical Accuracy, Clarity, and passive voice."],
+    "correct": 0,
+    "explanation": "Accuracy, clarity, conciseness, and logical organization are all key features of effective technical documents. Option A lists the most consistently correct characteristics."
+  },
+  {
+    "questionNumber": 52,
+    "question": "E-mail is similar to memos in?",
+    "options": ["A. Both use identification lines.", "B. Both use (Date, Signature, and Subject).", "C. Both are external correspondence."],
+    "correct": 0,
+    "explanation": "E-mail is similar to memos in that 'both use identification lines (Date, To, From, and Subject)'."
+  },
+  {
+    "questionNumber": 53,
+    "question": "Expressive writing is considered as?",
+    "options": ["A. Connotative and expressive.", "B. Subjective.", "C. Objective."],
+    "correct": 1,
+    "explanation": "Expressive Writing is described as 'Subjective, based on personal experience, connotative and expressive words'."
+  },
+  {
+    "questionNumber": 54,
+    "question": "Which of the following lines of the proposal that tell the reader how you propose to carry out your project?",
+    "options": ["A. Introduction", "B. Literature Review (or Background)", "C. Procedure (or Methodology)", "D. Budget"],
+    "correct": 2,
+    "explanation": "The 'procedure or the methodology is the heart of the proposal because it must tell the reader how you propose to carry out your project'."
+  },
+  {
+    "questionNumber": 55,
+    "question": "In which of the flowing reports you: start with the idea to be developed?",
+    "options": ["A. Occurrence report.", "B. Feasibility report.", "C. Investigation report.", "D. Evaluation report."],
+    "correct": 3,
+    "explanation": "In an evaluation report 'you: start with the idea to be developed (evaluated)'."
+  },
+  {
+    "questionNumber": 56,
+    "question": "Einstein's earth-shaking Law of Relativity is reducible to just five symbols, this could be an example of ......... in technical writing.",
+    "options": ["A. Clarity.", "B. Accuracy.", "C. Conciseness.", "D. Consistency."],
+    "correct": 2,
+    "explanation": "Reducing a complex idea to a simple, essential form is a prime example of conciseness, which means using 'only the words you need'."
+  },
+  {
+    "questionNumber": 57,
+    "question": "The 3 V's of Communication stands for?",
+    "options": ["A. Voice, verbal, and velocity", "B. voice, verbal, and visual.", "C. volume, velocity, and variety."],
+    "correct": null,
+    "explanation": "Information regarding the '3 V's of Communication' is not available in the provided PDF documents."
+  },
+  {
+    "questionNumber": 58,
+    "question": "When reviewing a technical document, it's crucial to?",
+    "options": ["A. Focus solely on grammar and mechanics.", "B. Ensure clarity, accuracy, and logical flow of information.", "C. Use more sentences regardless of clarity."],
+    "correct": 1,
+    "explanation": "Effective technical writing requires documents to be accurate, have logical organization, and be clear and accessible to the reader."
+  },
+  {
+    "questionNumber": 59,
+    "question": "Which of the following is NOT a key characteristic of effective technical writing?",
+    "options": ["A. Clarity and conciseness.", "B. Logical organization.", "C. Complex sentence structure.", "D. Accuracy of information."],
+    "correct": 2,
+    "explanation": "Effective technical writing uses 'short sentences and paragraphs', not complex sentence structures."
+  },
+  {
+    "questionNumber": 60,
+    "question": "When writing for a technical audience, it's important to?",
+    "options": ["A. Use vague and elaborate terminology.", "B. Define technical terms and acronyms.", "C. Assume the reader has in-depth knowledge of the subject.", "D. Write in a conversational and informal tone."],
+    "correct": 1,
+    "explanation": "Guidelines suggest defining abbreviations and acronyms and avoiding jargon unless the reader is familiar with it, which supports the need to define terms for clarity."
   }
 ],
 };

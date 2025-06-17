@@ -1461,7 +1461,7 @@ const quizData = {
     "questionNumber": 21,
     "question": "When writing the instruction in the user manual you should break the instructions down into sequential steps than the presented in order as a numbered list.",
     "options": ["True", "False"],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Presenting instructions in sequential steps, often as a numbered or bulleted list, is a key feature of good technical writing for clarity and ease of use."
   },
   {

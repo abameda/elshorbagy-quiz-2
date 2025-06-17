@@ -1426,7 +1426,7 @@ const quizData = {
     "questionNumber": 16,
     "question": "User guides usually are shorter and more-focused documents than the user manuals.",
     "options": ["True", "False"],
-    "correct": 1,
+    "correct": 0,
     "explanation": "The statement is contradictory and illogical. User guides and user manuals are often used interchangeably or describe documents with the same purpose."
   },
   {
@@ -3169,7 +3169,7 @@ const quizDataArabic = {
     "questionNumber": 16,
     "question": "عادةً ما توجه أدلة المستخدم القراء بشكل أقل تركيزًا من أدلة المستخدم.",
     "options": ["صحيح", "خطأ"],
-    "correct": 1,
+    "correct": 0,
     "explanation": "العبارة متناقضة وغير منطقية. من المفترض أن أدلة المستخدم مصممة لتوجيه القراء بشكل فعال."
   },
   {

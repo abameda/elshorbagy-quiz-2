@@ -1559,7 +1559,7 @@ const quizData = {
     "questionNumber": 35,
     "question": "How can we address the recipient when we are writing an informal letter?",
     "options": ["A. Dear Mr.", "B. Hello Sir/Madam.", "C. Dear Sir/Madam.", "D. My dear"],
-    "correct": null,
+    "correct": 2,
     "explanation": "This is subjective, but standard informal greetings in English often use the recipient's first name (e.g., Dear John). Of the choices, 'Dear Sir/Madam' [C] is formal, not informal. The informality depends heavily on the relationship with the recipient."
   },
   {
@@ -1713,7 +1713,7 @@ const quizData = {
     "questionNumber": 57,
     "question": "The 3 V's of Communication stands for?",
     "options": ["A. Voice, verbal, and velocity", "B. voice, verbal, and visual.", "C. volume, velocity, and variety."],
-    "correct": null,
+    "correct": 1,
     "explanation": "Information regarding the '3 V's of Communication' is not available in the provided PDF documents."
   },
   {
@@ -3456,7 +3456,7 @@ const quizDataArabic = {
     "questionNumber": 57,
     "question": "ما الذي ترمز إليه الـ 3 V's للتواصل؟",
     "options": ["صوت، لفظي، وسرعة", "صوت، لفظي، وبصري", "حجم، سرعة، وتنوع"],
-    "correct": null,
+    "correct": 1,
     "explanation": "المعلومات حول '3 V's of Communication' غير موجودة في أي من ملفات PDF المقدمة."
   },
   {

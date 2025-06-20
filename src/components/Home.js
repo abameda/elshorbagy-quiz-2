@@ -59,15 +59,15 @@ const Home = () => {
   
   // Banner messages
   const bannerMessages = {
-    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in technical writing.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza 🇵🇸 in your prayers.",
-    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة الكتابة التقتية.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة 🇵🇸."
+    en: "Created by Abdelhmeed Elshorbagy for Computer & AI students for the final exam in Scientific Thinking.\nI truly hope it helps you and makes things easier.\nFinally, I kindly ask you to keep me and the people of Gaza 🇵🇸 in your prayers.",
+    ar: "تم الإنشاء بواسطة عبد الحميد الشوربجي لطلاب قسم الحاسبات والذكاء الاصطناعي من أجل امتحان نهاية الترم في مادة التفكير العلمي.\nأتمنى إنه يفيدكم فعلاً ويساعدكم.\nوفي الختام، أسألكم الدعاء لي ولأهل غزة 🇵🇸."
   };
   
   // Translations
   const translations = {
     en: {
-      title: 'technical writing Quiz',
-      subtitle: 'Test your knowledge on technical writing concepts',
+      title: 'Scientific Thinking Quiz',
+      subtitle: 'Test your knowledge on Scientific Thinking concepts',
       selectChapter: 'Select a chapter to start the quiz:',
       startQuiz: 'Start Quiz',
       questionsAvailable: 'questions available',
@@ -76,8 +76,8 @@ const Home = () => {
       switchToArabic: 'العربية'
     },
     ar: {
-      title: 'اختبار الكتابة التقتية',
-      subtitle: 'اختبر معرفتك بمفاهيم الكتابة التقتية',
+      title: 'اختبار التفكير العلمي',
+      subtitle: 'اختبر معرفتك بمفاهيم التفكير العلمي',
       selectChapter: 'اختر فصلاً لبدء الاختبار:',
       startQuiz: 'ابدأ الاختبار',
       questionsAvailable: 'أسئلة متاحة',

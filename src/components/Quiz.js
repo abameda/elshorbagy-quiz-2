@@ -261,7 +261,7 @@ const Quiz = () => {
   // Translations
   const translations = {
     en: {
-      title: 'technical writing Quiz',
+      title: 'Scientific Thinking Quiz',
       question: 'Question',
       of: 'of',
       correct: 'Correct!',
@@ -276,8 +276,8 @@ const Quiz = () => {
       answered: 'You answered',
       outOf: 'out of',
       questionsCorrectly: 'questions correctly.',
-      excellent: 'Excellent work! You have a strong understanding of technical writing.',
-      good: 'Good job! You have a solid grasp of technical writing concepts.',
+      excellent: 'Excellent work! You have a strong understanding of Scientific Thinking.',
+      good: 'Good job! You have a solid grasp of Scientific Thinking concepts.',
       keepStudying: 'Keep studying! Review the chapters to improve your understanding.',
       restart: 'Restart Quiz',
       createdBy: 'Created by',
@@ -294,7 +294,7 @@ const Quiz = () => {
       alreadyAnswered: 'You have already answered this question'
     },
     ar: {
-      title: 'اختبار الكتابة التقتية',
+      title: 'اختبار التفكير العلمي',
       question: 'سؤال',
       of: 'من',
       correct: 'صحيح!',

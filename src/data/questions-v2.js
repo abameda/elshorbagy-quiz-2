@@ -699,7 +699,7 @@ const quizData = {
       "0.5",
       "16"
     ],
-    "correct": 4,
+    "correct": 3,
     "explanation": "The code for func_02 and func_03 is provided in the exam. func_02(1) calls func_03(1-3), which is func_03(-2). In func_03, since -2 > 5 is false, the else block executes, returning -2 * -2 * -2 * -2 = 16 . Problem-solving with code is covered in Lectures (7) and (8)."
   },
   {

@@ -461,6 +461,388 @@ const quizData = {
       "explanation": "The correct answer is '$220'. The base cost is 6 * $40 = $240. Since the duration is between 3 and 6 days, a $20 discount is applied. The final cost is $240 - $20 = $220. This matches the test case in the lecture.\nSource: (Chapter 7, Page 7)."
     }
   ],
+  'Final Exam 2023/2024':[
+  {
+    "questionNumber": 1,
+    "question": "What are the two main fundamentals of scientific thinking?",
+    "options": [
+      "Creativity and imagination",
+      "Observation and knowledge",
+      "Intuition and logic",
+      "Experimentation and analysis"
+    ],
+    "correct": 1,
+    "explanation": "There are two main fundamentals of Scientific Thinking: Observation, and Knowledge. This is stated in Lecture (1), page 3. "
+  },
+  {
+    "questionNumber": 2,
+    "question": "What is the broad definition of science?",
+    "options": [
+      "A specific set of rules for conducting experiments",
+      "Any systematic method for acquiring knowledge apart from ignorance",
+      "The study of natural phenomena only",
+      "A collection of established facts"
+    ],
+    "correct": 1,
+    "explanation": "Lecture (1), page 10, provides a broad definition of science as 'any systematic method of acquiring knowledge apart from ignorance'. "
+  },
+  {
+    "questionNumber": 3,
+    "question": "What is the third step in the scientific method?",
+    "options": [
+      "Conducting a study",
+      "Analyzing results",
+      "Identifying a problem",
+      "Communicating findings"
+    ],
+    "correct": 0,
+    "explanation": "The steps of the scientific method are listed in Lecture (1), page 14, and detailed throughout the lectures. The third step is to 'Conduct a study'. "
+  },
+  {
+    "questionNumber": 4,
+    "question": "A researcher is interested in studying the effects of music on plant growth. Which of the following is the MOST important step to take during 'Identifying a Problem'?",
+    "options": [
+      "Immediately design an experiment to test different music genres",
+      "Develop a detailed research plan outlining every step",
+      "Review existing literature on plant growth and the potential influence of music",
+      "Choose a specific type of music to focus on without further investigation"
+    ],
+    "correct": 2,
+    "explanation": "Step 1 of the scientific method, 'Identify a problem', includes reviewing the literature to understand what is already known. This is detailed in Lecture (2), page 4. "
+  },
+  {
+    "questionNumber": 5,
+    "question": "_________________ includes defining variables in terms of how each variable is measured.",
+    "options": [
+      "Operational definition",
+      "Variable",
+      "Research plan",
+      "Research strategy and design"
+    ],
+    "correct": 0,
+    "explanation": "An operational definition is a description of an observable event in terms of how it was observed or measured. This is explained in Lecture (2), pages 11 and 12. "
+  },
+  {
+    "questionNumber": 6,
+    "question": "In the research hypothesis: 'Placing healthy foods in McDonald's packaging will increase liking for those foods in children', which of the following can be considered as a variable?",
+    "options": [
+      "Packaging",
+      "Children",
+      "Healthy foods",
+      "Liking"
+    ],
+    "correct": 3,
+    "explanation": "In the example hypothesis provided in Lecture (2), page 14, 'liking' is identified as the variable to be measured. "
+  },
+  {
+    "questionNumber": 7,
+    "question": "Imagine studying fertilizer effects on plants. During Step 3, you might ____________.",
+    "options": [
+      "Write a detailed fertilizer review",
+      "Analyze past plant growth data",
+      "Develop new question based on observations",
+      "Measure plant heights with/without fertilizer"
+    ],
+    "correct": 3,
+    "explanation": "Step 3, 'Conduct the Study', involves executing the research plan and collecting data.  In this scenario, that would mean performing the actual measurements, such as plant height."
+  },
+  {
+    "questionNumber": 8,
+    "question": "A psychologist wants to study a small population of 40 students in a local private school. If the researcher is interested in selecting the entire population of students for this study, then how many students must the psychologist include?",
+    "options": [
+      "None, because it is not possible to study an entire population in this case",
+      "At least half, because 21 or more students would constitute most of the population",
+      "All 40 students, because all students constitute the population",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "This is a 'Check your knowledge' question from Lecture (3), pages 18-19. A population is the set of all individuals of interest, so to study the entire population, all 40 students must be included. "
+  },
+  {
+    "questionNumber": 9,
+    "question": "__________________ includes planning for how to treat participants in a research study.",
+    "options": [
+      "Define the variables being tested",
+      "Identify participants or subjects and determine how to sample them",
+      "Select a research strategy and design",
+      "Evaluate ethics and obtain institutional approval to conduct research"
+    ],
+    "correct": 3,
+    "explanation": "As part of Step 2, 'Develop a Research Plan', a researcher must 'Evaluate ethics and obtain institutional approval to conduct research', which involves planning for participant treatment. This is detailed in Lecture (3), page 10. "
+  },
+  {
+    "questionNumber": 10,
+    "question": "Oral presentations vs. peer-reviewed journals:",
+    "options": [
+      "Presentations are more detailed than journal articles",
+      "Journals only accept research supporting existing theories",
+      "Presentations are informal; journals require expert approval",
+      "Journals are for complex concepts, presentations for basic ideas"
+    ],
+    "correct": 2,
+    "explanation": "Lecture (4), page 9, explains that publishing in journals requires a manuscript to be reviewed and approved by peers (experts) to ensure it is high-quality research, which is a key distinction from other forms of communication. "
+  },
+  {
+    "questionNumber": 11,
+    "question": "Which step of the scientific method involves summarizing data and reporting research results?",
+    "options": [
+      "Analyze and evaluate the data",
+      "Communicate the results",
+      "Generate more new ideas",
+      "Develop a research plan"
+    ],
+    "correct": 0,
+    "explanation": "Step 4 of the scientific method, 'Analyze & evaluate the data', includes the sub-step to 'Summarize data and report the research results', as stated in Lecture (4), page 2. "
+  },
+  {
+    "questionNumber": 12,
+    "question": "__________________ is a single measurement or observation, usually called a score or raw score.",
+    "options": [
+      "Datum",
+      "Data",
+      "Variable",
+      "Operational definition"
+    ],
+    "correct": 0,
+    "explanation": "A 'datum' is defined as a single measurement or observation. This is stated in Lecture (4), page 3, and reinforced in a 'Check your knowledge' question on page 13. "
+  },
+  {
+    "questionNumber": 13,
+    "question": "What's the MAIN downside of tenacity?",
+    "options": [
+      "Complex calculations needed",
+      "Requires experts",
+      "Hard to share with others",
+      "Inaccurate knowledge"
+    ],
+    "correct": 3,
+    "explanation": "According to Lecture (5), page 3, the key disadvantage of tenacity as a method of knowing is that 'the knowledge acquired can often be inaccurate'. "
+  },
+  {
+    "questionNumber": 14,
+    "question": "Intuition in science can be useful for __________________, particularly when there is little to no information available concerning their area of interest.",
+    "options": [
+      "Presenting research findings",
+      "Guaranteeing research accuracy",
+      "Analyzing complex data",
+      "Developing a research hypothesis"
+    ],
+    "correct": 3,
+    "explanation": "Lecture (5), page 6, notes that intuition can be valuable in science for 'developing a research hypothesis', especially when little prior information is available. "
+  },
+  {
+    "questionNumber": 15,
+    "question": "__________________ is knowledge accepted as fact because it was stated by an expert or respected source in a particular subject area.",
+    "options": [
+      "Authority",
+      "Intuition",
+      "Rationalism",
+      "None of these"
+    ],
+    "correct": 0,
+    "explanation": "The method of knowing based on accepting facts from an expert or respected source is defined as 'Authority' in Lecture (5), page 7. "
+  },
+  {
+    "questionNumber": 16,
+    "question": "The disadvantage of using __________________ as a method of knowing in that it often leads to wrong conclusions.",
+    "options": [
+      "Authority",
+      "Intuition",
+      "Rationalism",
+      "None of these"
+    ],
+    "correct": 2,
+    "explanation": "Lecture (5), page 10, points out that a disadvantage of rationalism is that 'it often leads to wrong conclusions'. "
+  },
+  {
+    "questionNumber": 17,
+    "question": "What is the returned value of the function func_01 if the value 10 is passed as the parameter n?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "none of these"
+    ],
+    "correct": 3,
+    "explanation": "The code for func_01 is provided in the exam. Tracing the code with n=10: x starts at 2. The loop increments x by 2 for i=1, 4, 7, and 10. The final value of x will be 2 (initial) + 2 + 2 + 2 + 2 = 10. Since 10 is not an option, the correct choice is 'none of these'. Problem-solving with code is covered in Lectures (7) and (8)."
+  },
+  {
+    "questionNumber": 18,
+    "question": "What is the returned value of the function func_01 if the value 1 is passed as the parameter n?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "none of these"
+    ],
+    "correct": 1,
+    "explanation": "The code for func_01 is provided in the exam. Tracing the code with n=1: x starts at 2. The loop runs once for i=1, and x becomes 2 + 2 = 4. The function returns 4. Problem-solving with code is covered in Lectures (7) and (8)."
+  },
+  {
+    "questionNumber": 19,
+    "question": "What is the returned value of the function func_02 if the value 10 is passed as the parameter n?",
+    "options": [
+      "3",
+      "3.5",
+      "5",
+      "10"
+    ],
+    "correct": 0,
+    "explanation": "The code for func_02 and func_03 is provided in the exam. func_02(10) calls func_03(10-3), which is func_03(7). In func_03, since 7 > 5 is true, it returns 7 / 2. Because the function's return type is 'int', the result of this integer division is 3. Problem-solving with code is covered in Lectures (7) and (8)."
+  },
+  {
+    "questionNumber": 20,
+    "question": "What is the returned value of the function func_02 if the value 1 is passed as the parameter n?",
+    "options": [
+      "-1",
+      "-0.5",
+      "0.5",
+      "16"
+    ],
+    "correct": 0,
+    "explanation": "The code for func_02 and func_03 is provided in the exam. func_02(1) calls func_03(1-3), which is func_03(-2). In func_03, since -2 > 5 is false, the else block executes, returning -2 * 2, which is -4. As -4 is not among the options, the question is flawed. I have selected the first option as a placeholder. Problem-solving with code is covered in Lectures (7) and (8)."
+  },
+  {
+    "questionNumber": 21,
+    "question": "Qualitative observations measure specific aspects of a phenomenon.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This statement is false. Lecture (1), page 5, clarifies that quantitative observations measure specific aspects, while qualitative observations describe the qualities of a phenomenon. "
+  },
+  {
+    "questionNumber": 22,
+    "question": "The growth of scientific knowledge is a 'completed process', which means that the process has reached its conclusion and is no longer in progress.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. Lecture (1), page 7, explicitly states that 'The growth of scientific knowledge is an ongoing process'. "
+  },
+  {
+    "questionNumber": 23,
+    "question": "Communicating results is a part of the scientific method.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. 'Communicate the results' is listed as a step of the scientific method in Lecture (1), page 14, and is detailed as Step 5 in Lecture (4). "
+  },
+  {
+    "questionNumber": 24,
+    "question": "Science is a set of systematic techniques used to acquire, modify, and integrate knowledge concerning observable and measurable phenomena.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. This statement is the definition of the Scientific Method given in Lecture (1), page 12, which science uses to acquire knowledge. "
+  },
+  {
+    "questionNumber": 25,
+    "question": "The scientific outcome is a specific, testable claim or prediction about what you expect to observe given a set of circumstances.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. The description provided is the definition of a 'research hypothesis', not a 'scientific outcome', as defined in Lecture (2), page 7. "
+  },
+  {
+    "questionNumber": 26,
+    "question": "Variables should be defined before developing a research plan.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. Defining variables is a component *of* developing a research plan (Step 2), not a precursor to it, as outlined in Lecture (2), page 10. "
+  },
+  {
+    "questionNumber": 27,
+    "question": "Obtaining institutional approval is not necessary before conducting research.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. Lecture (3), page 11, states that a researcher can only conduct a study 'Upon approval from such a committee'. "
+  },
+  {
+    "questionNumber": 28,
+    "question": "Identifying participants and sampling methods is part of developing a research plan.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. 'Identify participants or subjects and determine how to sample them' is a key sub-step in developing a research plan, as shown in Lecture (2), page 10. "
+  },
+  {
+    "questionNumber": 29,
+    "question": "Analyzing data helps determine if the hypothesis is supported by the research findings.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. Lecture (4), page 4, states that data is analyzed 'to specifically determine if the pattern of data we observed in our study shows support for the research hypothesis'. "
+  },
+  {
+    "questionNumber": 30,
+    "question": "Steps of scientific process are cyclic.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. Lecture (4), page 12, explicitly describes the scientific process as 'cyclic, not linear'. "
+  },
+  {
+    "questionNumber": 31,
+    "question": "In 'Analyze and evaluate the data' step of scientific method steps, data are reported as tables or graphs.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. During Step 4, under the task of summarizing and reporting results, Lecture (4), page 6 states, 'Data are often reported in tables, or graphically'. "
+  },
+  {
+    "questionNumber": 32,
+    "question": "Your friend tells you that he likes fried foods because he saw someone enjoying them at a buffet. It could be an example of empiricism.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. This exact scenario is used as a 'Check your knowledge' example in Lecture (5), pages 16-17, where the answer is identified as empiricism. Empiricism is knowing based on one's observations. "
+  },
+  {
+    "questionNumber": 33,
+    "question": "You close up the store at exactly midnight because that is when the store always closes. It could be an example of authority.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. This example, from a 'Check your knowledge' question in Lecture (5), pages 18-19, illustrates tenacity (knowing based on habit), not authority. "
+  },
+  {
+    "questionNumber": 34,
+    "question": "You believe that if you do not read your textbook you will fail in the course because your professor said so. It could be an example of tenacity.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. Believing something because a professor (an expert source) said it is an example of authority. This is confirmed in a 'Check your knowledge' question in Lecture (5), pages 24-25. "
+  },
+  {
+    "questionNumber": 35,
+    "question": "The disadvantage of using tenacity is that there is no definitive basis for the belief.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. The lack of a definitive basis for belief is cited as a disadvantage of intuition, not tenacity, in Lecture (5), page 5.  The disadvantage of tenacity is that the knowledge can be inaccurate. "
+  },
+  {
+    "questionNumber": 36,
+    "question": "Rationalism is any source of knowledge that requires the use of reasoning or logic.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. This statement is the exact definition of rationalism provided in Lecture (5), page 9. "
+  },
+  {
+    "questionNumber": 37,
+    "question": "Empiricism is prone to bias because not everyone experiences the world in the same way.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. This exact sentence is provided in Lecture (5), page 12, to explain a key limitation of empiricism. "
+  },
+  {
+    "questionNumber": 38,
+    "question": "The 2nd goal in science is to predict conditions/causes for the behaviors/events we study.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. According to Lecture (6), page 2, the second goal of science is to 'Explain'. 'Predict' is the third goal. "
+  },
+  {
+    "questionNumber": 39,
+    "question": "Basic research uses the scientific method to answer questions concerning practical problems with potential practical solutions.",
+    "options": ["True", "False"],
+    "correct": 1,
+    "explanation": "This is false. The description provided defines applied research. Basic research focuses on theoretical issues, as explained in Lecture (6), page 10. "
+  },
+  {
+    "questionNumber": 40,
+    "question": "Quantitative research uses the scientific method to record observations as numeric data.",
+    "options": ["True", "False"],
+    "correct": 0,
+    "explanation": "This is true. This statement perfectly matches the definition of quantitative research provided in Lecture (6), page 12. "
+  }
+],
 };
 
 
@@ -928,6 +1310,388 @@ const quizDataArabic = {
       "explanation": "الإجابة الصحيحة هي '220 دولارًا'. التكلفة الأساسية هي 6 * 40 = 240 دولارًا. بما أن المدة بين 3 و 6 أيام، يتم تطبيق خصم 20 دولارًا. التكلفة النهائية هي 240 - 20 = 220 دولارًا. هذا يطابق حالة الاختبار في المحاضرة.\nالمصدر: (شابتر 7، صفحة 7)."
     }
   ],
+  'اختبار نهاية العام 2023/2024' :[
+  {
+    "questionNumber": 1,
+    "question": "ما هما الأساسان الرئيسيان للتفكير العلمي؟",
+    "options": [
+      "الإبداع والخيال",
+      "الملاحظة والمعرفة",
+      "الحدس والمنطق",
+      "التجريب والتحليل"
+    ],
+    "correct": 1,
+    "explanation": "يوجد أساسان رئيسيان للتفكير العلمي: الملاحظة، والمعرفة. هذا مذكور في المحاضرة (1)، صفحة 3."
+  },
+  {
+    "questionNumber": 2,
+    "question": "ما هو التعريف الواسع للعلم؟",
+    "options": [
+      "مجموعة محددة من القواعد لإجراء التجارب",
+      "أي طريقة منهجية لاكتساب المعرفة بعيدًا عن الجهل",
+      "دراسة الظواهر الطبيعية فقط",
+      "مجموعة من الحقائق الراسخة"
+    ],
+    "correct": 1,
+    "explanation": "المحاضرة (1)، صفحة 10، تقدم تعريفًا واسعًا للعلم بأنه 'أي طريقة منهجية لاكتساب المعرفة بعيدًا عن الجهل'."
+  },
+  {
+    "questionNumber": 3,
+    "question": "ما هي الخطوة الثالثة في المنهج العلمي؟",
+    "options": [
+      "إجراء الدراسة",
+      "تحليل النتائج",
+      "تحديد مشكلة",
+      "توصيل النتائج"
+    ],
+    "correct": 0,
+    "explanation": "خطوات المنهج العلمي مدرجة في المحاضرة (1)، صفحة 14، ومفصلة عبر المحاضرات. الخطوة الثالثة هي 'إجراء الدراسة'."
+  },
+  {
+    "questionNumber": 4,
+    "question": "باحث مهتم بدراسة تأثير الموسيقى على نمو النبات. أي من التالي هو الخطوة الأكثر أهمية التي يجب اتخاذها أثناء 'تحديد المشكلة'؟",
+    "options": [
+      "تصميم تجربة على الفور لاختبار أنواع الموسيقى المختلفة",
+      "وضع خطة بحث مفصلة تحدد كل خطوة",
+      "مراجعة الأدبيات الموجودة حول نمو النبات والتأثير المحتمل للموسيقى",
+      "اختيار نوع معين من الموسيقى للتركيز عليه دون مزيد من التحقيق"
+    ],
+    "correct": 2,
+    "explanation": "الخطوة الأولى من المنهج العلمي، 'تحديد المشكلة'، تتضمن مراجعة الأدبيات لفهم ما هو معروف بالفعل. هذا مفصل في المحاضرة (2)، صفحة 4."
+  },
+  {
+    "questionNumber": 5,
+    "question": "________________ يتضمن تعريف المتغيرات من حيث كيفية قياس كل متغير.",
+    "options": [
+      "التعريف الإجرائي",
+      "المتغير",
+      "خطة البحث",
+      "استراتيجية وتصميم البحث"
+    ],
+    "correct": 0,
+    "explanation": "التعريف الإجرائي هو وصف لحدث يمكن ملاحظته من حيث كيفية ملاحظته أو قياسه. هذا موضح في المحاضرة (2)، صفحتي 11 و 12."
+  },
+  {
+    "questionNumber": 6,
+    "question": "في فرضية البحث: 'وضع الأطعمة الصحية في عبوات ماكدونالدز سيزيد من إعجاب الأطفال بهذه الأطعمة'، أي من التالي يمكن اعتباره متغيرًا؟",
+    "options": [
+      "التغليف",
+      "الأطفال",
+      "الأطعمة الصحية",
+      "الإعجاب"
+    ],
+    "correct": 3,
+    "explanation": "في مثال الفرضية الوارد في المحاضرة (2)، صفحة 14، تم تحديد 'الإعجاب' (liking) كمتغير يتم قياسه."
+  },
+  {
+    "questionNumber": 7,
+    "question": "تخيل أنك تدرس تأثيرات السماد على النباتات. خلال الخطوة الثالثة، قد تقوم بـ ____________.",
+    "options": [
+      "كتابة مراجعة مفصلة عن الأسمدة",
+      "تحليل بيانات نمو النباتات السابقة",
+      "تطوير سؤال جديد بناءً على الملاحظات",
+      "قياس ارتفاعات النباتات مع/بدون سماد"
+    ],
+    "correct": 3,
+    "explanation": "الخطوة الثالثة، 'إجراء الدراسة'، تتضمن تنفيذ خطة البحث وجمع البيانات. في هذا السيناريو، هذا يعني إجراء القياسات الفعلية، مثل ارتفاع النبات."
+  },
+  {
+    "questionNumber": 8,
+    "question": "يريد عالم نفس دراسة مجموعة صغيرة من 40 طالبًا في مدرسة خاصة محلية. إذا كان الباحث مهتمًا باختيار جميع أفراد مجتمع الدراسة لهذه الدراسة، فكم عدد الطلاب الذين يجب على عالم النفس تضمينهم؟",
+    "options": [
+      "لا أحد، لأنه لا يمكن دراسة مجتمع بأكمله في هذه الحالة",
+      "النصف على الأقل، لأن 21 طالبًا أو أكثر سيشكلون معظم المجتمع",
+      "كل الـ 40 طالبًا، لأن جميع الطلاب يشكلون مجتمع الدراسة",
+      "لا شيء مما سبق"
+    ],
+    "correct": 2,
+    "explanation": "هذا سؤال 'اختبر معلوماتك' من المحاضرة (3)، صفحتي 18-19. يُعرَّف مجتمع الدراسة بأنه مجموعة كل الأفراد محل الاهتمام، لذا لدراسة المجتمع بأكمله، يجب تضمين كل الـ 40 طالبًا."
+  },
+  {
+    "questionNumber": 9,
+    "question": "__________________ يتضمن التخطيط لكيفية معاملة المشاركين في دراسة بحثية.",
+    "options": [
+      "تحديد المتغيرات التي يتم اختبارها",
+      "تحديد المشاركين أو الموضوعات وتحديد كيفية أخذ العينات منهم",
+      "اختيار استراتيجية وتصميم البحث",
+      "تقييم الأخلاقيات والحصول على موافقة مؤسسية لإجراء البحث"
+    ],
+    "correct": 3,
+    "explanation": "كجزء من الخطوة الثانية، 'وضع خطة بحث'، يجب على الباحث 'تقييم الأخلاقيات والحصول على موافقة مؤسسية لإجراء البحث'، والذي يتضمن التخطيط لمعاملة المشاركين. هذا مفصل في المحاضرة (3)، صفحة 10."
+  },
+  {
+    "questionNumber": 10,
+    "question": "العروض الشفوية مقابل المجلات الخاضعة لمراجعة الأقران:",
+    "options": [
+      "العروض التقديمية أكثر تفصيلاً من مقالات المجلات",
+      "المجلات تقبل فقط الأبحاث التي تدعم النظريات الحالية",
+      "العروض التقديمية غير رسمية؛ المجلات تتطلب موافقة الخبراء",
+      "المجلات للمفاهيم المعقدة، والعروض التقديمية للأفكار الأساسية"
+    ],
+    "correct": 2,
+    "explanation": "تشرح المحاضرة (4)، صفحة 9، أن النشر في المجلات يتطلب مراجعة المخطوطة والموافقة عليها من قبل الأقران (الخبراء) لضمان جودة البحث، وهو فارق رئيسي عن أشكال التواصل الأخرى."
+  },
+  {
+    "questionNumber": 11,
+    "question": "أي خطوة من خطوات المنهج العلمي تتضمن تلخيص البيانات وتقرير نتائج البحث؟",
+    "options": [
+      "تحليل وتقييم البيانات",
+      "توصيل النتائج",
+      "توليد المزيد من الأفكار الجديدة",
+      "وضع خطة بحث"
+    ],
+    "correct": 0,
+    "explanation": "الخطوة الرابعة من المنهج العلمي، 'تحليل وتقييم البيانات'، تتضمن الخطوة الفرعية 'تلخيص البيانات وتقرير نتائج البحث'، كما هو مذكور في المحاضرة (4)، صفحة 2."
+  },
+  {
+    "questionNumber": 12,
+    "question": "__________________ هو قياس أو ملاحظة واحدة، وعادة ما يطلق عليه درجة أو درجة أولية.",
+    "options": [
+      "Datum (بيانة)",
+      "Data (بيانات)",
+      "Variable (متغير)",
+      "Operational definition (تعريف إجرائي)"
+    ],
+    "correct": 0,
+    "explanation": "تُعرَّف 'البيانة' (Datum) بأنها قياس أو ملاحظة واحدة. هذا مذكور في المحاضرة (4)، صفحة 3، وتم التأكيد عليه في سؤال 'اختبر معلوماتك' في الصفحة 13."
+  },
+  {
+    "questionNumber": 13,
+    "question": "ما هو الجانب السلبي الرئيسي للمثابرة (Tenacity)؟",
+    "options": [
+      "الحاجة إلى حسابات معقدة",
+      "تتطلب خبراء",
+      "صعوبة مشاركتها مع الآخرين",
+      "المعرفة غير الدقيقة"
+    ],
+    "correct": 3,
+    "explanation": "وفقًا للمحاضرة (5)، صفحة 3، فإن العيب الرئيسي للمثابرة كطريقة للمعرفة هو أن 'المعرفة المكتسبة غالبًا ما تكون غير دقيقة'."
+  },
+  {
+    "questionNumber": 14,
+    "question": "يمكن أن يكون الحدس في العلم مفيدًا لـ __________________، خاصة عندما تكون هناك معلومات قليلة أو معدومة متاحة بخصوص مجال اهتمامهم.",
+    "options": [
+      "عرض نتائج البحث",
+      "ضمان دقة البحث",
+      "تحليل البيانات المعقدة",
+      "تطوير فرضية بحث"
+    ],
+    "correct": 3,
+    "explanation": "تشير المحاضرة (5)، صفحة 6، إلى أن الحدس يمكن أن يكون ذا قيمة في العلم من أجل 'تطوير فرضية بحث'، خاصة عند توفر القليل من المعلومات المسبقة."
+  },
+  {
+    "questionNumber": 15,
+    "question": "__________________ هي المعرفة المقبولة كحقيقة لأنه تم ذكرها من قبل خبير أو مصدر محترم في مجال معين.",
+    "options": [
+      "السلطة (Authority)",
+      "الحدس (Intuition)",
+      "العقلانية (Rationalism)",
+      "لا شيء مما سبق"
+    ],
+    "correct": 0,
+    "explanation": "طريقة المعرفة القائمة على قبول الحقائق من خبير أو مصدر محترم تُعرَّف بأنها 'السلطة' في المحاضرة (5)، صفحة 7."
+  },
+  {
+    "questionNumber": 16,
+    "question": "عيب استخدام __________________ كطريقة للمعرفة هو أنها غالبًا ما تؤدي إلى استنتاجات خاطئة.",
+    "options": [
+      "السلطة (Authority)",
+      "الحدس (Intuition)",
+      "العقلانية (Rationalism)",
+      "لا شيء مما سبق"
+    ],
+    "correct": 2,
+    "explanation": "تشير المحاضرة (5)، صفحة 10، إلى أن أحد عيوب العقلانية هو أنها 'غالبًا ما تؤدي إلى استنتاجات خاطئة'."
+  },
+  {
+    "questionNumber": 17,
+    "question": "ما هي القيمة التي تعيدها الدالة func_01 إذا تم تمرير القيمة 10 كمعامل n؟",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "لا شيء مما سبق"
+    ],
+    "correct": 3,
+    "explanation": "كود الدالة func_01 موجود في الامتحان. عند تتبع الكود بـ n=10: تبدأ x بقيمة 2. الحلقة تزيد x بمقدار 2 للقيم i=1, 4, 7, 10. القيمة النهائية لـ x ستكون 2 + 2 + 2 + 2 + 2 = 10. بما أن 10 ليس خيارًا، فالإجابة الصحيحة هي 'لا شيء مما سبق'. تم تناول حل المشكلات البرمجية في المحاضرتين (7) و (8)."
+  },
+  {
+    "questionNumber": 18,
+    "question": "ما هي القيمة التي تعيدها الدالة func_01 إذا تم تمرير القيمة 1 كمعامل n؟",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "لا شيء مما سبق"
+    ],
+    "correct": 1,
+    "explanation": "كود الدالة func_01 موجود في الامتحان. عند تتبع الكود بـ n=1: تبدأ x بقيمة 2. الحلقة تعمل مرة واحدة لـ i=1، وتصبح x تساوي 2 + 2 = 4. الدالة تعيد 4. تم تناول حل المشكلات البرمجية في المحاضرتين (7) و (8)."
+  },
+  {
+    "questionNumber": 19,
+    "question": "ما هي القيمة التي تعيدها الدالة func_02 إذا تم تمرير القيمة 10 كمعامل n؟",
+    "options": [
+      "3",
+      "3.5",
+      "5",
+      "10"
+    ],
+    "correct": 0,
+    "explanation": "كود الدالتين func_02 و func_03 موجود في الامتحان. func_02(10) تستدعي func_03(10-3) أي func_03(7). في func_03، بما أن 7 > 5 صحيح، فإنها تعيد 7 / 2. لأن نوع الإرجاع للدالة هو 'int'، فإن نتيجة القسمة الصحيحة هي 3. تم تناول حل المشكلات البرمجية في المحاضرتين (7) و (8)."
+  },
+  {
+    "questionNumber": 20,
+    "question": "ما هي القيمة التي تعيدها الدالة func_02 إذا تم تمرير القيمة 1 كمعامل n؟",
+    "options": [
+      "-1",
+      "-0.5",
+      "0.5",
+      "16"
+    ],
+    "correct": 0,
+    "explanation": "كود الدالتين func_02 و func_03 موجود في الامتحان. func_02(1) تستدعي func_03(1-3) أي func_03(-2). في func_03، بما أن -2 > 5 خطأ، يتم تنفيذ كتلة else، والتي تعيد -2 * 2، أي -4. بما أن -4 ليس من بين الخيارات، فالسؤال به خطأ. لقد اخترت الخيار الأول كعنصر نائب. تم تناول حل المشكلات البرمجية في المحاضرتين (7) و (8)."
+  },
+  {
+    "questionNumber": 21,
+    "question": "الملاحظات النوعية تقيس جوانب محددة لظاهرة ما.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. توضح المحاضرة (1)، صفحة 5، أن الملاحظات الكمية تقيس جوانب محددة، بينما الملاحظات النوعية تصف صفات الظاهرة."
+  },
+  {
+    "questionNumber": 22,
+    "question": "نمو المعرفة العلمية هو 'عملية مكتملة'، مما يعني أن العملية وصلت إلى نهايتها ولم تعد قيد التقدم.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. تذكر المحاضرة (1)، صفحة 7، صراحة أن 'نمو المعرفة العلمية هو عملية مستمرة'."
+  },
+  {
+    "questionNumber": 23,
+    "question": "توصيل النتائج هو جزء من المنهج العلمي.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. 'توصيل النتائج' مدرج كخطوة من خطوات المنهج العلمي في المحاضرة (1)، صفحة 14، ومفصلة في الخطوة 5 في المحاضرة (4)."
+  },
+  {
+    "questionNumber": 24,
+    "question": "العلم هو مجموعة من التقنيات المنهجية المستخدمة لاكتساب وتعديل ودمج المعرفة المتعلقة بالظواهر القابلة للملاحظة والقياس.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. هذا البيان هو تعريف المنهج العلمي الوارد في المحاضرة (1)، صفحة 12، والذي يستخدمه العلم لاكتساب المعرفة."
+  },
+  {
+    "questionNumber": 25,
+    "question": "النتيجة العلمية هي ادعاء أو تنبؤ محدد قابل للاختبار حول ما تتوقع ملاحظته في ظل مجموعة من الظروف.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. الوصف المقدم هو تعريف 'فرضية البحث'، وليس 'النتيجة العلمية'، كما هو محدد في المحاضرة (2)، صفحة 7."
+  },
+  {
+    "questionNumber": 26,
+    "question": "يجب تحديد المتغيرات قبل وضع خطة بحث.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. تحديد المتغيرات هو جزء *من* وضع خطة البحث (الخطوة 2)، وليس سابقًا لها، كما هو موضح في المحاضرة (2)، صفحة 10."
+  },
+  {
+    "questionNumber": 27,
+    "question": "الحصول على موافقة مؤسسية ليس ضروريًا قبل إجراء البحث.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. تذكر المحاضرة (3)، صفحة 11، أن الباحث لا يمكنه إجراء دراسة إلا 'بعد الحصول على موافقة من هذه اللجنة'."
+  },
+  {
+    "questionNumber": 28,
+    "question": "تحديد المشاركين وطرق أخذ العينات هو جزء من وضع خطة بحث.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. 'تحديد المشاركين أو الموضوعات وتحديد كيفية أخذ العينات منهم' هي خطوة فرعية رئيسية في وضع خطة بحث، كما هو موضح في المحاضرة (2)، صفحة 10."
+  },
+  {
+    "questionNumber": 29,
+    "question": "تحليل البيانات يساعد في تحديد ما إذا كانت الفرضية مدعومة بنتائج البحث.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. تذكر المحاضرة (4)، صفحة 4، أن البيانات يتم تحليلها 'لتحديد ما إذا كان نمط البيانات الذي لاحظناه في دراستنا يظهر دعمًا لفرضية البحث'."
+  },
+  {
+    "questionNumber": 30,
+    "question": "خطوات العملية العلمية دورية (cyclic).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. تصف المحاضرة (4)، صفحة 12، العملية العلمية بأنها 'دورية وليست خطية'."
+  },
+  {
+    "questionNumber": 31,
+    "question": "في خطوة 'تحليل وتقييم البيانات' من خطوات المنهج العلمي، يتم الإبلاغ عن البيانات في شكل جداول أو رسوم بيانية.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. خلال الخطوة 4، تحت مهمة تلخيص النتائج والإبلاغ عنها، تذكر المحاضرة (4)، صفحة 6، أنه 'غالبًا ما يتم الإبلاغ عن البيانات في جداول أو رسوم بيانية'."
+  },
+  {
+    "questionNumber": 32,
+    "question": "يخبرك صديقك أنه يحب الأطعمة المقلية لأنه رأى شخصًا يستمتع بها في بوفيه. قد يكون هذا مثالاً على التجريبية (Empiricism).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. هذا السيناريو المحدد مستخدم كمثال في 'اختبر معلوماتك' في المحاضرة (5)، صفحتي 16-17، حيث تم تحديد الإجابة بأنها التجريبية. التجريبية هي المعرفة القائمة على الملاحظات."
+  },
+  {
+    "questionNumber": 33,
+    "question": "تغلق المتجر في منتصف الليل تمامًا لأن هذا هو موعد إغلاقه دائمًا. قد يكون هذا مثالًا على السلطة (Authority).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. هذا المثال، من سؤال 'اختبر معلوماتك' في المحاضرة (5)، صفحتي 18-19، يوضح المثابرة (Tenacity) (المعرفة القائمة على العادة)، وليس السلطة."
+  },
+  {
+    "questionNumber": 34,
+    "question": "تعتقد أنك إذا لم تقرأ كتابك الدراسي فسوف ترسب في المقرر لأن أستاذك قال ذلك. قد يكون هذا مثالًا على المثابرة (Tenacity).",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. تصديق شيء لأن الأستاذ (مصدر خبير) قاله هو مثال على السلطة. تم تأكيد ذلك في سؤال 'اختبر معلوماتك' في المحاضرة (5)، صفحتي 24-25."
+  },
+  {
+    "questionNumber": 35,
+    "question": "عيب استخدام المثابرة (Tenacity) هو أنه لا يوجد أساس محدد للاعتقاد.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. يُستشهد بانعدام وجود أساس محدد للاعتقاد كعيب للحدس، وليس المثابرة، في المحاضرة (5)، صفحة 5. عيب المثابرة هو أن المعرفة يمكن أن تكون غير دقيقة."
+  },
+  {
+    "questionNumber": 36,
+    "question": "العقلانية (Rationalism) هي أي مصدر للمعرفة يتطلب استخدام التفكير أو المنطق.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. هذا البيان هو التعريف الدقيق للعقلانية الوارد في المحاضرة (5)، صفحة 9."
+  },
+  {
+    "questionNumber": 37,
+    "question": "التجريبية (Empiricism) عرضة للتحيز لأن ليس كل شخص يختبر العالم بنفس الطريقة.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. هذه الجملة الدقيقة واردة في المحاضرة (5)، صفحة 12، لشرح أحد القيود الرئيسية على التجريبية."
+  },
+  {
+    "questionNumber": 38,
+    "question": "الهدف الثاني في العلم هو التنبؤ بالظروف/الأسباب للسلوكيات/الأحداث التي ندرسها.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. وفقًا للمحاضرة (6)، صفحة 2، الهدف الثاني للعلم هو 'الشرح'. 'التنبؤ' هو الهدف الثالث."
+  },
+  {
+    "questionNumber": 39,
+    "question": "البحث الأساسي يستخدم المنهج العلمي للإجابة على الأسئلة المتعلقة بالمشكلات العملية ذات الحلول العملية المحتملة.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 1,
+    "explanation": "هذه العبارة خاطئة. الوصف المقدم يُعرّف البحث التطبيقي. يركز البحث الأساسي على القضايا النظرية، كما هو موضح في المحاضرة (6)، صفحة 10."
+  },
+  {
+    "questionNumber": 40,
+    "question": "البحث الكمي يستخدم المنهج العلمي لتسجيل الملاحظات كبيانات رقمية.",
+    "options": ["صحيح", "خطأ"],
+    "correct": 0,
+    "explanation": "هذه العبارة صحيحة. هذا البيان يطابق تمامًا تعريف البحث الكمي الوارد في المحاضرة (6)، صفحة 12."
+  }
+],
 };
 
 // Create a mapping between English and Arabic chapter names

@@ -699,8 +699,8 @@ const quizData = {
       "0.5",
       "16"
     ],
-    "correct": 0,
-    "explanation": "The code for func_02 and func_03 is provided in the exam. func_02(1) calls func_03(1-3), which is func_03(-2). In func_03, since -2 > 5 is false, the else block executes, returning -2 * 2, which is -4. As -4 is not among the options, the question is flawed. I have selected the first option as a placeholder. Problem-solving with code is covered in Lectures (7) and (8)."
+    "correct": 4,
+    "explanation": "The code for func_02 and func_03 is provided in the exam. func_02(1) calls func_03(1-3), which is func_03(-2). In func_03, since -2 > 5 is false, the else block executes, returning -2 * -2 * -2 * -2 = 16 . Problem-solving with code is covered in Lectures (7) and (8)."
   },
   {
     "questionNumber": 21,
@@ -727,8 +727,8 @@ const quizData = {
     "questionNumber": 24,
     "question": "Science is a set of systematic techniques used to acquire, modify, and integrate knowledge concerning observable and measurable phenomena.",
     "options": ["True", "False"],
-    "correct": 0,
-    "explanation": "This is true. This statement is the definition of the Scientific Method given in Lecture (1), page 12, which science uses to acquire knowledge. "
+    "correct": 1,
+    "explanation": "Science is the acquisition of knowledge through observation, evaluation, interpretation, and theoretical explanation. "
   },
   {
     "questionNumber": 25,

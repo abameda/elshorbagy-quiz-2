@@ -663,8 +663,8 @@ const quizData = {
       "8",
       "none of these"
     ],
-    "correct": 3,
-    "explanation": "The code for func_01 is provided in the exam. Tracing the code with n=10: x starts at 2. The loop increments x by 2 for i=1, 4, 7, and 10. The final value of x will be 2 (initial) + 2 + 2 + 2 + 2 = 10. Since 10 is not an option, the correct choice is 'none of these'. Problem-solving with code is covered in Lectures (7) and (8)."
+    "correct": 2,
+    "explanation": "Based on the manually modified code in the image, the loop starts with i=2. Tracing the code with n=10, the loop runs when i=2, 5, and 8. The final value of x is 2 (initial) + 2 + 2 + 2 = 8. This value matches option (c)."
   },
   {
     "questionNumber": 18,
@@ -675,8 +675,8 @@ const quizData = {
       "8",
       "none of these"
     ],
-    "correct": 1,
-    "explanation": "The code for func_01 is provided in the exam. Tracing the code with n=1: x starts at 2. The loop runs once for i=1, and x becomes 2 + 2 = 4. The function returns 4. Problem-solving with code is covered in Lectures (7) and (8)."
+    "correct": 0,
+    "explanation": "Using the same modified code where i starts at 2, and when n=1, the loop's condition (i <= n) or (2 <= 1) is false from the start. Therefore, the loop is never executed. The function returns the initial value of x, which is 2. This value matches option (a)."
   },
   {
     "questionNumber": 19,
@@ -967,15 +967,15 @@ const quizDataArabic = {
       "questionNumber": 17,
       "question": "وفقًا لشجرة القرار لتحديد المتغيرات العلمية، ما هو السؤال الأول الذي يجب طرحه حول سلوك أو حدث محل اهتمام؟",
       "options": [ "هل يمكن قياس السلوك أو الحدث؟", "هل يمكن ملاحظة السلوك أو الحدث بشكل مباشر أو غير مباشر؟", "هل السلوك أو الحدث مثير للاهتمام؟", "هل يمكن التحكم في السلوك أو الحدث؟" ],
-      "correct": 1,
-      "explanation": "الإجابة الصحيحة هي 'هل يمكن ملاحظة السلوك أو الحدث...'. شجرة القرار الموضحة في المحاضرة تبدأ بالسؤال 'Can the behavior or event be directly or indirectly observed?'.\nالمصدر: (شابتر 2، صفحة 13)."
+    "correct": 2,
+    "explanation": "بناءً على الكود المعدل يدويًا في الصورة، الحلقة تبدأ بـ i=2. عند تتبع الكود بـ n=10، فإن الحلقة تعمل عندما تكون i=2, 5, 8. القيمة النهائية لـ x تكون 2 (ابتدائي) + 2 + 2 + 2 = 8. هذه القيمة تطابق الخيار (c)."
     },
     {
       "questionNumber": 18,
       "question": "أي مما يلي هو التعريف الإجرائي الثاني المقترح لقياس متغير 'الإعجاب' (Liking) في مثال الأطفال؟",
       "options": [ "قياس مقدار الوقت الذي يقضيه الطفل في تناول الطعام", "سؤال الوالدين عن رأيهم", "الاختيار التفضيلي بين طعامين", "تقييم الطعام على مقياس رقمي من 1 إلى 10" ],
-      "correct": 2,
-      "explanation": "الإجابة الصحيحة هي 'الاختيار التفضيلي بين طعامين'. المحاضرة تقدم تعريفين إجرائيين، والثاني هو 'الاختيار التفضيلي بين طعامين'، حيث يُستدل على أن اختيار طعام على آخر يشير إلى إعجاب أكبر به.\nالمصدر: (شابتر 2، صفحة 16)."
+    "correct": 0,
+    "explanation": "باستخدام نفس الكود المعدل الذي يبدأ فيه i=2، وعندما تكون n=1، فإن شرط الحلقة (i <= n) أو (2 <= 1) يكون خاطئًا من البداية. لذلك، لا يتم تنفيذ الحلقة على الإطلاق. الدالة تعيد القيمة الابتدائية لـ x وهي 2. هذه القيمة تطابق الخيار (a)."
     },
     {
       "questionNumber": 19,

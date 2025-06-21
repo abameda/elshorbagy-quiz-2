@@ -1702,7 +1702,7 @@ const chapterMapping = {
 'Chapter 1: Introduction to Scientific Thinking': 'الفصل الأول: مقدمة في التفكير العلمي',
 'Chapter 2: The Scientific Method - Identifying a Problem & Developing a Plan': 'الفصل الثاني: المنهج العلمي - تحديد المشكلة ووضع الخطة',
 'Chapter 3: The Scientific Method - Research Plans & Study Conduct': 'الفصل الثالث: المنهج العلمي - خطط البحث وإجراء الدراسة',
-'Chapter 4: The Scientific Method - Analysis, Communication, and New Ideas': 'الفصل الرابع: المنهج العلمي - التحليل والتواصل والأفكار الجديدة',
+'Chapter 4: The Scientific Method - Analysis, Communication, and New Ideas': 'الفصل الرابع: المنهج العلمي - التحليل، والتواصل، والأفكار الجديدة',
 'Chapter 5: Other Methods of Knowing': 'الفصل الخامس: طرق أخرى للمعرفة',
 'Chapter 6: Goals of Science and Research Approaches': 'الفصل السادس: أهداف العلم والمناهج البحثية',
 'Chapters 7 & 8: Problem Solving': 'الفصول 7 و 8: حل المشكلات',
